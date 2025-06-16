@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caring Hands Veterinary Clinic</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar fix">
+        <div class="top-info">
+            <span>📞 (215) 621-8959</span>
+            <span>3310 Grant Ave, Philadelphia, PA </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header fix">
+        <div class="logo">
+            <img src="./asset/logo.jpg" alt="Logo" />
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>    
+            <a href="./page/service.html">Service</a>
+            <li class="dropdown">
+            <a href="#">Conditions Treated</a>
+            <div class="dropdown-content">
+                <a href="./page/condition.html">Lameness and Limping in Pets</a>
+                <a href="#">Leptospirosis</a>
+                <a href="#">Skin Infection</a>
+            </div>
+            </li>
+            <a href="#"></a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us </a>
+            <a href="#">Online Form</a>
+            <a href="#">More</a>
+        </nav>
+        <a href="#" class="btn1 ">Request Appointment</a>
+
+       
+
+    </header>
+    <!-- Add inside <body> after previous code -->
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+    <!-- Mobile Nav (hidden by default) -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="./page/service.html">Service</a>
+        <a href="#">conditions Treated</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us </a>
+        <a href="#">Online Form</a>
+        <a href="#">More</a>
+        <a href="#" class="btn2 margin-top">Request Appointment</a>
+    </div>
+
+
+
+
+
+    <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('./asset/dark2.jpg');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>LIFE WELLNESS <span>PROGRAMS</span></h1>
+                    <p>Stay in touch and in shape with periodic tips from our in-house experts on wellness, fitness and
+                        nutrition.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn">READ MORE</a>
+                        <a href="#" class="btn btn-primary">DONATE NOW</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Slide 2 -->
+            <div class="slide active" style="background-image: url('./asset/dark.jpg');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>LIFE WELLNESS <span>PROGRAMS</span></h1>
+                    <p>Stay in touch and in shape with periodic tips from our in-house experts on wellness, fitness and
+                        nutrition.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn">READ MORE</a>
+                        <a href="#" class="btn btn-primary">DONATE NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide active" style="background-image: url('./asset/dark3.jpg');">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>LIFE WELLNESS <span>PROGRAMS</span></h1>
+                    <p>Stay in touch and in shape with periodic tips from our in-house experts on wellness, fitness and
+                        nutrition.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn">READ MORE</a>
+                        <a href="#" class="btn btn-primary">DONATE NOW</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Navigation Dots -->
+            <div class="dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+
+
+        <section class="info-section">
+            <div class="info-box">
+                <div class="icon"><i class="fas fa-user-md"></i></div>
+                <h3>Book Appointment</h3>
+                <hr />
+                <p>Schedule an appointment with our office now. We can’t wait to meet you!</p>
+                <a href="#" class="info-btn">Schedule Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="info-box">
+                <div class="icon"><i class="fas fa-hospital"></i></div>
+                <h3>Online Forms</h3>
+                <hr />
+                <p>Our forms are available online and can be completed before your appointment.</p>
+                <a href="#" class="info-btn">View Forms <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="info-box">
+                <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                <h3>Contact Us</h3>
+                <hr />
+                <p>Call or send us an email today! Our staff will respond as soon as possible to give you the info you
+                    need.</p>
+                <a href="#" class="info-btn">Contact Us<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="qr-section">
+            <img src="./asset/qr-code.webp" alt="qr code">
+        </section>
+
+        <section class="hospital-section">
+            <div class="container">
+                <div class="content-left">
+                    <h1>Welcome to Caring Hands Vet Clinic</h1>
+                    <p class="subtitle"> <strong>We Are an AAHA Veterinary Practice Serving the Philadelphia
+                            Area.</strong> </p>
+                    <p>Caring Hands Veterinary is your one-stop-shop for all veterinary care needs, for a reliable
+                        source of information, and a place to share concerns that may arise. Since we opened our doors
+                        in 2012, we have been providing quality and efficient care to pets in the Greater Philadelphia
+                        area. Our friendly and dedicated team of vet professionals truly cares about pets and their
+                        health and well-being. We make sure that our pet patients are always in good health so that they
+                        can live happy lives.</p>
+                    <p>As an accredited member of AAHA (American Animal Hospital Association), our vet team strongly
+                        follows all healthcare guidelines that this association sets out so that we can continue to
+                        provide high-quality to all of our patients. Being a part of this organization is a great honor
+                        for us.</p>
+                    <p><strong>Pet Care Services That Keep Animals Healthy</strong></p>
+                    <p>If you want to give your pets the best care possible, consider taking advantage of our pet
+                        wellness services. These services include health checkups, vaccinations, preventative care, and
+                        routine care. We offer these services and more as our way of making it easier and more
+                        affordable to care for your beloved pets comprehensively.</p>
+                    <p>One thing many pet owners easily overlook is the importance of proper dental care. Strong,
+                        healthy teeth are just as important for cats and dogs as they are for people. Because they’re
+                        not always able to explain any discomfort or issues they may be experiencing, it’s essential
+                        that teeth and gums be checked and cleaned regularly.</p>
+                    <p><strong>The Most Modern Vet Care in Philadelphia</strong></p>
+                    <p>Caring Hands Veterinary Clinic is state-of-the-art vet facility that is staffed by the finest and
+                        most attentive professionals in the Greater Philadelphia area. We are able to take digital
+                        imaging in high-resolution within seconds, allowing non-invasive diagnosis of internal injuries,
+                        and our in-house laboratory allows us to do most lab work quickly and accurately without relying
+                        on outside providers. We can even evaluate your pets’ electrolytes, making it easier to assess
+                        their condition during emergencies.</p>
+                    <p><strong>Why Chose Our Vet Clinic?</strong></p>
+                    <p>Dr. Sajeesh Thomas, our veterinarian, and his staff know that comprehensive pet care has to
+                        include respect and compassion for pet owners throughout every visit as well. Whether it’s
+                        standard procedures like pet wellness exams, dental cleanings, or something more serious, we
+                        will talk you through your options and explain the procedures themselves.</p>
+
+                    <div class="bottom-content">
+                        <div class="image-wrapper">
+                            <img src="./asset/blade2-8.jpg.webp" alt="Surgical Operation">
+                        </div>
+                        <div class="text-wrapper">
+                            <p>Wellness Care<strong>adipisicing elit.</strong> Animi eveniet ipsam, error dolorum
+                                impedit
+                                debitis, officiis sint saepe similique quasi dolor, ut ipsum quaerat saepe, sapiente
+                                doloribus ab laudantium ipsam!</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-bars">
+                        <div class="progress-item">
+                            <p>Wellness Care</p>
+                            <div class="bar-container">
+                                <div class="bar cardiology" style="width: 85%;"></div>
+                                <span>99%</span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <p>Diagnostics</p>
+                            <div class="bar-container">
+                                <div class="bar general-practice" style="width: 60%;"></div>
+                                <span>99%</span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <p>Pet Surgery</p>
+                            <div class="bar-container">
+                                <div class="bar general-surgery" style="width: 89%;"></div>
+                                <span>99%</span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <p>PExotic Pet Care</p>
+                            <div class="bar-container">
+                                <div class="bar pharmacology" style="width: 66%;"></div>
+                                <span>99%</span>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <p>Bring Your Pet to Caring Hands Veterinary Clinic for Quality Care!</p>
+                            <div class="bar-container">
+                                <div class="bar pharmacology" style="width: 66%;"></div>
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <img src="./asset/blade1-10.jpg.webp" alt="Doctor and Patient">
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container2">
+                <div class="services-header">
+                    <h2>Your Philadelphia vet and our dedicated veterinary team offer the following services to pets in
+                        our care:</h2>
+                    <div class="underline"></div>
+                    <p>Repellendus error placeat numquam doloribus perferendis consequatur maxime molestiae soluta
+                        Corporis quidem quaerat accusantium omnis repudiandae nulla recusandae</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Wellness Care</h3>
+                        <p>Through wellness care, we can help your furball stay healthy long-term. Our wellness care
+                            program includes such services as pet exams, diagnostics, vaccinations, dental care,
+                            heartworm prevention, parasite control, nutritional and behavioral counseling and more. Our
+                            facility offers core and non-core vaccines for pets to protect them from life-threatening
+                            diseases. We’ll provide you with medication to protect your pet from parasites and heartworm
+                            year-round. We can also schedule annual dental exams and cleanings for your pet to help him
+                            maintain good oral health. </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h3>Diagnostics</h3>
+                        <p>Our onsite diagnostics (digital radiology and ultrasounds) and in-house lab for blood work
+                            enable us to make prompt, accurate diagnosis of health issues, so your pet can get the
+                            treatment he needs to make a speedy recovery.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <h3>Medical Treatments</h3>
+                        <p>Your Philadelphia veterinarian near you has experience treating all kinds of pet illnesses
+                            and conditions, including eye and ear infections, pet allergies, dermatology problems,
+                            digestive and respiratory illnesses, heart problems, arthritis, obesity, diabetes and
+                            more.<br>
+
+                            Like people, dogs and cats are prone to allergies, specifically environmental allergies,
+                            food allergies and flea bite allergies. It’s not unusual for allergies to cause reactions on
+                            your pet’s skin. If your pet’s suffering from dry, itchy skin, skin rash, skin infection,
+                            hot spots or other dermatology issue, it could be due to allergies. Through skin and blood
+                            tests, we can pinpoint the allergen triggering these reactions and recommend treatment to
+                            relieve your pet’s symptoms.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Pet Surgery</h3>
+                        <p>Some pet conditions require surgery to restore your pet’s health. Our clinic has the
+                            resources and personnel for surgical treatments. In addition to routine spay & neuter
+                            surgery to prevent unwanted pregnancy, your Philadelphia vet offers orthopedic surgery to
+                            correct problems with your pet’s ligaments and joints, tumor removal, foreign body removal,
+                            fracture repair, dental extraction and more.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h3>Exotic Pet Care</h3>
+                        <p>We have ample experience treating exotic pets and can help keep your exotic furball in
+                            optimal health. </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <h3>Bring Your Pet to Caring Hands Veterinary Clinic for Quality Care!</h3>
+                        <p>ooking for a trustworthy veterinarian near you in Philadelphia, PA to help care for your
+                            beloved pet? We’re more than happy to lend a hand! Contact Caring Hands Veterinary Clinic
+                            today at (215) 621-8959 .</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="appointment-section">
+            <div class="container">
+                <div class="image-column">
+                    <img src="./asset/doc.png" alt="Smiling Doctor">
+                </div>
+                <div class="form-column">
+                    <div class="form-header">
+                        <h2>MAKE AN <span class="highlight">APPOINTMENT</span></h2>
+                        <div class="underline"></div>
+                        <p>Consectetur adipisicing elit. Id dignissimos atque debitis esse possimus, fuga tenetur rem
+                            et. Vitae, repudiandae.</p>
+                    </div>
+                    <form class="appointment-form">
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Input Subject" required>
+                            <input type="text" id="date" name="date" placeholder="Input Date" onfocus="this.type='date'"
+                                onblur="if(!this.value)this.type='text'" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email Here" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea id="message" name="message" placeholder="Wright Message" rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section ">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt contact-icon"></i>
+                <h3 class="contact-title">GIVE US A CALL</h3>
+                <p class="contact-detail">+970-438-3248</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <h3 class="contact-title">SEND US A MESSAGE</h3>
+                <p class="contact-detail">Your_mail@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <h3 class="contact-title">VISIT OUR LOCATION</h3>
+                <p class="contact-detail">32 New York, USA</p>
+            </div>
+        </section>
+
+        <section class="doctors-section">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our <span class="color"> Skilled Team</span></h2>
+                <p class="section-description">
+                    Hendrerit ligula nisl quam est scelerisque fusce lacinia malesuada mattis suspendisse
+                    porta nullam eleifend potenti conubia ad vestibulum.
+                </p>
+            </div>
+
+            <div class="doctor-cards-container">
+                <!-- Doctor Card 1 -->
+                <div class="doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
+                        <img src="./asset/doc.png" alt="Dr. George Beller" class="doctor-image">
+                    </div>
+                    <div class="doctor-info-box">
+                        <h3 class="doctor-name">Dr. Sajeesh Thomas</h3>
+                        <p class="doctor-specialty">Veterinarian</p>
+                    </div>
+                    <div class="doctor-availability">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="view-profile-button">VIEW PROFILE</button>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
+                        <img src="./asset/604fe5a197272_crystal_20220930_2349.jpeg.webp" alt="Dr. George Belle"
+                            class="doctor-image">
+                    </div>
+                    <div class="doctor-info-box">
+                        <h3 class="doctor-name">Crystal</h3>
+                        <p class="doctor-specialty">Receptionist</p>
+                    </div>
+                    <div class="doctor-availability">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="view-profile-button">VIEW PROFILE</button>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
+                        <img src="./asset/662d190d63bff_rebecca.jpeg.webp" alt="Dr. Mokles Beller" class="doctor-image">
+                    </div>
+                    <div class="doctor-info-box">
+                        <h3 class="doctor-name">Rebecca</h3>
+                        <p class="doctor-specialty">Receptionist</p>
+                    </div>
+                    <div class="doctor-availability">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="view-profile-button">VIEW PROFILE</button>
+                </div>
+
+                <!-- Doctor Card 4 -->
+                <div class="doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
+                        <img src="./asset/5b04890a3517e_mary_20220930_2352.jpg.webp" alt="Dr. George Belle"
+                            class="doctor-image">
+                    </div>
+                    <div class="doctor-info-box">
+                        <h3 class="doctor-name">Mary Berry</h3>
+                        <p class="doctor-specialty">Certified Veterinary Technician</p>
+                    </div>
+                    <div class="doctor-availability">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="view-profile-button">VIEW PROFILE</button>
+                </div>
+
+
+                <!-- Doctor Card 5 -->
+                <div class="doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
+                        <img src="./asset/5b048d7b9cb9b_brittpicture_20220930_2359.jpg.webp" alt="Dr. George Belle"
+                            class="doctor-image">
+                    </div>
+                    <div class="doctor-info-box">
+                        <h3 class="doctor-name">Brittany</h3>
+                        <p class="doctor-specialty">Veterinary Technician Assistant</p>
+                    </div>
+                    <div class="doctor-availability">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="view-profile-button">VIEW PROFILE</button>
+                </div>
+
+
+
+                <!-- Doctor Card 6 -->
+                <div class="doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
+                        <img src="./asset/5b048c2e70c35_kaylapic_20221001_0000.jpg.webp" alt="Dr. George Belle"
+                            class="doctor-image">
+                    </div>
+                    <div class="doctor-info-box">
+                        <h3 class="doctor-name">Kayla</h3>
+                        <p class="doctor-specialty">Veterinary Technician Assistant</p>
+                    </div>
+                    <div class="doctor-availability">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="view-profile-button">VIEW PROFILE</button>
+                </div>
+
+
+                <!-- Doctor Card 7 -->
+                <div class="doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
+                        <img src="./asset/66045729097b7_Holly.png.webp" alt="Dr. George Belle" class="doctor-image">
+                    </div>
+                    <div class="doctor-info-box">
+                        <h3 class="doctor-name">Holly</h3>
+                        <p class="doctor-specialty">Veterinary Technician Assistant</p>
+                    </div>
+                    <div class="doctor-availability">
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>17:00 - 19:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button class="view-profile-button">VIEW PROFILE</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="testimonial-section">
+            <div class="section-header">
+                <h2 class="section-title">OUR <span class="highlight">CLIENTS</span> SAY</h2>
+                <div class="underline"></div>
+                <p class="section-description">
+                    Repellendus error placeat numquam doloribus perferendis consequatur maxime molestiae soluta
+                    Corporis quidem quaerat accusantium omnis repudiandae nulla recusandae
+                </p>
+            </div>
+
+            <div class="slider-container">
+                <button class="slider-arrow prev-arrow" aria-label="Previous slide">&#10094;</button>
+                <div class="slider-wrapper">
+                    <div class="testimonial-slide active">
+                        <div class="client-avatar-wrapper">
+                            <img src="./asset/66045729097b7_Holly.png.webp" alt="John Daniel" class="client-avatar">
+                        </div>
+                        <h3 class="client-name">JOHN DANIEL</h3>
+                        <p class="client-title">Business Man</p>
+                        <div class="rating">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                        </div>
+                        <p class="testimonial-text">
+                            consectetur adipisicing elit. Nemo ex doloremque maiores quas. commodi eaque
+                            molestiae in ratione nam obcaecati nihil provident illum eius sed ullam amet. expedita
+                            .molestias iusto
+                        </p>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="client-avatar-wrapper">
+                            <img src="./asset/5b048c2e70c35_kaylapic_20221001_0000.jpg.webp" alt="Jane Doe"
+                                class="client-avatar">
+                        </div>
+                        <h3 class="client-name">JANE DOE</h3>
+                        <p class="client-title">Marketing Manager</p>
+                        <div class="rating">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris.
+                        </p>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="client-avatar-wrapper">
+                            <img src="./asset/662d190d63bff_rebecca.jpeg.webp" alt="Peter Jones" class="client-avatar">
+                        </div>
+                        <h3 class="client-name">rebeka</h3>
+                        <p class="client-title">Receptionist</p>
+                        <div class="rating">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star">&#9734;</span>
+                            <span class="star">&#9734;</span>
+                        </div>
+                        <p class="testimonial-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt.
+                        </p>
+                    </div>
+                </div>
+                <button class="slider-arrow next-arrow" aria-label="Next slide">&#10095;</button>
+            </div>
+
+            <div class="slider-dots">
+            </div>
+        </section>
+
+        <div class="map--section">
+            <div class="info--area">
+                <div class="office-hours-container">
+                  
+                    <!-- Main content area now uses a responsive grid -->
+                    <div class="office-hours-grid">
+                        <!-- Office Hours List Column -->
+                         
+                        <div>
+                              <h1 class="office-hours-title">Office Hours</h1>
+
+                            <div class="office-hours-list">
+                                <!-- Monday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Monday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 5:00 pm</span>
+                                </div>
+
+                                <!-- Tuesday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Tuesday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 8:00 pm</span>
+                                </div>
+
+                                <!-- Wednesday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Wednesday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 8:00 pm</span>
+                                </div>
+
+                                <!-- Thursday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Thursday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">9:00 am - 6:00 pm</span>
+                                </div>
+
+                                <!-- Friday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Friday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 4:00 pm</span>
+                                </div>
+
+                                <!-- Saturday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Saturday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">9:00 am - 3:00 pm</span>
+                                </div>
+
+                                <!-- Sunday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Sunday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Holiday Closures Section Column -->
+                        
+                        <div>
+                            <h1 class="office-hours-title">We will be closed on the following holidays:</h1>
+                            <ul class="holiday-list">
+                                <li>New Year's Eve</li>
+                                <li>New Year's Day</li>
+                                <li>Memorial Day</li>
+                                <li>Independence Day</li>
+                                <li>Labor Day</li>
+                                <li>Thanksgiving</li>
+                                <li>Christmas Eve</li>
+                                <li>Christmas Day</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="container-wrapper">
+        <!-- Emergency Contact Section -->
+        <div class="emergency-section">
+            <h2>Emergency Care</h2>
+            <p>
+                In case of emergency during our off hours you can contact the following 24 hour Emergency Care Centers:
+            </p>
+            <ul>
+                <li>
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-medium">Veterinary Specialty & Emergency Center (VSEC)</span>
+                        <a href="https://vesecvet.com" target="_blank">vesecvet.com</a>
+                        <span class="block">(215) 750-7884</span>
+                    </div>
+                </li>
+                <li>
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-medium">Matthew J Ryan Hospital (University of Penn.)</span>
+                        <span class="block">(215) 898-4680</span>
+                    </div>
+                </li>
+                <li>
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-medium">Centre for Animal Referral & Emergency Services (CARES)</span>
+                        <a href="https://vetcares.com" target="_blank">vetcares.com</a>
+                        <span class="block">(215) 750-2774</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Branding and Social Media Section -->
+        <div class="branding-social-section">
+            <!-- Logos -->
+            <div class="logos-container">
+                <img src="./asset/caringhandsvetclinic_logo15f-999-626.png.webp"
+                     alt="Caring Hands Veterinary Clinic Logo">
+               <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+                    <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+
+      
+        </div>
+    </div>
+
+
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.079743306154!2d-75.0071798!3d40.0679285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b37a74daf973%3A0x86d30f06cde938d!2sCaring%20Hands%20Veterinary%20Clinic!5e1!3m2!1sen!2sph!4v1750088527301!5m2!1sen!2sph"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+        <!-- Footer Section -->
+        <footer class="main-footer">
+            <div class="footer-content-wrapper">
+                <div class="footer-column about-us">
+                    <div class="footer-logo">
+                        <!-- Replace with actual logo image -->
+                        <img src="./asset/logo.jpg" alt="Hospital Medicative Logo">
+                    </div>
+                    <p class="footer-description">
+                        Voluptate porro esse repellat quo exercitationem debitis incidunt.
+                    </p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone-alt"></i> Phone: (215) 621-8959</p>
+                    </div>
+                     <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">OUR PEGES</h4>
+                    <div class="underline-footer"></div>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Service</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Conditions Treated</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Blog</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                         <li><a href="#"><i class="fas fa-angle-right"></i>More</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">OUR SERVICES</h4>
+                    <div class="underline-footer"></div>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Bloodwork</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Dental Diseases</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Deworming</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Eye and Ear Surgery</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>More</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column fliker-feed">
+                    <h4 class="footer-heading">FLIKER FEED</h4>
+                    <div class="underline-footer"></div>
+                    <div class="flickr-grid">
+                        <!-- Replace with actual Flickr images or remove if dynamic -->
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image1" alt="Flickr Image 1">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image2" alt="Flickr Image 2">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image3" alt="Flickr Image 3">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image4" alt="Flickr Image 4">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image5" alt="Flickr Image 5">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image6" alt="Flickr Image 6">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>

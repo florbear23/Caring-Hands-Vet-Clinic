@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caring Hands Veterinary Clinic</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+   <!-- Top Info Bar -->
+    <div class="top-bar fix">
+        <div class="top-info">
+            <span>📞 (215) 621-8959</span>
+            <span>3310 Grant Ave, Philadelphia, PA </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header fix">
+        <div class="logo">
+            <img src="../asset/logo.jpg" alt="Logo" />
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>    
+            <a href="../page/service.html">Service</a>
+            <a href="#">Conditions Treated</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us </a>
+            <a href="#">Online Form</a>
+            <a href="#">More</a>
+        </nav>
+        <a href="#" class="btn1 ">Request Appointment</a>
+
+       
+
+    </header>
+    <!-- Add inside <body> after previous code -->
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+    <!-- Mobile Nav (hidden by default) -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="../page/service.html">Service</a>
+        <a href="#">conditions Treated</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us </a>
+        <a href="#">Online Form</a>
+        <a href="#">More</a>
+        <a href="#" class="btn2 margin-top">Request Appointment</a>
+    </div>
+
+    <main>
+         <h2 class="main--title--serve">Service</h2>
+        <div class="main--container">
+            
+               
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="openTab(event, 'bloodwork')">bloodwork</button>
+                    <button class="tab-btn" onclick="openTab(event, 'Dental Diseases')">Dental Diseases</button>
+                    <button class="tab-btn" onclick="openTab(event, 'Deworming')">Deworming</button>
+                    <button class="tab-btn" onclick="openTab(event, 'Eye and Ear Surgery')">Eye and Ear Surgery</button>
+                    <!-- <button class="tab-btn" onclick="openTab(event, 'tab3')">Tab 3</button> -->
+                </div>
+
+
+                <div class="tab-content">
+                    <div id="bloodwork" class="tab-pane active">
+                        <p>Lab tests, analysis, and bloodwork are essential for medical diagnosis, especially internal medicine. While physical evaluation, performance evaluation, and behavior over time can speak a lot, the inner balance of a pet’s body is indicated at the chemical level. Our Caring Hands Veterinary Clinic in Philadelphia, PA, is where bloodwork and lab tests show the most about what’s happening inside a pet. </p>   
+                        <img class="picture-tab" src="../asset/pexels-pixabay-35609.jpg" alt="dog"> 
+                        <h2>Process and Medical Approach</h2>
+                        <p>Once blood is drawn, it goes through a battery of tests and microscopic analysis. Today, the research is applied with various chemical tests that quickly indicate the results. It’s a process originally learned from human medicine and transferred to veterinarian medicine with modification and understanding of animal health science. In summary, the method provides a veterinarian with a window into the pet’s body to evaluate oxygen levels, kidney and liver conditions, disease indicators, diabetes or leukemia, pancreas status, and much more. No surprise, bloodwork is a traditional testing approach for a pet wellness exam strategy at vet clinics in Philadelphia..</p>
+                        <h2>Scheduling and Application</h2>
+                        <p>Usually, a scheduled bloodwork draw and the test is typically applied annually. If the pet has an already-identified condition, the bloodwork may be used more frequently to track the condition's status, improvement, or deterioration. While bloodwork won’t identify every ailment in a pet, it has been a reliable and consistent tool for vets and animal health teams, even with today’s computer technology and increased ability to see inside an animal’s body with other devices and systems.</p>
+                        <h2>Timing Bloodwork for Results</h2>
+                        <p>While there is no magical notice or signal that goes up when a pet needs bloodwork to identify concerns, our trained veterinarian will apply for lab work when they know the results combined with visible symptoms are likely to tell a better story of what’s going on with a pet’s health condition. It’s a science of understanding the results. White blood cell counts, certain proteins, and the absence of other elements confirm a given organ or hormone condition. Our veterinarian just needs to know what to look for.</p>
+                        <h2>Visit Our Office</h2>
+                        <p>aring Hands Veterinary Clinic in Philadelphia, PA, combines hands-on veterinarian treatment with bloodwork and lab work for a full diagnostic review. If your pet feels under the weather, schedule an exam with us. Call us at (215) 621-8959 to schedule an appointment!</p>
+                     </div>
+                    
+                    <div id="Dental Diseases" class="tab-pane">
+                      <p>Having strong teeth is an important part of maintaining overall pet health. Poor teeth not only impact your pet’s ability to digest food but could also lead to other significant health issues. </p>   
+                      <p>We at Caring Hands Veterinary Clinic offer preventative care to help ensure that your pet stays healthy. If you are that your pet may be developing a pet dental disease, schedule an appointment with our veterinarian here in Philadelphia, PA. Here’s a closer look at some of the dental diseases that pets are vulnerable to. </p>
+                        <img class="picture-tab" src="../asset/dog-dental.webp" alt="dog"> 
+                        <h2>Signs that Your Pet May Have Dental Disease</h2>
+                        <p>Discolored teeth, bleeding, and swollen gums are possible signs of pet disease. Another potential sign is your pet having a reduced appetite. Painful abscesses and tumors may develop inside your pet’s mouth that restricts his appetite. You may also start to notice some behavioral changes. Take your pet to our vet if you notice any of these problems before things become more serious.</p>
+                        <h2>Periodontal Disease</h2>
+                        <p>Periodontal disease is a common issue that pets may deal with, especially as they get older. This disease spreads through inflamed tissues that eventually damage the root and bone. Once the disease enters the bone, it starts to get weaker.</p>
+                        <p>We can provide thorough teeth cleaning here at Caring Hands Veterinary Clinic to prevent your pet from developing a dental disease. In addition to bad breath, periodontal disease also exposes pets to potentially developing heart, liver, and kidney problems. Routine preventive care can prevent this disease.</p>
+                        <h2>How to Prevent Dental Disease</h2>
+                        <p>In addition to regular brushing, consider purchasing chew toys that are designed to promote good oral health. Consider evaluating your pet’s diet as well. Some companies have created healthy treats that are designed to help prevent plaque and tartar buildup.</p>
+                        <h2>Get Teeth Cleaning and Preventative Care from Our Vet</h2>
+                        <p>Maintaining good oral health prevents your pet from developing more serious health issues in the future. We offer thorough teeth cleaning exams where we’ll check for potential teeth decay and other issues. We are committed to making sure your pet receives the preventative care he needs. Schedule an appointment today in Philadelphia, PA, for teeth cleanings, and other important pet dental care. Call us at (215) 621-8959 for our veterinarian at Caring Hands Veterinary Clinic.</p>
+                    </div>
+
+                    <div id="Deworming" class="tab-pane">
+                      <h2>Understanding Deworming and Protecting Your Pet</h2>
+                      <p>At Caring Hands Veterinary Clinic, Dr. Thomas and our team prioritize the health and happiness of Philadelphia pets. One crucial aspect of keeping your furry friend thriving is parasite prevention, and deworming plays a vital role in this. While internal parasites like worms might seem inconsequential, they can significantly impact your pet's well-being.</p>
+                      <img class="picture-tab" src="../asset/Heartworm.jpg.webp" alt="dog"> 
+                      <h2>The Risks of Internal Parasites</h2>
+                      <p>Roundworms, hookworms, tapeworms, and whipworms are common internal parasites that live in your pet's digestive system. They steal nutrients, causing weight loss, anemia, and digestive issues like vomiting and diarrhea. In severe cases, they can even migrate to other organs, posing serious health risks.</p>
+                      <h2>The Importance of Deworming</h2>
+                      <p>Deworming medications effectively eliminate these internal parasites, protecting your pet from their harmful effects. Regular deworming schedules, determined by your veterinarian near you, ensure your furry friend enjoys optimal health and prevents the spread of parasites to other animals and even humans.</p>
+                      <h2>Puppies and Kittens</h2>
+                      <p>Puppies and kittens are particularly susceptible to worm infestations due to their developing immune systems. At Caring Hands Veterinary Clinic, we recommend early and frequent deworming for growing pups and kittens to ensure their healthy development.</p>
+                      <h2>The Heartworm Connection</h2>
+                      <p>Did you know some intestinal worms can transmit heartworm disease, a potentially fatal condition spread by mosquito bites? Deworming can play a crucial role in preventing this dangerous disease, offering an added layer of protection for your Philadelphia pet.</p>
+                      <h2>Tailored Deworming</h2>
+                      <p>The type and frequency of deworming required depends on your pet's age, breed, lifestyle, and exposure risk. Consulting a veterinarian near you is essential for developing a personalized deworming plan that effectively protects your furry friend from internal parasites.</p>
+                      <h2>Peace of Mind and a Healthy Companion</h2>
+                      <p>Regular deworming is a simple yet powerful preventative measure that safeguards your pet's health and well-being. By prioritizing this essential practice, you can ensure your Philadelphia companion enjoys a happy and healthy life free from the harmful effects of internal parasites.</p>
+                      <p>Don't let unseen threats compromise your pet's health. Call Caring Hands Veterinary Clinic at (215) 621-8959 today to discuss the best deworming plan for your furry friend. Remember, proactive care is key to a joyful and healthy life for your pet, and Caring Hands Veterinary Clinic is dedicated to being your partner in their well-being journey.</p>
+                        
+                    </div>
+
+                     <div id="Eye and Ear Surgery" class="tab-pane">
+                      <p>If you require any veterinary care for your furry friend, Caring Hands Veterinary is here for you. Dr. Thomas has been working as a vet since 2003 to help animals have optimum health. He has also worked for many rescue organizations in Philadelphia to help sterilize and neuter animals. </p>
+                      <p>His vast experience has helped him provide efficient and quality care for pets. You can bring your pet to our clinic in Philadelphia, PA, to get the best treatment procedures, including pet eye and ear surgery. </p>
+                      <img class="picture-tab" src="../asset/Ear-Infections2.jpg.webp" alt="dog"> 
+                      <h2>Are You Concerned with Your Pets’ Eye or Ear Functioning?</h2>
+                      <p>The eyes are the window to the soul and your pets can melt your heart with just a look. This is why it is disheartening if they have an eye problem. Just as eyesight, hearing is also very crucial for pets. There are many eye and ear problems that can affect your pet. However, this should not worry you. Dr. Thomas, our veterinarian, uses state-of-the-art specialized testing and treatment methods to ensure that your pets get better. Here are common eye and ear conditions that most pets suffer from:</p>
+                      <h2>Eye Conditions and Diseases</h2>
+                      <ul class="list-margin">
+                        <li>Varying Eyelid Masses</li>
+                        <li>Glaucoma</li>
+                        <li>Cherry Eye/Third Eyelid Hypertrophy</li>
+                        <li>Corneal Ulcers</li>
+                        <li>Lacrimal Duct Blockage</li>
+                        <li>Eye Infection</li>
+                        <li>Tear Production Disorders</li>
+                      </ul>
+                      <h2>Ear Conditions & Diseases</h2>
+                      <ul class="list-margin">
+                        <li>Aural Hematoma</li>
+                        <li>Ear Infections</li>
+                        <li>Cysts</li>
+                        <li>Ear Mites</li>
+                      </ul>
+                      <h2>How Our Vet Determines if Your Pet Needs Surgery</h2>
+                      <p>Before surgery is considered, Dr. Thomas does a full ear or eye examination on your animal friend. He then diagnoses the condition and identifies the best and safest treatment for your pet. If your pet needs surgery, he will first tell you the type of pet surgery, the effects, and how to care for your pet after the procedure.</p>
+                      <h2>Types of Pet Surgeries (Eye and Ear)</h2>
+                      <p>With advanced equipment and techniques, Caring Hands Veterinary offers enhanced pet surgeries to correct any conditions involving your pet’s ears and eyes. </p>
+                      <h2>Pet Eye Surgeries</h2>
+                      <p>Some of the pet eye surgeries that are common include:</p>
+                      <ul class="list-margin">
+                        <li>Construction of third eyelid and conjunctival flaps</li>
+                        <li>Lacerations of the eyelids</li>
+                        <li>Repositioning of the prolapsed gland of the third eyelid</li>
+                        <li>Corneal and conjunctival lacerations</li>
+                      </ul>
+                      <h2>Pet Ear Surgeries</h2>
+                      <p>Some of the most common pet ear surgeries include:</p>
+                      <ul class="list-margin">
+                        <li>Ventral bulla osteotomy</li>
+                        <li>Vertical ear canal ablation</li>
+                        <li>Excision of tumors of the ear</li>
+                        <li>Total ear canal ablation</li>
+                      </ul>
+                       <h2>Trust Our Veterinarian, Dr. Thomas, for Exceptional Veterinary Services</h2>
+                      <p>If you live in Philadelphia, PA, it’s time you get your pets the best veterinarian for their eye and ear issues. Caring Hands Veterinary strives to give you the best treatment methods that favor both you and your precious animals. Visit us or call us today at (215) 621-8959 to help your pets get back their optimum eye and ear health.</p>
+                        
+                    </div>
+
+
+
+                    <!-- <div id="tab3" class="tab-pane">
+                    <h2>Tab 3 Content</h2>
+                    <p>This is the content of Tab 3.</p>
+                    </div> -->
+                </div>
+                </div>
+
+        </div>
+    </main>
+
+            <div class="map--section">
+            <div class="info--area">
+                <div class="office-hours-container">
+                  
+                    <!-- Main content area now uses a responsive grid -->
+                    <div class="office-hours-grid">
+                        <!-- Office Hours List Column -->
+                         
+                        <div>
+                              <h1 class="office-hours-title">Office Hours</h1>
+
+                            <div class="office-hours-list">
+                                <!-- Monday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Monday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 5:00 pm</span>
+                                </div>
+
+                                <!-- Tuesday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Tuesday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 8:00 pm</span>
+                                </div>
+
+                                <!-- Wednesday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Wednesday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 8:00 pm</span>
+                                </div>
+
+                                <!-- Thursday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Thursday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">9:00 am - 6:00 pm</span>
+                                </div>
+
+                                <!-- Friday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Friday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">8:00 am - 4:00 pm</span>
+                                </div>
+
+                                <!-- Saturday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Saturday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">9:00 am - 3:00 pm</span>
+                                </div>
+
+                                <!-- Sunday -->
+                                <div class="daily-schedule-item">
+                                    <span class="day-name">Sunday</span>
+                                    <div class="separator"></div>
+                                    <span class="time-range">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Holiday Closures Section Column -->
+                        
+                        <div>
+                            <h1 class="office-hours-title">We will be closed on the following holidays:</h1>
+                            <ul class="holiday-list">
+                                <li>New Year's Eve</li>
+                                <li>New Year's Day</li>
+                                <li>Memorial Day</li>
+                                <li>Independence Day</li>
+                                <li>Labor Day</li>
+                                <li>Thanksgiving</li>
+                                <li>Christmas Eve</li>
+                                <li>Christmas Day</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="container-wrapper">
+        <!-- Emergency Contact Section -->
+        <div class="emergency-section">
+            <h2>Emergency Care</h2>
+            <p>
+                In case of emergency during our off hours you can contact the following 24 hour Emergency Care Centers:
+            </p>
+            <ul>
+                <li>
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-medium">Veterinary Specialty & Emergency Center (VSEC)</span>
+                        <a href="https://vesecvet.com" target="_blank">vesecvet.com</a>
+                        <span class="block">(215) 750-7884</span>
+                    </div>
+                </li>
+                <li>
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-medium">Matthew J Ryan Hospital (University of Penn.)</span>
+                        <span class="block">(215) 898-4680</span>
+                    </div>
+                </li>
+                <li>
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <span class="font-medium">Centre for Animal Referral & Emergency Services (CARES)</span>
+                        <a href="https://vetcares.com" target="_blank">vetcares.com</a>
+                        <span class="block">(215) 750-2774</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+     <!-- Branding and Social Media Section -->
+        <div class="branding-social-section">
+            <!-- Logos -->
+            <div class="logos-container">
+                <img src="../asset/caringhandsvetclinic_logo15f-999-626.png.webp"
+                     alt="Caring Hands Veterinary Clinic Logo">
+               <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+                    <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+
+      
+        </div>
+    </div>
+
+
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.079743306154!2d-75.0071798!3d40.0679285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b37a74daf973%3A0x86d30f06cde938d!2sCaring%20Hands%20Veterinary%20Clinic!5e1!3m2!1sen!2sph!4v1750088527301!5m2!1sen!2sph"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+        <!-- Footer Section -->
+        <footer class="main-footer">
+            <div class="footer-content-wrapper">
+                <div class="footer-column about-us">
+                    <div class="footer-logo">
+                        <!-- Replace with actual logo image -->
+                        <img src="../asset/logo.jpg" alt="Hospital Medicative Logo">
+                    </div>
+                    <p class="footer-description">
+                        Voluptate porro esse repellat quo exercitationem debitis incidunt.
+                    </p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone-alt"></i> Phone: (215) 621-8959</p>
+                    </div>
+                     <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">OUR PEGES</h4>
+                    <div class="underline-footer"></div>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Service</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Conditions Treated</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Blog</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                         <li><a href="#"><i class="fas fa-angle-right"></i>More</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">OUR SERVICES</h4>
+                    <div class="underline-footer"></div>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Bloodwork</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Dental Diseases</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Deworming</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Eye and Ear Surgery</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>More</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column fliker-feed">
+                    <h4 class="footer-heading">FLIKER FEED</h4>
+                    <div class="underline-footer"></div>
+                    <div class="flickr-grid">
+                        <!-- Replace with actual Flickr images or remove if dynamic -->
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image1" alt="Flickr Image 1">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image2" alt="Flickr Image 2">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image3" alt="Flickr Image 3">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image4" alt="Flickr Image 4">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image5" alt="Flickr Image 5">
+                        <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image6" alt="Flickr Image 6">
+                    </div>
+                </div>
+            </div>
+        </footer> 
+
+</body>
+
+<script src="../index.js"></script>
+
+</html>
