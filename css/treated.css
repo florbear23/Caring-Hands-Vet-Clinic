@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #a67a50; /* MediumSeaGreen */
+    --text-dark:     #72461c ;
+    --text-light: #fdf3f1;
+    
+}
+
+.treated-container{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.vet-clinic-treated {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+
+/* Container for responsiveness */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Headings */
+.treated-title {
+    font-size: 2.2em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.subtreated-title {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.treated-description,
+.subtreated-description,
+.card-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Condition Card Styling */
+.condition-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Contact Info Styling */
+.treated1-info {
+    background-color: #eedcb5;
+    border: 1px solid #cce5ff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.treated1-title {
+    font-size: 1.6em;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.treated1-text {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.treated1-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.treated1-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .treated-title {
+        font-size: 1.8em;
+    }
+
+    .subtreated-title {
+        font-size: 1.5em;
+    }
+
+    .card-title {
+        font-size: 1.3em;
+    }
+
+    .treated-description,
+    .subtreated-description,
+    .card-text,
+    .treated1-text {
+        font-size: 1em;
+    }
+
+    .vet-clinic-treated {
+        padding: 15px;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .treated-title {
+        font-size: 1.5em;
+    }
+
+    .subtreated-title {
+        font-size: 1.3em;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .treated-description,
+    .subtreated-description,
+    .card-text,
+    .treated1-text {
+        font-size: 0.95em;
+    }
+
+    .vet-clinic-treated {
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}

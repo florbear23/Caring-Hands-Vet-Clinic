@@ -137,6 +137,7 @@ body{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 4px;
     flex-direction: column;
+    
 }
 
 .dropdown-content a {
@@ -153,11 +154,13 @@ body{
 .dropdown-content a:hover {
     background-color: var(--text-light);
     color: #72461c;
+
 }
 
 /* Show dropdown on hover (desktop only) */
 .dropdown:hover .dropdown-content {
     display: flex;
+    
 }
 
 /* Responsive: Disable dropdown hover on mobile */
@@ -257,6 +260,19 @@ body{
         display: block;
     }
 }
+
+
+
+.main---container{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
 
 /* end drop down */
 

@@ -1,0 +1,184 @@
+ :root {
+    --primary-color: #a67a50; /* MediumSeaGreen */
+    --text-dark:     #72461c ;
+    --text-light: #fdf3f1;
+    --bg:#eedcb5;
+    
+}
+ 
+ 
+ 
+ 
+ .leptospirosis-main-section {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Clear floats */
+        }
+
+        /* Section Title */
+        .section-heading {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        /* Paragraphs */
+        .intro-paragraph,
+        .content-paragraph {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Image Styling */
+        .section-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .section-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            display: block; /* Ensures image takes its own line */
+            margin: 0 auto; /* Centers the image */
+        }
+
+        /* Sub-section Title */
+        .sub-section-heading {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        /* Contact Section */
+        .contact-lep-section {
+            background-color: var(--bg);
+            border: 1px solid #cce5ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-lep-heading {
+            font-size: 1.6em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .contact-lep-paragraph {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .contact-lep-link-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+        }
+
+        .contact-lep-link-button:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .contact-lep-phone-display {
+            margin-top: 15px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: none; /* Hidden by default, shown by JS */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .leptospirosis-main-section {
+                margin: 15px auto;
+                padding: 20px;
+            }
+
+            .section-heading {
+                font-size: 2em;
+            }
+
+            .sub-section-heading {
+                font-size: 1.6em;
+            }
+
+            .intro-paragraph,
+            .content-paragraph,
+            .contact-lep-paragraph {
+                font-size: 1em;
+            }
+
+            .contact-lep-link-button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            .contact-lep-phone-display {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .leptospirosis-main-section {
+                margin: 10px auto;
+                padding: 15px;
+                border-radius: 5px;
+            }
+
+            .section-heading {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+            }
+
+            .sub-section-heading {
+                font-size: 1.4em;
+                margin-top: 20px;
+            }
+
+            .intro-paragraph,
+            .content-paragraph,
+            .contact-lep-paragraph {
+                font-size: 0.95em;
+            }
+
+            .contact-lep-section {
+                padding: 15px;
+            }
+
+            .contact-lep-heading {
+                font-size: 1.4em;
+            }
+
+            .contact-lep-link-button {
+                padding: 8px 15px;
+                font-size: 0.85em;
+            }
+
+            .contact-lep-phone-display {
+                font-size: 1em;
+            }
+        }
