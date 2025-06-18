@@ -1419,7 +1419,7 @@ input[type="date"] {
 }
 
 .section-description {
-    color: var(--text-light);
+    color: var(--primary-color);
     font-size: 0.95em;
     line-height: 1.6;
     max-width: 600px;
@@ -2408,3 +2408,28 @@ input[type="date"] {
             .margin-top{
                 margin-top: 1rem;
             }
+
+              /* Scroll to top button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 30px; /* Place at the bottom */
+            right: 30px; /* Place at the right */
+            z-index: 99; /* Make sure it's above other content */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: var(--text-dark); /* Blue background */
+            color: white; /* White text */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px 25px; /* Some padding */
+            border-radius: 50%; /* Rounded button */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow for button */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: var(--primary-color); /* Darker blue on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }

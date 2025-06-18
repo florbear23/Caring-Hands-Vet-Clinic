@@ -1,0 +1,177 @@
+         :root {
+            --primary-color: #a67a50; /* MediumSeaGreen */
+            --text-dark:     #72461c ;
+            --text-light: #fdf3f1;
+            
+        }
+        
+        
+        /* Container for the entire about section */
+        .about-container {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); /* More prominent shadow */
+            animation: slideInFromTop 1s ease-out forwards; /* Improved entrance animation */
+            opacity: 0; /* Start invisible for animation */
+        }
+
+        @keyframes slideInFromTop {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Section Header Styles */
+        .about-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            border-radius: 5px; /* Added border-radius for consistency */
+        }
+
+        .about-header h1 {
+            font-size: 2.8em;
+            color: var(--primary-color); /* Dark blue/grey */
+            margin-bottom: 10px;
+            font-weight: 700;
+            animation: textFadeIn 1.5s ease-out 0.5s forwards; /* Animated header text */
+            opacity: 0;
+        }
+
+        .about-header p {
+            font-size: 1.1em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: textFadeIn 1.5s ease-out 0.7s forwards; /* Animated header paragraph */
+            opacity: 0;
+        }
+
+        @keyframes textFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Core Content Sections (general styling for the new sections) */
+        .about-section {
+            padding: 30px;
+            background-color: #fcfcfc;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            margin-top: 30px;
+            border-left: 5px solid #a67a50; /* Light blue accent for new sections */
+        }
+
+        .about-section h2 {
+            font-size: 2.2em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .about-section h3 {
+            font-size: 1.5em;
+            color: var(--text-dark);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 1em;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 1em; /* Spacing for paragraphs */
+        }
+
+        .about-section ul {
+            list-style: disc;
+            padding-left: 25px;
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .about-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .about-section a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .about-section a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .about-container {
+                margin: 30px 20px;
+                padding: 15px;
+            }
+            .about-header h1 {
+                font-size: 2.4em;
+            }
+            .about-header p {
+                font-size: 1em;
+            }
+            .about-section {
+                padding: 25px;
+            }
+            .about-section h2 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                margin: 20px 15px;
+                padding: 15px;
+            }
+            .about-header h1 {
+                font-size: 2em;
+            }
+            .about-header p {
+                font-size: 0.95em;
+            }
+            .about-section {
+                padding: 25px;
+            }
+            .about-section h2 {
+                font-size: 1.8em;
+            }
+            .about-section h3 {
+                font-size: 1.3em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-container {
+                margin: 15px 10px;
+                padding: 10px;
+            }
+            .about-header h1 {
+                font-size: 1.8em;
+            }
+            .about-header p {
+                font-size: 0.9em;
+            }
+            .about-section {
+                padding: 20px;
+            }
+            .about-section h2 {
+                font-size: 1.6em;
+            }
+            .about-section h3 {
+                font-size: 1.2em;
+            }
+        }
+
+      

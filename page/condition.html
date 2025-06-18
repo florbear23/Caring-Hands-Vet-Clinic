@@ -26,23 +26,37 @@
         </div>
     </div>
 
-    <!-- Main Header -->
-    <header class="main-header fix">
+    
+ <header class="main-header fix">
         <div class="logo">
             <img src="../asset/logo.jpg" alt="Logo" />
         </div>
         <nav class="nav-menu">
-            <a href="../index.html">Home</a>    
+            <a href="../index.html">Home</a>
             <a href="../page/service.html">Service</a>
-            <a href="#">Conditions Treated</a>
-            <a href="#">About Us</a>
+            <li class="dropdown">
+                <a href="../page/treated.html">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                    <a href="../page/leptospirosis.html">Leptospirosis</a>
+                    <a href="../page/skin.html">Skin Infection</a>
+                </div>
+            </li>
+             <li class="dropdown">
+                <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Blog</a>
+                    <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                    <a href="../page/meetOutPets.html">Meet Our Pets</a>
+                </div>
+            </li>
             <a href="#">Contact Us </a>
             <a href="#">Online Form</a>
             <a href="#">More</a>
         </nav>
         <a href="#" class="btn1 ">Request Appointment</a>
 
-       
+
 
     </header>
     <!-- Add inside <body> after previous code -->
@@ -52,10 +66,24 @@
     </div>
     <!-- Mobile Nav (hidden by default) -->
     <div class="mobile-nav" id="mobileNav">
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="../page/service.html">Service</a>
-        <a href="#">conditions Treated</a>
-        <a href="#">About Us</a>
+        <li class="dropdown">
+            <a href="#">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                <a href="../page/leptospirosis.html">Leptospirosis</a>
+                <a href="../page/skin.html">Skin Infection</a>
+            </div>
+        </li>
+        <li class="dropdown">
+                <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Blog</a>
+                    <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                    <a href="../page/meetOutPets.html">Meet Our Team</a>
+                </div>
+            </li>
         <a href="#">Contact Us </a>
         <a href="#">Online Form</a>
         <a href="#">More</a>
@@ -67,255 +95,74 @@
     <main class="main--container--1">
 
         
-    <section id="petCareSection" class="pet-care-section">
-        <!-- Left Column - Image and custom shape -->
-        <div class="image-column">
-            <div class="image-background-shape">
-                <!-- Placeholder image for the pet and person -->
-                <img src="../asset/dog1-resize.png" alt="Woman and her dog">
-                <!-- In a real scenario, you'd replace 'https://placehold.co/600x400' with your actual image path like 'image_aed449.jpg' -->
-            </div>
+   <section class="condition-main-section">
+        <h1 class="section-heading">Understanding Lameness and Limping in Pets</h1>
+        <p class="intro-paragraph">
+            Lameness and limping in pets are common concerns that can stem from various underlying issues. At Caring Hands Veterinary Clinic in Philadelphia, PA, our veterinarians are here to help determine the cause of your pet’s discomfort and provide the care they need. Early intervention is key to ensuring your pet’s mobility and overall quality of life.
+        </p>
+
+        <div class="section-image-container">
+            <!-- Placeholder image with alt text updated for lameness/limping content -->
+            <img class="section-image" src="../asset/pexels-pixabay-35609.jpg" alt="A pet limping or showing signs of lameness, illustrating the topic.">
         </div>
 
-        <!-- Right Column - Text Content -->
-        <div class="text-content-column">
-            <h1 class="main-heading fade-in-up">
-                Lameness & Limping in <span class="highlight-text">Pets</span>
-            </h1>
-            <!-- <p class="intro-paragraph fade-in-up">
-                Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convallis.
-            </p> -->
+        <h2 class="sub-section-heading">Common Causes of Lameness in Pets</h2>
+        <ul class="content-list">
+            <li class="content-list-item"><strong>Sprains and strains:</strong> These are often the result of overexertion or minor accidents.</li>
+            <li class="content-list-item"><strong>Arthritis:</strong> A degenerative condition that affects joints, especially in older pets.</li>
+            <li class="content-list-item"><strong>Fractures or dislocations:</strong> Trauma can lead to more severe injuries requiring prompt attention.</li>
+            <li class="content-list-item"><strong>Infections or abscesses:</strong> Puncture wounds or infections can cause pain and limping.</li>
+            <li class="content-list-item"><strong>Nerve damage:</strong> Spinal or neurological issues can affect a pet’s ability to move properly.</li>
+        </ul>
+        <p class="content-paragraph">
+            If your pet shows signs of lameness or limping, scheduling a wellness exam at our animal hospital can help pinpoint the issue and start an appropriate treatment plan.
+        </p>
 
-            <!-- Accordion List of items -->
-            <div class="accordion-list-container">
-                <!-- Accordion Item 1 -->
-                <div class="accordion-item fade-in-up">
-                    <div class="accordion-header">
-                        <div class="accordion-header-content">
-                            <span class="accordion-icon-wrapper blue-icon-bg">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <span class="accordion-title">Understanding Lameness and Limping in Pets</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>
-                           Lameness and limping in pets are common concerns that can stem from various underlying issues. At Caring Hands Veterinary Clinic in Philadelphia, PA, our veterinarians are here to help determine the cause of your pet’s discomfort and provide the care they need. Early intervention is key to ensuring your pet’s mobility and overall quality of life.
-                        </p>
-                    </div>
-                </div>
+        <h2 class="sub-section-heading">Signs and Symptoms to Watch For</h2>
+        <ul class="content-list">
+            <li class="content-list-item">Reluctance to walk, run, or jump</li>
+            <li class="content-list-item">Swelling in limbs or joints</li>
+            <li class="content-list-item">Visible wounds or abrasions</li>
+            <li class="content-list-item">Vocalizing pain when touched or moved</li>
+            <li class="content-list-item">Changes in posture or gait</li>
+        </ul>
+        <p class="content-paragraph">
+            If you notice any of these signs, consult with a veterinarian near you for a thorough assessment.
+        </p>
 
-                <!-- Accordion Item 2 -->
-                <div class="accordion-item fade-in-up">
-                    <div class="accordion-header">
-                        <div class="accordion-header-content">
-                            <span class="accordion-icon-wrapper blue-icon-bg">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <span class="accordion-title">Common Causes of Lameness in Pets</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>
-                          Lameness can result from a variety of factors, including injuries, infections, and chronic conditions. Some common causes include:
-                        </p>
-                         <ul class="list">
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text"><strong>Sprains and strains:</strong> These are often the result of overexertion or minor accidents.</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text"><strong>Arthritis:</strong> A degenerative condition that affects joints, especially in older pets.</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text"><strong>Fractures or dislocations:</strong> Trauma can lead to more severe injuries requiring prompt attention.</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text"><strong>Infections or abscesses:</strong> Puncture wounds or infections can cause pain and limping.</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text"><strong>Nerve damage:</strong> Spinal or neurological issues can affect a pet's ability to move properly.</p>
-                            </li>
-                        </ul>
+        <h2 class="sub-section-heading">Diagnostic Approach</h2>
+        <p class="content-paragraph">
+            At Caring Hands Veterinary Clinic, our veterinarians use a comprehensive approach to diagnose the cause of lameness. During a wellness exam, we evaluate your pet’s medical history, perform a physical examination, and may recommend diagnostic tools such as X-rays, blood work, or advanced imaging to determine the root cause of the issue.
+        </p>
 
-                        <p class="paragraph">
-                            If your pet shows signs of lameness or limping, scheduling a wellness exam at our animal hospital can help pinpoint the issue and start an
-                            appropriate treatment plan.
-                        </p>
-                    </div>
-                </div>
+        <h2 class="sub-section-heading">Treatment Options for Lameness</h2>
+        <ul class="content-list">
+            <li class="content-list-item"><strong>Rest and anti-inflammatory medications:</strong> For minor injuries or inflammation.</li>
+            <li class="content-list-item"><strong>Physical therapy:</strong> To aid recovery and improve mobility.</li>
+            <li class="content-list-item"><strong>Surgery:</strong> Necessary for severe injuries, such as fractures or ligament tears.</li>
+            <li class="content-list-item"><strong>Weight management:</strong> Helps reduce stress on joints and improve overall mobility.</li>
+            <li class="content-list-item"><strong>Medications or supplements:</strong> For chronic conditions like arthritis.</li>
+        </ul>
+        <p class="content-paragraph">
+            Our team works closely with pet owners to develop tailored treatment plans that prioritize your pet’s comfort and recovery.
+        </p>
 
-                <!-- Accordion Item 3 -->
-                <div class="accordion-item fade-in-up">
-                    <div class="accordion-header">
-                        <div class="accordion-header-content">
-                            <span class="accordion-icon-wrapper blue-icon-bg">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <span class="accordion-title">Signs and Symptoms to Watch For</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                         <p>
-                          Aside from limping, there are additional signs that may indicate a problem with your pet’s mobility:
-                        </p>
-                         <ul class="list">
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">Reluctance to walk, run, or jump</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">Swelling in limbs or joints</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text"> Visible wounds or abrasions</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">  Vocalizing pain when touched or moved</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">Changes in posture or gait</p>
-                            </li>
-                        </ul>
+        <h2 class="sub-section-heading">Prevention Tips</h2>
+        <ul class="content-list">
+            <li class="content-list-item">Maintain a healthy weight for your pet</li>
+            <li class="content-list-item">Provide regular exercise appropriate for your pet’s age and breed</li>
+            <li class="content-list-item">Keep your pet’s living environment safe and free of hazards</li>
+            <li class="content-list-item">Schedule routine wellness exams to detect potential issues early</li>
+        </ul>
 
-                        <p class="paragraph">
-                           If you notice any of these signs, consult with a veterinarian near you for a thorough assessment.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Accordion Item 4 -->
-
-                 <div class="accordion-item fade-in-up">
-                    <div class="accordion-header">
-                        <div class="accordion-header-content">
-                            <span class="accordion-icon-wrapper blue-icon-bg">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <span class="accordion-title">Diagnostic Approach</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>
-                          At Caring Hands Veterinary Clinic, our veterinarians use a comprehensive approach to diagnose the cause of lameness. During a wellness exam, we evaluate your pet’s medical history, perform a physical examination, and may recommend diagnostic tools such as X-rays, blood work, or advanced imaging to determine the root cause of the issue.
-                        </p>
-                    </div>
-                </div>
-
-                 <!-- Accordion Item 5 -->
-
-                <div class="accordion-item fade-in-up">
-                    <div class="accordion-header">
-                        <div class="accordion-header-content">
-                        <span class="accordion-icon-wrapper blue-icon-bg">
-                            <i class="fas fa-check"></i>
-                        </span>
-                        <span class="accordion-title">Treatment Options for Lameness</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>
-                        Treatment depends on the underlying cause of your pet’s lameness. Some common options include:
-                        </p>
-                        <ul class="list">
-                        <li class="list-item">
-                            <span class="list-bullet">&bull;</span>
-                            <p class="list-text">Rest and anti-inflammatory medications: For minor injuries or inflammation.</p>
-                        </li>
-                        <li class="list-item">
-                            <span class="list-bullet">&bull;</span>
-                            <p class="list-text">Physical therapy: To aid recovery and improve mobility.</p>
-                        </li>
-                        <li class="list-item">
-                            <span class="list-bullet">&bull;</span>
-                            <p class="list-text">Surgery: Necessary for severe injuries, such as fractures or ligament tears.</p>
-                        </li>
-                        <li class="list-item">
-                            <span class="list-bullet">&bull;</span>
-                            <p class="list-text">Weight management: Helps reduce stress on joints and improve overall mobility.</p>
-                        </li>
-                        <li class="list-item">
-                            <span class="list-bullet">&bull;</span>
-                            <p class="list-text">Medications or supplements: For chronic conditions like arthritis.</p>
-                        </li>
-                        </ul>
-                        <p class="paragraph">
-                        Our team works closely with pet owners to develop tailored treatment plans that prioritize your pet’s comfort and recovery.
-                        </p>
-                    </div>
-                    </div>
-
-                <!-- Accordion Item 6 -->
-
-                <div class="accordion-item fade-in-up">
-                    <div class="accordion-header">
-                        <div class="accordion-header-content">
-                            <span class="accordion-icon-wrapper blue-icon-bg">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <span class="accordion-title">Prevention Tips</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>
-                            While some causes of lameness are unavoidable, there are steps you can take to reduce risks:
-                        </p>
-                        <ul class="list">
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">Maintain a healthy weight for your pet</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">Provide regular exercise appropriate for your pet’s age and breed</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">Keep your pet’s living environment safe and free of hazards</p>
-                            </li>
-                            <li class="list-item">
-                                <span class="list-bullet">&bull;</span>
-                                <p class="list-text">Schedule routine wellness exams to detect potential issues early</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                 <!-- Accordion Item 7 -->
-                <div class="accordion-item fade-in-up">
-                    <div class="accordion-header">
-                        <div class="accordion-header-content">
-                            <span class="accordion-icon-wrapper blue-icon-bg">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <span class="accordion-title">Trust Caring Hands Veterinary Clinic for Expert Care</span>
-                        </div>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="accordion-content">
-                        <p>
-                        If your pet is experiencing lameness or limping, our team at Caring Hands Veterinary Clinic in Philadelphia, PA, is here to provide the compassionate care they need. Our skilled veterinarians are committed to ensuring your pet’s health and mobility. Call us today at (215) 621-8959 to schedule an appointment and let our team help your pet feel their best.
-                        </p>
-                    </div>
-                </div>
-    
-
-                <!-- Accordion Item 5 -->
-              
+        <div class="contact-con-section">
+            <h2 class="contact-con-heading">Trust Caring Hands Veterinary Clinic for Expert Care</h2>
+            <p class="contact-con-paragraph">
+                If your pet is experiencing lameness or limping, our team at Caring Hands Veterinary Clinic in Philadelphia, PA, is here to provide the compassionate care they need. Our skilled veterinarians are committed to ensuring your pet’s health and mobility. Call us today at <button class="contact-con-link-button" id="showContactButton">CALL US</button> to schedule an appointment and let our team help your pet feel their best.
+            </p>
+            <div class="contact-con-phone-display" id="phoneNumberDisplay" style="display: none;">
+                <!-- Phone number is already in the button text, but keeping this for potential future dynamic display if needed -->
+            </div>
         </div>
     </section>
 

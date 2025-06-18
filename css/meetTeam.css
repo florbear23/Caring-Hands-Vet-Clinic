@@ -1,0 +1,232 @@
+ :root {
+    --primary-color: #a67a50; /* MediumSeaGreen */
+    --text-dark:     #72461c ;
+    --text-light: #fdf3f1;
+    
+}
+ 
+ 
+ .team-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Section Title */
+        .team-title {
+            text-align: center;
+            font-size: 3.5em;
+            color: var(--text-dark);
+            margin-bottom: 60px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .team-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color); /* Primary blue color */
+            border-radius: 2px;
+        }
+
+        /* Individual Member Section */
+        .member-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 80px; /* Space between members */
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden; /* Ensures rounded corners apply correctly */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 30px; /* Internal padding */
+        }
+
+        .member-section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Alternate layout for every second member */
+        .member-section:nth-child(even) {
+            flex-direction: row-reverse; /* Image on right, text on left */
+        }
+
+        /* Member Image Container - Now Circular */
+        .member-image-wrapper {
+            flex-shrink: 0; /* Prevent shrinking */
+            width: 300px; /* Fixed width for circular image on desktop */
+            aspect-ratio: 1 / 1; /* Maintain 1:1 aspect ratio for perfect circle */
+            margin: 0 30px; /* Space between image and text */
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%; /* Make it circular */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: all 0.3s ease;
+        }
+
+        .member-section:hover .member-image-wrapper {
+            box-shadow: 0 0 0 8px rgba(236, 143, 3, 0.473); /* Blue glowing ring on hover */
+        }
+
+        .member-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image covers the circular area */
+            display: block;
+            border-radius: 50%; /* Match wrapper for inner image */
+            transition: transform 0.5s ease;
+        }
+
+        .member-section:hover .member-image-wrapper img {
+            transform: scale(1.03); /* Slight zoom on image itself on hover */
+        }
+
+        /* Member Info Text Content */
+        .member-info {
+            flex: 1; /* Takes remaining space */
+            padding: 20px;
+        }
+
+        .member-name {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .member-role {
+            font-size: 1.3em;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .member-bio {
+            font-size: 1.1em;
+            color: #495057;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        /* Social Icons */
+        .social-icons a {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-size: 1.8em;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* Font Awesome for social icons */
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .member-section {
+                flex-direction: column; /* Stack image and text vertically */
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 60px;
+            }
+
+            .member-section:nth-child(even) {
+                flex-direction: column; /* Reset alternation for smaller screens */
+            }
+
+            .member-image-wrapper {
+                width: 220px; /* Smaller circular image on mobile */
+                margin: 0 auto 25px auto; /* Center image, add space below */
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter shadow for mobile */
+            }
+
+            .member-section:hover .member-image-wrapper {
+                 box-shadow: 0 0 0 6px rgba(0, 123, 255, 0.3); /* Slightly smaller ring on hover for mobile */
+            }
+
+            .member-info {
+                padding: 10px;
+            }
+
+            .member-name {
+                font-size: 2em;
+            }
+
+            .member-role {
+                font-size: 1.1em;
+            }
+
+            .member-bio {
+                font-size: 1em;
+            }
+
+            .social-icons {
+                margin-top: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .team-title {
+                font-size: 2.8em;
+                margin-bottom: 40px;
+            }
+
+            .member-section {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .team-title {
+                font-size: 2.2em;
+                margin-bottom: 30px;
+                padding-bottom: 15px;
+            }
+
+            .team-title::after {
+                width: 60px;
+                height: 3px;
+            }
+
+            .member-section {
+                padding: 15px;
+            }
+
+            .member-image-wrapper {
+                width: 180px; /* Even smaller circular image on smaller mobile */
+                margin-bottom: 20px;
+            }
+
+            .member-section:hover .member-image-wrapper {
+                box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25); /* Even smaller ring */
+            }
+
+            .member-name {
+                font-size: 1.8em;
+            }
+
+            .member-role {
+                font-size: 1em;
+            }
+
+            .member-bio {
+                font-size: 0.95em;
+            }
+
+            .social-icons a {
+                font-size: 1.5em;
+                margin-right: 10px;
+            }
+        }
