@@ -210,6 +210,9 @@ body{
 /* Show Mobile Nav */
 .mobile-nav.open {
     display: flex;
+    position: sticky;
+    top: 123px;
+    z-index: 99999999999999999;
 }
 
 /* Responsive Styles */
@@ -258,6 +261,7 @@ body{
 
     .mobile-nav .dropdown.open .dropdown-content {
         display: block;
+
     }
 }
 
