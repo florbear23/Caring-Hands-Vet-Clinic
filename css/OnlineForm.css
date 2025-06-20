@@ -1,0 +1,149 @@
+       .vh{
+        height: 100vh;
+       }
+       
+       /* Container for the list */
+        .forms-list-container {
+            background-color: #fdf3f1; /* Applied new light color */
+            padding: 40px; /* Increased padding */
+            border-radius: 16px; /* More rounded corners */
+            box-shadow: 0 8px 30px rgba(114, 70, 28, 0.15); /* Stronger, more diffused shadow using dark brown */
+            width: 100%;
+            max-width: 650px; /* Slightly wider */
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid rgba(253, 243, 241, 0.8); /* Subtle border matching background for depth */
+            min-height: 400px;
+            backdrop-filter: blur(5px); /* Gentle blur effect */
+        }
+
+        .forms-list-container h2 {
+            color: #72461c; /* Applied new dark brown for heading */
+            margin-bottom: 35px; /* More space below heading */
+            font-weight: 700; /* Bolder font weight */
+            font-size: 32px; /* Larger font size */
+            letter-spacing: -0.5px; /* Slightly tighter letter spacing */
+            position: relative; /* For pseudo-element underline */
+            padding-bottom: 10px;
+        }
+
+        .forms-list-container h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px; /* Short underline */
+            height: 4px;
+            background-color: #a67a50; /* Applied new warm brown accent for underline */
+            border-radius: 2px;
+        }
+
+        .forms-list-container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .forms-list-container ul li {
+            background-color: #ffffff; /* Keeping white for contrast */
+            margin-bottom: 18px; /* More space between items */
+            padding: 0; /* Remove padding from LI, move to A */
+            border-radius: 10px; /* Nicely rounded corners for items */
+            box-shadow: 0 4px 15px rgba(114, 70, 28, 0.07); /* Subtle shadow using dark brown */
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #d0c6c4; /* Light warm gray border */
+        }
+
+        .forms-list-container ul li:hover {
+            transform: translateY(-5px); /* More pronounced lift on hover */
+            background-color: #fff8f5; /* Lighter, warmer white/pinkish on hover */
+            box-shadow: 0 8px 25px rgba(114, 70, 28, 0.1); /* Stronger shadow using dark brown on hover */
+        }
+
+        .forms-list-container ul li a {
+            display: flex; /* Use flexbox for icon and text alignment */
+            align-items: center;
+            justify-content: center; /* Center text within the item */
+            padding: 20px 25px; /* Padding inside the anchor */
+            font-size: 19px; /* Slightly larger text */
+            color: #72461c; /* Applied dark brown for text */
+            text-decoration: none; /* Remove underline from links */
+            width: 100%; /* Make anchor fill the list item */
+            height: 100%; /* Make anchor fill the list item */
+            box-sizing: border-box; /* Include padding in A's dimensions */
+            border-radius: 10px; /* Match LI border-radius */
+            cursor: pointer; /* Indicate interactivity */
+        }
+
+        .forms-list-container ul li a:hover {
+            /* No need for specific hover on anchor as LI handles it */
+        }
+
+        .forms-list-container ul li .icon {
+            margin-right: 15px; /* Space between icon and text */
+            font-size: 24px; /* Larger icon size */
+            color: #a67a50; /* Applied warm brown for icon color */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .forms-list-container {
+                padding: 30px;
+                border-radius: 14px;
+                box-shadow: 0 6px 20px rgba(114, 70, 28, 0.12);
+            }
+
+            .forms-list-container h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .forms-list-container h2::after {
+                width: 60px;
+                height: 3px;
+            }
+
+            .forms-list-container ul li a {
+                font-size: 17px;
+                padding: 18px 20px;
+            }
+            .forms-list-container ul li {
+                margin-bottom: 15px;
+            }
+
+            .forms-list-container ul li .icon {
+                font-size: 22px;
+                margin-right: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            .forms-list-container {
+                border-radius: 12px;
+                padding: 25px;
+                box-shadow: 0 4px 15px rgba(114, 70, 28, 0.1);
+            }
+            .forms-list-container h2 {
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+            .forms-list-container h2::after {
+                width: 50px;
+                height: 3px;
+            }
+            .forms-list-container ul li a {
+                font-size: 16px;
+                padding: 15px;
+            }
+            .forms-list-container ul li {
+                margin-bottom: 12px;
+            }
+            .forms-list-container ul li .icon {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
