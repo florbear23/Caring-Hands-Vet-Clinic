@@ -92,6 +92,12 @@ main{
   margin-left: 20px;
 }
 
+.tab-pane > ul {
+  padding-left: 1rem;
+}
+
+
+
 /* Responsive for small screens */
 @media (max-width: 768px) {
   .tabs-container {
