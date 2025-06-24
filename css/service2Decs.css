@@ -1,0 +1,196 @@
+.description-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.05);
+            animation: fadeInScale 0.8s ease-out forwards;
+            opacity: 0; /* Start hidden for animation */
+            transform: scale(0.95); /* Start slightly smaller for animation */
+        }
+
+        /* Keyframes for fade in and scale up animation */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .description-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .description-header h2 {
+            font-size: 2.8em;
+            color: #72461c; /* Changed heading color */
+            margin-bottom: 10px;
+            font-weight: 700;
+            animation: slideInLeft 1s ease-out forwards;
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        .description-header p {
+            font-size: 1.1em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: slideInRight 1s ease-out forwards;
+            opacity: 0;
+            transform: translateX(50px);
+            animation-delay: 0.2s; /* Stagger animation */
+        }
+
+        .description-header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+
+        /* Keyframes for sliding animations */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .description-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .description-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: #fdfdfd;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        /* Staggered animation for description items */
+        .description-item:nth-child(1) { animation-delay: 0.6s; } /* Adjusted delay due to image */
+        .description-item:nth-child(2) { animation-delay: 0.8s; }
+        .description-item:nth-child(3) { animation-delay: 1.0s; }
+        .description-item:nth-child(4) { animation-delay: 1.2s; }
+        .description-item:nth-child(5) { animation-delay: 1.4s; }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .description-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .description-item .icon {
+            font-size: 2.5em;
+            /* Using background-clip and text-fill-color for gradient text/icons */
+            background: linear-gradient(45deg, #a67a50, #72461c); /* Changed icon gradient colors */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            flex-shrink: 0;
+            margin-top: 5px; /* Align icon better with text */
+        }
+
+        .description-item .text-content h3 {
+            font-size: 1.6em;
+            color: #72461c; /* Changed heading color */
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .description-item .text-content p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .description-container {
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            .description-header h2 {
+                font-size: 2.2em;
+            }
+
+            .description-header p {
+                font-size: 1em;
+            }
+
+            .description-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .description-item .icon {
+                margin-bottom: 15px;
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.8em;
+            }
+            .description-item .icon {
+                font-size: 2em;
+            }
+            .description-item .text-content h3 {
+                font-size: 1.3em;
+            }
+            .description-item .text-content p {
+                font-size: 0.9em;
+            }
+        }

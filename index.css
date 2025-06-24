@@ -5,6 +5,7 @@
     --text-dark:     #72461c ;
     --text-light: #fdf3f1;
     
+   
 }
 
 *{
@@ -133,7 +134,7 @@ body{
     background-color: #fff;
     padding: 10px 0;
     min-width: 300px;
-    z-index: 1000;
+    z-index: 999999999999;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 4px;
     flex-direction: column;
@@ -2436,4 +2437,51 @@ input[type="date"] {
             background-color: var(--primary-color); /* Darker blue on hover */
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+
+          #scrollToTopBtn2 {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 30px; /* Place at the bottom */
+            left: 30px; /* Place at the right */
+            z-index: 99; /* Make sure it's above other content */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: var(--text-dark); /* Blue background */
+            color: white; /* White text */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px 25px; /* Some padding */
+            border-radius: 50%; /* Rounded button */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow for button */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #scrollToTopBtn2:hover {
+            background-color: var(--primary-color); /* Darker blue on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .floating{
+            display: flex; /* Hidden by default */
+            justify-content: center;
+            align-items: center;
+            position: fixed; /* Fixed position */
+            bottom: 30px; /* Place at the bottom */
+            left: 30px; /* Place at the right */
+            z-index: 99999999999; /* Make sure it's above other content */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: var(--text-dark); /* Blue background */
+            color: white; /* White text */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px 25px; /* Some padding */
+            border-radius: 50%; /* Rounded button */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow for button */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            width: 50px;
+            height: 50px;
         }

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caring Hands Veterinary Clinic</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/service2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar fix">
+        <div class="top-info">
+            <span>📞 (215) 621-8959</span>
+            <span>3310 Grant Ave, Philadelphia, PA </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+            <a
+                href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                    class="fab fa-google"></i></a>
+            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i
+                    class="fab fa-yelp"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header fix">
+        <div class="logo">
+            <img src="../asset/logo.jpg" alt="Logo" />
+        </div>
+        <nav class="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="../page/service.html">Service</a>
+            <li class="dropdown">
+                <a href="../page/treated.html">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                    <a href="../page/leptospirosis.html">Leptospirosis</a>
+                    <a href="../page/skin.html">Skin Infection</a>
+                </div>
+            </li>
+             <li class="dropdown">
+                <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Blog</a>
+                    <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                    <a href="../page/meetOutPets.html">Meet Our Pets</a>
+                </div>
+            </li>
+            <a href="#">Contact Us </a>
+            <a href="#">Online Form</a>
+            <a href="#">More</a>
+        </nav>
+        <a href="#" class="btn1 ">Request Appointment</a>
+
+
+
+    </header>
+    <!-- Add inside <body> after previous code -->
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+    <!-- Mobile Nav (hidden by default) -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="../page/service.html">Service</a>
+        <li class="dropdown">
+            <a href="#">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                <a href="../page/leptospirosis.html">Leptospirosis</a>
+                <a href="../page/skin.html">Skin Infection</a>
+            </div>
+        </li>
+        <li class="dropdown">
+                <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Blog</a>
+                    <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                    <a href="../page/meetOutPets.html">Meet Our Team</a>
+                </div>
+            </li>
+        <a href="#">Contact Us </a>
+        <a href="#">Online Form</a>
+        <a href="#">More</a>
+        <a href="#" class="btn2 margin-top">Request Appointment</a>
+    </div>
+
+
+
+
+    <main class="main---container">
+
+       <div class="service-container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <!-- Service: Bloodwork (Spans 2 columns on desktop) -->
+            <div class="service-box span-2-columns">
+                <div class="service-box-content">
+                    <i class="fas fa-microscope icon"></i>
+                    <h3>Bloodwork</h3>
+                    <p>Comprehensive blood tests to monitor your pet's health and detect underlying conditions early.</p>
+                    <a href="../servicePage/bloodwork.html" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Dental Diseases -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-tooth icon"></i>
+                    <h3>Dental Diseases</h3>
+                    <p>Expert dental care for pets, including cleaning, extractions, and management of oral health issues.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Deworming -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-worm icon"></i>
+                    <h3>Deworming</h3>
+                    <p>Effective deworming treatments to protect your pet from common internal parasites.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Eye and Ear Surgery -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-eye-dropper icon"></i>
+                    <h3>Eye and Ear Surgery</h3>
+                    <p>Specialized surgical procedures for conditions affecting your pet's eyes and ears.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Exotic Pets -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-frog icon"></i>
+                    <h3>Exotic Pets</h3>
+                    <p>Dedicated veterinary care tailored for exotic animals, ensuring their unique health needs are met.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Flea, Tick & Heartworm Prevention (Spans 2 columns on desktop) -->
+            <div class="service-box span-2-columns">
+                <div class="service-box-content">
+                    <i class="fas fa-hand-sparkles icon"></i>
+                    <h3>Flea, Tick & Heartworm Prevention</h3>
+                    <p>Preventative treatments to keep your pet safe from fleas, ticks, and dangerous heartworm disease.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Internal Procedures -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-stethoscope icon"></i>
+                    <h3>Internal Procedures</h3>
+                    <p>Advanced diagnostic and therapeutic internal procedures for accurate health assessments and treatment.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Mass Removals -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-cut icon"></i>
+                    <h3>Mass Removals</h3>
+                    <p>Safe and precise surgical removal of masses and tumors for your pet's well-being.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Orthopedic Surgery -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-bone icon"></i>
+                    <h3>Orthopedic Surgery</h3>
+                    <p>Surgical solutions for bone, joint, and ligament issues to restore your pet's mobility.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Emergency Care -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-truck-medical icon"></i>
+                    <h3>Emergency Care</h3>
+                    <p>Immediate and critical care for pets in urgent situations, available when you need it most.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Pet Fractures -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-x-ray icon"></i>
+                    <h3>Pet Fractures</h3>
+                    <p>Comprehensive treatment for pet fractures, including diagnosis, setting, and recovery management.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Pet Food Allergies -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-bowl-food icon"></i>
+                    <h3>Pet Food Allergies</h3>
+                    <p>Diagnosis and management of food allergies to improve your pet's diet and overall health.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Pet Wellness Exams (Spans 2 columns on desktop) -->
+            <div class="service-box span-2-columns">
+                <div class="service-box-content">
+                    <i class="fas fa-notes-medical icon"></i>
+                    <h3>Pet Wellness Exams</h3>
+                    <p>Regular check-ups to ensure your pet is healthy, happy, and up-to-date on all preventative care.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service: Pet Allergies -->
+            <div class="service-box">
+                <div class="service-box-content">
+                    <i class="fas fa-lungs-virus icon"></i>
+                    <h3>Pet Allergies</h3>
+                    <p>Identification and treatment of various pet allergies to alleviate discomfort and improve quality of life.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </main>
+
+    <div class="map--section">
+        <div class="info--area">
+            <div class="office-hours-container">
+
+                <!-- Main content area now uses a responsive grid -->
+                <div class="office-hours-grid">
+                    <!-- Office Hours List Column -->
+
+                    <div>
+                        <h1 class="office-hours-title">Office Hours</h1>
+
+                        <div class="office-hours-list">
+                            <!-- Monday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Monday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 5:00 pm</span>
+                            </div>
+
+                            <!-- Tuesday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Tuesday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 8:00 pm</span>
+                            </div>
+
+                            <!-- Wednesday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Wednesday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 8:00 pm</span>
+                            </div>
+
+                            <!-- Thursday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Thursday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">9:00 am - 6:00 pm</span>
+                            </div>
+
+                            <!-- Friday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Friday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 4:00 pm</span>
+                            </div>
+
+                            <!-- Saturday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Saturday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">9:00 am - 3:00 pm</span>
+                            </div>
+
+                            <!-- Sunday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Sunday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Holiday Closures Section Column -->
+
+                    <div>
+                        <h1 class="office-hours-title">We will be closed on the following holidays:</h1>
+                        <ul class="holiday-list">
+                            <li>New Year's Eve</li>
+                            <li>New Year's Day</li>
+                            <li>Memorial Day</li>
+                            <li>Independence Day</li>
+                            <li>Labor Day</li>
+                            <li>Thanksgiving</li>
+                            <li>Christmas Eve</li>
+                            <li>Christmas Day</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrapper">
+                <!-- Emergency Contact Section -->
+                <div class="emergency-section">
+                    <h2>Emergency Care</h2>
+                    <p>
+                        In case of emergency during our off hours you can contact the following 24 hour Emergency Care
+                        Centers:
+                    </p>
+                    <ul>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Veterinary Specialty & Emergency Center (VSEC)</span>
+                                <a href="https://vesecvet.com" target="_blank">vesecvet.com</a>
+                                <span class="block">(215) 750-7884</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Matthew J Ryan Hospital (University of Penn.)</span>
+                                <span class="block">(215) 898-4680</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Centre for Animal Referral & Emergency Services (CARES)</span>
+                                <a href="https://vetcares.com" target="_blank">vetcares.com</a>
+                                <span class="block">(215) 750-2774</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Branding and Social Media Section -->
+                <div class="branding-social-section">
+                    <!-- Logos -->
+                    <div class="logos-container">
+                        <img src="../asset/caringhandsvetclinic_logo15f-999-626.png.webp"
+                            alt="Caring Hands Veterinary Clinic Logo">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                            <a
+                                href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                                    class="fab fa-google"></i></a>
+                            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i
+                                    class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.079743306154!2d-75.0071798!3d40.0679285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b37a74daf973%3A0x86d30f06cde938d!2sCaring%20Hands%20Veterinary%20Clinic!5e1!3m2!1sen!2sph!4v1750088527301!5m2!1sen!2sph"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content-wrapper">
+            <div class="footer-column about-us">
+                <div class="footer-logo">
+                    <!-- Replace with actual logo image -->
+                    <img src="../asset/logo.jpg" alt="Hospital Medicative Logo">
+                </div>
+                <p class="footer-description">
+                    Voluptate porro esse repellat quo exercitationem debitis incidunt.
+                </p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> Phone: (215) 621-8959</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100055273847886"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                    <a
+                        href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                            class="fab fa-google"></i></a>
+                    <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i
+                            class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-heading">OUR PEGES</h4>
+                <div class="underline-footer"></div>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Service</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Conditions Treated</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>About Us</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Blog</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>More</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-heading">OUR SERVICES</h4>
+                <div class="underline-footer"></div>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Bloodwork</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Dental Diseases</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Deworming</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>Eye and Ear Surgery</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i>More</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column fliker-feed">
+                <h4 class="footer-heading">FLIKER FEED</h4>
+                <div class="underline-footer"></div>
+                <div class="flickr-grid">
+                    <!-- Replace with actual Flickr images or remove if dynamic -->
+                    <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image1" alt="Flickr Image 1">
+                    <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image2" alt="Flickr Image 2">
+                    <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image3" alt="Flickr Image 3">
+                    <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image4" alt="Flickr Image 4">
+                    <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image5" alt="Flickr Image 5">
+                    <img src="https://placehold.co/80x80/e0e0e0/555555?text=Image6" alt="Flickr Image 6">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>

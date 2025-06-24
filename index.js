@@ -148,3 +148,6 @@ document.querySelectorAll('.mobile-nav .dropdown > a').forEach(link => {
         window.addEventListener('resize', () => {
             console.log('Window resized. Layout should adapt.');
         });
+
+
+        
