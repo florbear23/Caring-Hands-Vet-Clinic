@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caring Hands Veterinary Clinic</title>
     <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="../css/sugical.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -97,55 +97,156 @@
 
     <main class="main---container">
             <section class="contactUs">
-        <h2>Caring Hands Veterinary Clinic</h2>
-        <p>We look forward to hearing from you!</p>
+                 <div class="container">
+        <h1>Important Pet Surgery Information Packet</h1>
 
-        <div class="contact-info">
-            <p><strong>Address:</strong> 3310 Grant Ave, Philadelphia, PA, 19114</p>
-            <p><strong>Phone:</strong> <a href="tel:+12156218959" style="color: #72461c; text-decoration: none; font-weight: 600;">(215) 621-8959</a></p>
-            <p><strong>Appointment Times:</strong></p>
-            <ul>
-                <li>Monday to Thursday: 9 am - 4 pm</li>
-                <li>Friday & Saturday: 9 am - 12 pm</li>
-            </ul>
-            <p style="margin-top: 25px;">
-                In case of emergency, when we are closed, you can contact the emergency hospitals listed on the emergency hospital contact section on our website.
-            </p>
-        </div>
+        <!-- Wrap the entire content in a form tag -->
+        <form id="petSurgeryForm">
+            <div class="section">
+                <div class="section-header">
+                    <h2>Dear Client,</h2>
+                </div>
+                <p>Your pet has been scheduled for an upcoming surgery in the near future. In our attempt to assist clients, we have put together this packet to make surgery day as easy and stress-free as possible.</p>
+                <p>In addition to this letter, you will find that the following information has been enclosed:</p>
+                <ul>
+                    <li><strong>Pre-Anesthetic Blood Testing Information Form</strong> (Initial and bring in day of surgery)</li>
+                    <li><strong>Surgical Information Sheet</strong> (Initial and bring in Day of Surgery)</li>
+                </ul>
+                <p>Please read carefully all the enclosed information. If you have any questions, please feel free to call us. On your pets’ surgery day, we require you to review and sign an <strong>Authorization/Estimate Form</strong>— which allows you to choose optional services. This form is not included in the packet and will be provided to you at our office prior to admitting your pet for services.</p>
+                <div class="note">
+                    <p><strong>Important:</strong> We require a phone number(s) where you can be reached surgery day. <strong>Failure to be reached on the day of the procedure may result in postponement of the surgery.</strong></p>
+                </div>
 
-        <!-- Contact Form Re-added -->
-        <form id="contactForm" class="contact-form">
-            <div class="form-group">
-                <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="subject">Enter Your Name</label>
+                <h3>The night before your pet’s surgery…</h3>
+                <ul>
+                    <li>Withhold all food and treats after 9:00pm.</li>
+                    <li>Water may be left down after this time period.</li>
+                    <li>If you are currently administering any medications, vitamins and/or injections, <strong>withhold the morning doses unless otherwise instructed by the doctor.</strong></li>
+                </ul>
+                <p>Please make arrangements for your pet to be dropped off on the morning of scheduled surgery, unless other arrangements have been made in advance. For example, new clients are required to have a presurgical visit the morning of procedure and may not have an appointment until later. At time of drop off, our team will be happy to answer any questions/concerns and collect the enclosed/completed <strong>Information Forms</strong>.</p>
+                <p>Our veterinary nurse will escort your pet to the surgical prepping area to wait for their surgery. If you have elected any of the recommended blood tests, our nurse will collect all blood samples and tests prior to surgery. If any questions arise, the doctor may contact you at the number on the <strong>Authorization Form</strong> you will complete the morning of surgery.</p>
+                <p>You are welcome to check up on your pet’s status, however, we request that you allow plenty of time for your pet’s procedure to be done. At this time, we will be able to give you an idea when your pet may be discharged. When you arrive to take your pet home, the receptionist will bill you out and the veterinary nurse will go over all discharge orders verbally and give you a written copy. If you do not understand any instructions, please do not hesitate to ask them to go over them one more time.</p>
+                <p>We hope surgery day will be a pleasant experience. Remember, our team knows surgery can be an anxious time and we are always available to answer any and all questions concerning the upcoming procedure. We look forward to serving you and your pet on the upcoming surgery day and years to come.</p>
+
+                <div class="form-group">
+                    <label for="clientInitialIntro">Client Initial (to confirm reading Introduction):</label>
+                    <input type="text" id="clientInitialIntro" name="clientInitialIntro" placeholder="Your Initials" onchange="updateTimestamp('initialTimestampIntro')">
+                    <span id="initialTimestampIntro" style="font-size: 0.8em; color: #6c757d; display: block; margin-top: 5px;"></span>
+                </div>
             </div>
 
-            <div class="form-group">
-                <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Enter Your Email</label>
+            <div class="section">
+                <div class="section-header">
+                    <h2>PRE-ANESTHETIC BLOOD TESTING INFORMATION FORM</h2>
+                </div>
+                <h3>PLEASE READ CAREFULLY.</h3>
+                <p>Our greatest concern is the well-being of your pet. Before putting your pet under anesthesia, we routinely perform a full physical examination.</p>
+                <p>We also highly recommend and sometimes require that a <strong>Pre-Anesthetic Blood Profile</strong> be performed on all pets’ undergoing anesthesia to maximize patient safety.</p>
+                <p>The Pre-Anesthetic Blood Profile helps alert our surgeon to the presence of dehydration, anemia, infection, diabetes and/or kidney or liver disease that could complicate the procedure. These conditions may not be detected without a pre-anesthetic profile thus not allowing for the most appropriate and safest anesthetic regime to be administered.</p>
+                <p>These tests are similar to those your own physician would run if you were to undergo anesthesia. In addition, these tests may be useful if your pet’s health changes to develop faster, more accurate diagnoses and treatments.</p>
+                <p>The Authorization Form you will sign on your pet’s surgery date at our office will offer pre-anesthetic blood work.</p>
+                <h3>1. The Quantitative Blood Count (QBC) and Pre-Anesthetic Profile which includes:</h3>
+                <ul>
+                    <li><strong>CBC:</strong> PCV (Anemia), White Blood Cell Count (Infection) & Red Blood Cell Count (Anemia/Bleeding Disorder), Platelet Count (Clotting Disorder).</li>
+                    <li><strong>Profile:</strong> BUN and Creatinine (Kidney), ALKP and ALT (Liver), Glucose (Sugar), Total Protein (Dehydration), and Electrolytes (Imbalance).</li>
+                </ul>
+                <h3>2. Owner Elects to Decline the recommended pre-anesthetic blood tests at this time but requests that we proceed with the procedure. This is indicated by NOT checking the optional procedures.</h3>
+                <p>You will notice other tests available that are not included in the above choices. We have selected tests that give the doctors a suitable overview of healthy patients. However, if the patients are in their senior years (above 7 years old) or are sick, the FULL senior profile can be done the day of the procedure at the owner’s request. It has been included in the high amount estimate.</p>
+                <p>For feline patients, our feline owners will see an option for a FeLV/FIV Test. We highly recommend this test be performed on all feline patients at least once in their lives because Feline Leukemia and Feline Immunodeficiency Virus (Feline Aids) are viruses for which no cure exists. If your pet goes outside, we recommend administering the Feline Leukemia vaccine as well. Please ask questions if you would like to learn more about Feline Leukemia and Feline Aids.</p>
+                <p>We realize surgery and anesthesia are scary for both the owner and patient and we attempt to make surgery day as safe and comfortable for all involved. The physical examination and blood work done prior to any surgical procedure allows us to best minimize anesthetic and surgical risks and maximize patient safety.</p>
+                <p>If you have any questions or hesitations about the scheduled procedure, please do not hesitate to call us to discuss any aspect of the upcoming procedure.</p>
+
+                <div class="form-group">
+                    <label for="clientInitialBloodTest">Client Initial (to confirm reading Pre-Anesthetic Blood Testing Form):</label>
+                    <input type="text" id="clientInitialBloodTest" name="clientInitialBloodTest" placeholder="Your Initials" onchange="updateTimestamp('initialTimestampBloodTest')">
+                    <span id="initialTimestampBloodTest" style="font-size: 0.8em; color: #6c757d; display: block; margin-top: 5px;"></span>
+                </div>
             </div>
 
-            <div class="form-group">
-                <input type="text" id="subject" name="subject" required placeholder=" ">
-                <label for="subject">Enter Your Phone Number</label>
+            <div class="section">
+                <div class="section-header">
+                    <h2>SURGICAL INFORMATION FORM</h2>
+                </div>
+                <h3>PLEASE READ CAREFULLY.</h3>
+                <h3>Anesthetic Procedures & Risks</h3>
+                <p>We use a combination of pre-anesthetic medications/injectable and/or inhalant anesthetics to achieve optimum levels of anesthesia that are safe for your pet.</p>
+                <p>For short procedures, an injectable anesthetic is given alone that produces a good plane of surgical anesthesia with a quick recovery.</p>
+                <p>For most procedures, your pet is anesthetized and then intubated (insertion of a tube into the trachea or wind pipe). This will ensure that your pet is able to receive oxygen at all times and prevents aspiration of any fluids into the lungs.</p>
+                <p>For procedures that require minimum sedation, an injectable anesthetic is given that produces a good plane of sedation with quick recovery. Anesthesia is maintained with a gas anesthetic, Sevoflurane, which is very safe and is not metabolized by the body. This allows us to have more control over anesthetic depth and it is less irritating to the airways. Another advantage to Sevoflurane is a quick induction using a mask verses using injectable anesthetics that require metabolism from the body.</p>
+
+                <h3>Monitoring & Pain Management</h3>
+                <p>Monitoring of patients during anesthesia is done in two ways. First, a veterinary nurse is with your pet continuously from beginning of anesthesia to recovery. Second, we have a computerized monitor that records heart rate, pulse rate, oxygen levels, respiration, ECG, core and rectal temperature.</p>
+                <p>Our clinic strongly believes in compassionate, quality, medical care for our patients. As a result, all surgery patients will receive pain management before, during and after surgery. Additionally, pain medication may be prescribed home. Additional information will be given at discharge. We hope this program will reduce any discomfort experienced and aid in a quicker recovery.</p>
+
+                <h3>Intravenous Catheterization & Fluids</h3>
+                <p>We highly recommend the placement of an IV catheter and use of IV fluids during all anesthetic procedures. This allows us to have quick, available access to the circulatory system (blood) in case of an unforeseen emergency. The fluids help provide support to the circulatory system and prevent dehydration, as well as aid in a quicker recovery from anesthesia.</p>
+
+                <h3>Potential Surgical Complications</h3>
+                <h4>Canine and Feline Spay</h4>
+                <ol>
+                    <li>Bleeding</li>
+                    <li>Infection</li>
+                    <li>Recurrent Heat</li>
+                    <li>Urinary Incontinence</li>
+                    <li>Weight Gain</li>
+                    <li>Suture Reactions</li>
+                </ol>
+                <h4>Canine and Feline Alter</h4>
+                <ol>
+                    <li>Bleeding</li>
+                    <li>Infection</li>
+                    <li>Testicular Swelling</li>
+                    <li>Suture Reaction (Canine Only)</li>
+                </ol>
+                <h4>Feline Declaw</h4>
+                <ol>
+                    <li>Bleeding</li>
+                    <li>Infection</li>
+                    <li>Limping/Lameness</li>
+                    <li>Regrowth of Nail</li>
+                </ol>
+                <h4>Tumor/Lump Removal</h4>
+                <ol>
+                    <li>Bleeding</li>
+                    <li>Infection</li>
+                    <li>Swelling and Drainage</li>
+                    <li>Suture Reaction</li>
+                </ol>
+                <p>It is important for you to understand that there is always a risk of anesthetic and surgical complications anytime these procedures are performed. We strive to take the highest quality care of your pet and take all the added precautions you allow to avoid potential problems. Thank you for entrusting your pet to us.</p>
+
+                <div class="form-group">
+                    <label for="clientInitialSurgery">Client Initial (to confirm reading Surgical Information Form):</label>
+                    <input type="text" id="clientInitialSurgery" name="clientInitialSurgery" placeholder="Your Initials" onchange="updateTimestamp('initialTimestampSurgery')">
+                    <span id="initialTimestampSurgery" style="font-size: 0.8em; color: #6c757d; display: block; margin-top: 5px;"></span>
+                </div>
             </div>
 
-            <div class="form-group">
-                <textarea id="message" name="message" required placeholder=" "></textarea>
-                <label for="message">Notes For Doctor</label>
+            <!-- Client Information Section -->
+            <div class="section">
+                <div class="section-header">
+                    <h2>Client Contact Information</h2>
+                </div>
+                <div class="form-group">
+                    <label for="clientName">Enter your name (required) *</label>
+                    <input type="text" id="clientName" name="clientName" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="clientEmail">Enter email *</label>
+                    <input type="email" id="clientEmail" name="clientEmail" placeholder="your@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="clientPhone">(XXX)XXX-XXXX *</label>
+                    <input type="tel" id="clientPhone" name="clientPhone" placeholder="(123)456-7890" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" required>
+                    <small style="color: #6c757d;">Format: (123)456-7890 or 123-456-7890</small>
+                </div>
             </div>
 
-            <button type="submit">Send Message</button>
+            <div class="submit-button-container">
+                <button type="submit" class="submit-button">Submit Form</button>
+            </div>
         </form>
-
-        <div id="messageBox" class="message-box">
-            <!-- Message will be displayed here -->
-        </div>
-    </section>
-
-       
-
-
+    </div>
+            </section>
     </main>
 
     <div class="map--section">
@@ -384,5 +485,73 @@
 </body>
 
 <script src="./index.js"></script>
+
+<script>
+        /**
+         * Updates a timestamp next to an input field when the input value changes.
+         * @param {string} timestampId The ID of the span element where the timestamp should be displayed.
+         */
+        function updateTimestamp(timestampId) {
+            const timestampSpan = document.getElementById(timestampId);
+            if (timestampSpan) {
+                const now = new Date();
+                const options = {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                };
+                timestampSpan.textContent = `Last updated: ${now.toLocaleDateString('en-US', options)}`;
+            }
+        }
+
+        // Optional: Add a simple form submission handler for demonstration
+        document.getElementById('petSurgeryForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // For demonstration, you could collect form data here
+            const formData = {
+                clientInitialIntro: document.getElementById('clientInitialIntro').value,
+                clientInitialBloodTest: document.getElementById('clientInitialBloodTest').value,
+                clientInitialSurgery: document.getElementById('clientInitialSurgery').value,
+                clientName: document.getElementById('clientName').value,
+                clientEmail: document.getElementById('clientEmail').value,
+                clientPhone: document.getElementById('clientPhone').value
+            };
+
+            console.log('Form Submitted!', formData);
+            // In a real application, you would send this data to a server
+            // e.g., using fetch() or XMLHttpRequest
+            
+            // Instead of alert, display a message within the page
+            const container = document.querySelector('.container');
+            let messageBox = document.getElementById('submissionMessage');
+            if (!messageBox) {
+                messageBox = document.createElement('div');
+                messageBox.id = 'submissionMessage';
+                messageBox.style.cssText = `
+                    background-color: #d4edda;
+                    color: #155724;
+                    border: 1px solid #c3e6cb;
+                    border-radius: 8px;
+                    padding: 15px;
+                    margin-top: 20px;
+                    text-align: center;
+                    font-weight: 600;
+                `;
+                container.appendChild(messageBox);
+            }
+            messageBox.textContent = 'Form submitted successfully! (Data logged to console)';
+
+            // Clear the message after a few seconds
+            setTimeout(() => {
+                if (messageBox.parentNode) {
+                    messageBox.parentNode.removeChild(messageBox);
+                }
+            }, 5000);
+        });
+    </script>
 
 </html>

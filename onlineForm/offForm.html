@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caring Hands Veterinary Clinic</title>
     <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="../css/dropform.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -96,56 +96,150 @@
 
 
     <main class="main---container">
-            <section class="contactUs">
-        <h2>Caring Hands Veterinary Clinic</h2>
-        <p>We look forward to hearing from you!</p>
-
-        <div class="contact-info">
-            <p><strong>Address:</strong> 3310 Grant Ave, Philadelphia, PA, 19114</p>
-            <p><strong>Phone:</strong> <a href="tel:+12156218959" style="color: #72461c; text-decoration: none; font-weight: 600;">(215) 621-8959</a></p>
-            <p><strong>Appointment Times:</strong></p>
-            <ul>
-                <li>Monday to Thursday: 9 am - 4 pm</li>
-                <li>Friday & Saturday: 9 am - 12 pm</li>
-            </ul>
-            <p style="margin-top: 25px;">
-                In case of emergency, when we are closed, you can contact the emergency hospitals listed on the emergency hospital contact section on our website.
-            </p>
-        </div>
-
-        <!-- Contact Form Re-added -->
-        <form id="contactForm" class="contact-form">
+        <section class="contactUs">
+            <div class="form-container">
+        <h1>Pet Information Form</h1>
+        <form id="petInfoForm">
+            <div class="section-title">Owner Information</div>
             <div class="form-group">
-                <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="subject">Enter Your Name</label>
+                <label for="ownerName">Owner’s Name (First and Last)<span class="required-star">*</span></label>
+                <input type="text" id="ownerName" name="ownerName" required aria-required="true" placeholder="e.g., John Doe">
+                <div class="error-message" id="ownerNameError">Owner's Name is required.</div>
             </div>
 
             <div class="form-group">
-                <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Enter Your Email</label>
+                <label for="primaryNumber">Primary Number<span class="required-star">*</span></label>
+                <input type="tel" id="primaryNumber" name="primaryNumber" required aria-required="true" placeholder="e.g., (123) 456-7890">
+                <div class="error-message" id="primaryNumberError">Primary Number is required.</div>
             </div>
 
             <div class="form-group">
-                <input type="text" id="subject" name="subject" required placeholder=" ">
-                <label for="subject">Enter Your Phone Number</label>
+                <label for="secondaryNumber">Secondary Number</label>
+                <input type="tel" id="secondaryNumber" name="secondaryNumber" placeholder="e.g., (987) 654-3210">
             </div>
 
             <div class="form-group">
-                <textarea id="message" name="message" required placeholder=" "></textarea>
-                <label for="message">Notes For Doctor</label>
+                <label for="email">Enter email<span class="required-star">*</span></label>
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="e.g., example@email.com">
+                <div class="error-message" id="emailError">Valid Email is required.</div>
             </div>
 
-            <button type="submit">Send Message</button>
+            <div class="section-title">Pet Information</div>
+            <div class="form-group">
+                <label for="petName">Pet Name<span class="required-star">*</span></label>
+                <input type="text" id="petName" name="petName" required aria-required="true" placeholder="e.g., Buddy">
+                <div class="error-message" id="petNameError">Pet Name is required.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="dobAge">D.O.B/Age</label>
+                <input type="text" id="dobAge" name="dobAge" placeholder="e.g., 01/15/2020 or 4 years old">
+            </div>
+
+            <div class="form-group">
+                <label for="genderSpayedNeutered">Pet Gender/Spayed or Neutered</label>
+                <input type="text" id="genderSpayedNeutered" name="genderSpayedNeutered" placeholder="e.g., Male/Neutered, Female/Spayed">
+            </div>
+
+            <div class="form-group">
+                <label for="speciesBreed">Species/Breed</label>
+                <input type="text" id="speciesBreed" name="speciesBreed" placeholder="e.g., Canine/Golden Retriever, Feline/Domestic Shorthair">
+            </div>
+
+            <div class="form-group">
+                <label for="previousVet">Previous Vet</label>
+                <input type="text" id="previousVet" name="previousVet" placeholder="Vet's Name and Clinic">
+            </div>
+
+            <div class="form-group">
+                <label for="reasonForVisit">Reason for visit/When did the issue start</label>
+                <textarea id="reasonForVisit" name="reasonForVisit" placeholder="Describe the reason for your visit and when the issue started..."></textarea>
+            </div>
+
+            <div class="section-title">Checklist for Services</div>
+
+            <div class="form-group">
+                <label>Nail trims</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="nailTrims" value="Yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="nailTrims" value="No"> No
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Anal Glands</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="analGlands" value="Yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="analGlands" value="No"> No
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Vaccines</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="vaccines" value="Yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="vaccines" value="No"> No
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="whichVaccines">Which Vaccines?</label>
+                <textarea id="whichVaccines" name="whichVaccines" placeholder="Please list the specific vaccines..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Ear Cleaning</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="earCleaning" value="Yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="earCleaning" value="No"> No
+                    </label>
+                </div>
+            </div>
+
+            <div class="section-title anesthesia-section">Permission for Anesthesia</div>
+            <div class="form-group">
+                <p>I hereby authorize Caring Hands Veterinary Clinic to use general anesthesia on my pet,
+                <input type="text" id="anesthesiaPetName1" name="anesthesiaPetName1" class="inline-input" placeholder="Pet's Name" aria-label="Pet's Name for Anesthesia Authorization" required aria-required="true"><span class="required-star">*</span>,<br>
+                for the above treatment/ listed on this form.</p>
+                <div class="error-message" id="anesthesiaPetName1Error">Pet's name for anesthesia authorization is required.</div>
+
+                <p>I understand that anesthesia poses a risk to my pet, even death regardless of health status. In the event of unforeseen complications, I give permission to the doctors and staff to take reasonable measures in treating
+                <input type="text" id="anesthesiaPetName2" name="anesthesiaPetName2" class="inline-input" placeholder="Pet's Name" aria-label="Pet's Name for treatment authorization" required aria-required="true"><span class="required-star">*</span><br>
+                and accept all charges that are incurred as a result of such action. The anesthesia and relevant risks have been fully explained to me to my satisfaction.</p>
+                <div class="error-message" id="anesthesiaPetName2Error">Pet's name for treatment authorization is required.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="signatureFullName">For Signature please enter full name<span class="required-star">*</span></label>
+                <input type="text" id="signatureFullName" name="signatureFullName" required aria-required="true" placeholder="e.g., Jane Smith">
+                <div class="error-message" id="signatureFullNameError">Full name for signature is required.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="signatureDate">Date<span class="required-star">*</span></label>
+                <input type="date" id="signatureDate" name="signatureDate" required aria-required="true">
+                <div class="error-message" id="signatureDateError">Date is required.</div>
+            </div>
+
+            <button type="submit">Submit Information</button>
         </form>
-
-        <div id="messageBox" class="message-box">
-            <!-- Message will be displayed here -->
-        </div>
-    </section>
-
-       
-
-
+    </div>
+        </section>
     </main>
 
     <div class="map--section">
@@ -382,6 +476,102 @@
 
 
 </body>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('petInfoForm');
+
+            // Function to show an error message
+            const showError = (elementId, message) => {
+                const errorElement = document.getElementById(elementId);
+                if (errorElement) {
+                    errorElement.textContent = message;
+                    errorElement.style.display = 'block';
+                }
+            };
+
+            // Function to hide an error message
+            const hideError = (elementId) => {
+                const errorElement = document.getElementById(elementId);
+                if (errorElement) {
+                    errorElement.style.display = 'none';
+                }
+            };
+
+            // Function to validate a single input
+            const validateInput = (inputElement, errorElementId, errorMessage) => {
+                let isValid = true;
+                if (inputElement.hasAttribute('required') && inputElement.value.trim() === '') {
+                    showError(errorElementId, errorMessage);
+                    isValid = false;
+                } else if (inputElement.type === 'email' && inputElement.value.trim() !== '' && !/^[^@]+@[^@]+\.[^@]+$/.test(inputElement.value)) {
+                    showError(errorElementId, 'Please enter a valid email address.');
+                    isValid = false;
+                } else {
+                    hideError(errorElementId);
+                }
+                return isValid;
+            };
+
+            // Add blur event listeners for real-time validation on required fields
+            document.getElementById('ownerName').addEventListener('blur', (e) => validateInput(e.target, 'ownerNameError', 'Owner\'s Name is required.'));
+            document.getElementById('primaryNumber').addEventListener('blur', (e) => validateInput(e.target, 'primaryNumberError', 'Primary Number is required.'));
+            document.getElementById('email').addEventListener('blur', (e) => validateInput(e.target, 'emailError', 'Valid Email is required.'));
+            document.getElementById('petName').addEventListener('blur', (e) => validateInput(e.target, 'petNameError', 'Pet Name is required.'));
+            document.getElementById('anesthesiaPetName1').addEventListener('blur', (e) => validateInput(e.target, 'anesthesiaPetName1Error', 'Pet\'s name for anesthesia authorization is required.'));
+            document.getElementById('anesthesiaPetName2').addEventListener('blur', (e) => validateInput(e.target, 'anesthesiaPetName2Error', 'Pet\'s name for treatment authorization is required.'));
+            document.getElementById('signatureFullName').addEventListener('blur', (e) => validateInput(e.target, 'signatureFullNameError', 'Full name for signature is required.'));
+            document.getElementById('signatureDate').addEventListener('blur', (e) => validateInput(e.target, 'signatureDateError', 'Date is required.'));
+
+
+            // Function to automatically fill anesthesia pet name fields from Pet Name
+            const petNameInput = document.getElementById('petName');
+            const anesthesiaPetName1 = document.getElementById('anesthesiaPetName1');
+            const anesthesiaPetName2 = document.getElementById('anesthesiaPetName2');
+
+            petNameInput.addEventListener('input', () => {
+                anesthesiaPetName1.value = petNameInput.value;
+                anesthesiaPetName2.value = petNameInput.value;
+            });
+
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevent default form submission
+
+                let formIsValid = true;
+
+                // Validate all required fields on submit
+                formIsValid = validateInput(document.getElementById('ownerName'), 'ownerNameError', 'Owner\'s Name is required.') && formIsValid;
+                formIsValid = validateInput(document.getElementById('primaryNumber'), 'primaryNumberError', 'Primary Number is required.') && formIsValid;
+                formIsValid = validateInput(document.getElementById('email'), 'emailError', 'Valid Email is required.') && formIsValid;
+                formIsValid = validateInput(document.getElementById('petName'), 'petNameError', 'Pet Name is required.') && formIsValid;
+                formIsValid = validateInput(document.getElementById('anesthesiaPetName1'), 'anesthesiaPetName1Error', 'Pet\'s name for anesthesia authorization is required.') && formIsValid;
+                formIsValid = validateInput(document.getElementById('anesthesiaPetName2'), 'anesthesiaPetName2Error', 'Pet\'s name for treatment authorization is required.') && formIsValid;
+                formIsValid = validateInput(document.getElementById('signatureFullName'), 'signatureFullNameError', 'Full name for signature is required.') && formIsValid;
+                formIsValid = validateInput(document.getElementById('signatureDate'), 'signatureDateError', 'Date is required.') && formIsValid;
+
+
+                if (formIsValid) {
+                    const formData = new FormData(form);
+                    const data = {};
+                    formData.forEach((value, key) => {
+                        data[key] = value;
+                    });
+
+                    console.log('Form Data Submitted:', data);
+                    // In a real application, you would send this 'data' to a server
+                    // using fetch() or XMLHttpRequest.
+
+                    // For demonstration, let's show a simple "success" message (using a console log instead of alert)
+                    console.log('Form submitted successfully!');
+                    alert('Form submitted successfully! Check the console for data.');
+                    form.reset(); // Optionally reset the form after successful submission
+                } else {
+                    console.log('Form has validation errors.');
+                    alert('Please correct the errors in the form before submitting.');
+                }
+            });
+        });
+    </script>
 
 <script src="./index.js"></script>
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caring Hands Veterinary Clinic</title>
     <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="../css/formsOnline.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -97,8 +97,8 @@
 
     <main class="main---container">
             <section class="contactUs">
-        <h2>Caring Hands Veterinary Clinic</h2>
-        <p>We look forward to hearing from you!</p>
+        <h2>New Patient Registration Form</h2>
+        
 
         <div class="contact-info">
             <p><strong>Address:</strong> 3310 Grant Ave, Philadelphia, PA, 19114</p>
@@ -115,32 +115,149 @@
 
         <!-- Contact Form Re-added -->
         <form id="contactForm" class="contact-form">
-            <div class="form-group">
-                <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="subject">Enter Your Name</label>
-            </div>
+    <h2>Contact Us</h2>
+    <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder=" ">
+        <label for="name">Enter your name (required) *</label>
+    </div>
 
-            <div class="form-group">
-                <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Enter Your Email</label>
-            </div>
+    <div class="form-group">
+        <input type="text" id="address" name="address" required placeholder=" ">
+        <label for="address">Address *</label>
+    </div>
 
-            <div class="form-group">
-                <input type="text" id="subject" name="subject" required placeholder=" ">
-                <label for="subject">Enter Your Phone Number</label>
-            </div>
+    <div class="form-group">
+        <input type="text" id="city" name="city" required placeholder=" ">
+        <label for="city">City *</label>
+    </div>
 
-            <div class="form-group">
-                <textarea id="message" name="message" required placeholder=" "></textarea>
-                <label for="message">Notes For Doctor</label>
-            </div>
+    <div class="form-group">
+        <input type="text" id="state" name="state" required placeholder=" ">
+        <label for="state">State *</label>
+    </div>
 
-            <button type="submit">Send Message</button>
-        </form>
+    <div class="form-group">
+        <input type="text" id="zipCode" name="zipCode" required placeholder=" ">
+        <label for="zipCode">Zip Code *</label>
+    </div>
 
-        <div id="messageBox" class="message-box">
-            <!-- Message will be displayed here -->
+    <div class="form-group">
+        <input type="tel" id="homePhone" name="homePhone" required placeholder=" ">
+        <label for="homePhone">Home Phone *</label>
+    </div>
+
+    <div class="form-group">
+        <input type="tel" id="workPhone" name="workPhone" placeholder=" ">
+        <label for="workPhone">Work Phone</label>
+    </div>
+
+    <div class="form-group">
+        <input type="tel" id="cellPhone1" name="cellPhone1" placeholder=" ">
+        <label for="cellPhone1">Cell Phone #1</label>
+    </div>
+
+    <div class="form-group">
+        <input type="tel" id="cellPhone2" name="cellPhone2" placeholder=" ">
+        <label for="cellPhone2">Cell Phone #2</label>
+    </div>
+
+    <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder=" ">
+        <label for="email">Enter email *</label>
+    </div>
+
+    <div class="form-group">
+        <textarea id="message" name="message" required placeholder=" "></textarea>
+        <label for="message">Notes For Doctor</label>
+    </div>
+
+    <div class="form-group newsletter-subscription">
+        <p>Please subscribe me to the FREE Pet Living & Wellness Newsletter:</p>
+        <input type="radio" id="subscribeYes" name="newsletterSubscription" value="Yes"> Yes
+        <input type="radio" id="subscribeNo" name="newsletterSubscription" value="No"> No
+    </div>
+
+    <div class="form-group topic-of-interest">
+        <p>Topic of Interest:</p>
+        <div>
+            <input type="checkbox" id="topicDogs" name="topicOfInterest" value="Dogs"> Dogs
         </div>
+        <div>
+            <input type="checkbox" id="topicCats" name="topicCats" value="Cats"> Cats
+        </div>
+        <div>
+            <input type="checkbox" id="topicHorses" name="topicHorses" value="Horses"> Horses
+        </div>
+        <div>
+            <input type="checkbox" id="topicBirds" name="topicBirds" value="Birds"> Birds
+        </div>
+        <div>
+            <input type="checkbox" id="topicReptiles" name="topicReptiles" value="Reptiles"> Reptiles
+        </div>
+        <div>
+            <input type="checkbox" id="topicRodents" name="topicRodents" value="Rodents"> Rodents
+        </div>
+        <div>
+            <input type="checkbox" id="topicAnnouncements" name="topicAnnouncements" value="Dr/Member Announcements"> Dr/Member Announcements
+        </div>
+    </div>
+
+    <p style="font-size: 0.9em; color: #555; margin-top: 20px; text-align: center;">
+        **Please note:** Your privacy is important to us. All information received in all forms and through other communications is subject to our <a href="#" style="color: #007bff; text-decoration: none;">Patient Privacy Policy</a>.
+    </p>
+
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+    <h3>PET INFORMATION</h3>
+    <div class="form-group">
+        <input type="text" id="petName" name="petName" required placeholder=" ">
+        <label for="petName">Pet's Name *</label>
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="petBreed" name="petBreed" placeholder=" ">
+        <label for="petBreed">Breed</label>
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="petType" name="petType" required placeholder=" ">
+        <label for="petType">Pet (Dog / Cat / Other) *</label>
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="petAgeDOB" name="petAgeDOB" required placeholder=" ">
+        <label for="petAgeDOB">Age/DOB *</label>
+    </div>
+
+    <div class="form-group">
+        <select id="petSex" name="petSex" required>
+            <option value="" disabled selected>Select Sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label for="petSex">SEX *</label>
+    </div>
+
+    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+    <p style="font-size: 0.9em; color: #333; line-height: 1.5; text-align: center;">
+        **All payments are due at the time of services rendered.**<br>
+        We accept cash, checks, all major credit cards, & Care Credit which can be approved in as little as 10 minutes.<br><br>
+        I have read and understand the above statements and agree to all terms therein.
+    </p>
+
+    <div class="form-group">
+        <input type="date" id="agreementDate" name="agreementDate" required>
+        <label for="agreementDate">Date *</label>
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="signature" name="signature" required placeholder=" ">
+        <label for="signature">For signature please enter your full name *</label>
+    </div>
+
+    <button type="submit">Send Message</button>
+</form>
     </section>
 
        

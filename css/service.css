@@ -34,74 +34,144 @@ main{
   padding: 20px 0;
 }
 
+
+.main--title--serve {
+  font-family: 'Georgia', serif; /* A classic, elegant serif font */
+  font-size: 2.8em; /* Large and prominent */
+  color: var(--primary-color); /* Soft dark grey for sophistication */
+  text-align: center; /* Centered for balance */
+  margin-bottom: 30px; /* Space below the title */
+  position: relative;
+  padding-bottom: 10px; /* Space for the underline effect */
+}
+
+.main--title--serve::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px; /* Short, elegant underline */
+  height: 3px;
+  background-color: var(--text-dark)  ; /* A nice blue for accent */
+  border-radius: 2px; /* Slightly rounded underline */
+}
+
 .tabs-container {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: none; /* Remove default border */
+  border-radius: 12px; /* More rounded corners */
   overflow: hidden;
+  box-shadow: 0 10px 30px var(--shadow-color); /* Softer, larger shadow */
+  background-color: #fff; /* Ensure container has a background */
 }
 
 .tab-buttons {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  background-color: #f4f4f4;
-  border-right: 1px solid #ccc;
+  width: 220px; /* Slightly wider buttons section */
+  background-color: var(--light-bg);
+  border-right: 1px solid var(--secondary-color);
+  padding: 10px 0; /* Add some vertical padding */
 }
 
 .tab-btn {
-  padding: 15px;
+  padding: 18px 25px; /* More padding for a softer touch */
   border: none;
   background: none;
   cursor: pointer;
   text-align: left;
-  font-size: 16px;
-  transition: background 0.3s;
+  font-size: 17px; /* Slightly larger font */
+  font-weight: 500; /* Medium font weight */
+  color: var(--dark-text);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+  position: relative; /* For the active indicator */
+  overflow: hidden;
 }
 
-.tab-btn:hover,
+.tab-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px; /* Vertical active indicator */
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.tab-btn.active:before {
+  transform: translateX(0);
+}
+
+.tab-btn:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Light primary color hover */
+  color: var(--primary-color);
+}
+
 .tab-btn.active {
   background-color: var(--primary-color);
   color: white;
+  box-shadow: inset 5px 0 15px rgba(0, 0, 0, 0.2); /* Inner shadow for active */
+  transform: translateX(0); /* Ensure no shift on active */
 }
 
 .tab-content {
   flex: 1;
-  padding: 20px;
+  padding: 30px; /* More padding for content */
   background-color: #fff;
+  transition: opacity 0.5s ease-in-out; /* Fade transition for content */
 }
 
 .tab-pane {
   display: none;
-  
+  opacity: 0; /* Start hidden for fade-in */
+  transform: translateY(10px); /* Slight initial offset for slide-up */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Fade and slide transition */
 }
 
 .tab-pane.active {
   display: block;
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Slide to position */
 }
 
-.picture-tab{
-    width: 100%;
-    height: 400px;
+.picture-tab {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Ensures images cover the area nicely */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 10px var(--shadow-color); /* Shadow for images */
 }
 
-.list-margin{
+.list-margin {
   margin-left: 20px;
 }
 
 .tab-pane > ul {
-  padding-left: 1rem;
+  padding-left: 1.2rem; /* Slightly more indent for lists */
+  list-style: disc; /* Ensure clear list style */
 }
 
+.tab-pane > h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
 
+.tab-pane > p {
+  margin-bottom: 10px;
+}
 
 /* Responsive for small screens */
 @media (max-width: 768px) {
   .tabs-container {
     flex-direction: column;
+    border-radius: 8px; /* Slightly less rounded on small screens */
+    box-shadow: 0 5px 15px var(--shadow-color); /* Smaller shadow */
   }
 
   .tab-buttons {
@@ -109,12 +179,46 @@ main{
     width: 100%;
     overflow-x: auto;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 0; /* Remove vertical padding for horizontal scroll */
   }
 
   .tab-btn {
     flex: 1;
+    min-width: 120px; /* Ensure buttons have a minimum width */
     text-align: center;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--secondary-color);
+    padding: 15px 10px; /* Adjust padding for smaller screens */
+    font-size: 15px;
   }
+
+  .tab-btn:last-child {
+    border-right: none; /* No border on the last button */
+  }
+
+  .tab-btn:before {
+    width: 100%; /* Horizontal active indicator */
+    height: 3px;
+    top: auto;
+    bottom: 0;
+    transform: translateY(100%);
+  }
+
+  .tab-btn.active:before {
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Scrollbar styling for horizontal buttons on mobile */
+.tab-buttons::-webkit-scrollbar {
+  height: 5px;
+}
+
+.tab-buttons::-webkit-scrollbar-track {
+  background: var(--light-bg);
+}
+
+.tab-buttons::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
 }
