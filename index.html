@@ -7,6 +7,9 @@
     <title>Caring Hands Veterinary Clinic</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -43,7 +46,7 @@
                     <a href="./page/skin.html">Skin Infection</a>
                 </div>
             </li>
-             <li class="dropdown">
+            <li class="dropdown">
                 <a href="./page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="./page/blog.html">Blog</a>
@@ -78,13 +81,13 @@
             </div>
         </li>
         <li class="dropdown">
-                <a href="./page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="#">Blog</a>
-                    <a href="#">Meet Our Team</a>
-                    <a href="#">Meet Our Team</a>
-                </div>
-            </li>
+            <a href="./page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Blog</a>
+                <a href="#">Meet Our Team</a>
+                <a href="#">Meet Our Team</a>
+            </div>
+        </li>
         <a href="#">Contact Us </a>
         <a href="#">Online Form</a>
         <a href="#">More</a>
@@ -98,12 +101,10 @@
             <div class="slide active" style="background-image: url('./asset/dark2.jpg');">
                 <div class="overlay"></div>
                 <div class="content">
-                    <h1>LIFE WELLNESS <span>PROGRAMS</span></h1>
-                    <p>Stay in touch and in shape with periodic tips from our in-house experts on wellness, fitness and
-                        nutrition.</p>
+                    <h1>Book <span>Appointment</span></h1>
+                    <p>chedule an appointment with our office now. We can’t wait to meet you!</p>
                     <div class="buttons">
-                        <a href="#" class="btn">READ MORE</a>
-                        <a href="#" class="btn btn-primary">DONATE NOW</a>
+                        <a href="#" class="btn">Schedule Now</a>
                     </div>
                 </div>
             </div>
@@ -113,12 +114,10 @@
             <div class="slide active" style="background-image: url('./asset/dark.jpg');">
                 <div class="overlay"></div>
                 <div class="content">
-                    <h1>LIFE WELLNESS <span>PROGRAMS</span></h1>
-                    <p>Stay in touch and in shape with periodic tips from our in-house experts on wellness, fitness and
-                        nutrition.</p>
+                    <h1>Online <span>Forms</span></h1>
+                    <p>Our forms are available online and can be completed before your appointment.</p>
                     <div class="buttons">
-                        <a href="#" class="btn">READ MORE</a>
-                        <a href="#" class="btn btn-primary">DONATE NOW</a>
+                        <a href="#" class="btn">View Forms</a>
                     </div>
                 </div>
             </div>
@@ -127,12 +126,12 @@
             <div class="slide active" style="background-image: url('./asset/dark3.jpg');">
                 <div class="overlay"></div>
                 <div class="content">
-                    <h1>LIFE WELLNESS <span>PROGRAMS</span></h1>
-                    <p>Stay in touch and in shape with periodic tips from our in-house experts on wellness, fitness and
-                        nutrition.</p>
+                    <h1>Contact <span>Us</span></h1>
+                    <p>Call or send us an email today! Our staff will respond as soon as possible to give you the info
+                        you
+                        need.</p>
                     <div class="buttons">
-                        <a href="#" class="btn">READ MORE</a>
-                        <a href="#" class="btn btn-primary">DONATE NOW</a>
+                        <a href="#" class="btn">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -176,23 +175,37 @@
             <img src="./asset/qr-code.webp" alt="qr code">
         </section>
 
-        <section class="hospital-section">
-            <div class="container">
-                <div class="content-left">
-                    <h1>Welcome to Caring Hands Vet Clinic</h1>
-                    <p class="subtitle"> <strong>We Are an AAHA Veterinary Practice Serving the Philadelphia
-                            Area.</strong> </p>
+        <div class="about-container222">
+            <div class="bento-grid">
+                <!-- Bento Item 1: Introduction/Headline -->
+                <div class="bento-item intro">
+                    <h3>Welcome to Caring Hands Vet Clinic</h3>
+                    <p>We Are an AAHA Veterinary Practice Serving the Philadelphia Area.</p>
+                </div>
+
+                <!-- Bento Item 2: General Information -->
+                <div class="bento-item general-info">
+                    <h3>Our Dedication to Your Pet's Health</h3>
                     <p>Caring Hands Veterinary is your one-stop-shop for all veterinary care needs, for a reliable
                         source of information, and a place to share concerns that may arise. Since we opened our doors
                         in 2012, we have been providing quality and efficient care to pets in the Greater Philadelphia
                         area. Our friendly and dedicated team of vet professionals truly cares about pets and their
                         health and well-being. We make sure that our pet patients are always in good health so that they
                         can live happy lives.</p>
+                </div>
+
+                <!-- Bento Item 3: AAHA Accreditation -->
+                <div class="bento-item aaha-accreditation">
+                    <h3>AAHA Accredited Excellence</h3>
                     <p>As an accredited member of AAHA (American Animal Hospital Association), our vet team strongly
                         follows all healthcare guidelines that this association sets out so that we can continue to
                         provide high-quality to all of our patients. Being a part of this organization is a great honor
                         for us.</p>
-                    <p><strong>Pet Care Services That Keep Animals Healthy</strong></p>
+                </div>
+
+                <!-- Bento Item 4: Pet Care Services -->
+                <div class="bento-item services">
+                    <h3>Comprehensive Pet Care Services</h3>
                     <p>If you want to give your pets the best care possible, consider taking advantage of our pet
                         wellness services. These services include health checkups, vaccinations, preventative care, and
                         routine care. We offer these services and more as our way of making it easier and more
@@ -201,74 +214,68 @@
                         healthy teeth are just as important for cats and dogs as they are for people. Because they’re
                         not always able to explain any discomfort or issues they may be experiencing, it’s essential
                         that teeth and gums be checked and cleaned regularly.</p>
-                    <p><strong>The Most Modern Vet Care in Philadelphia</strong></p>
-                    <p>Caring Hands Veterinary Clinic is state-of-the-art vet facility that is staffed by the finest and
-                        most attentive professionals in the Greater Philadelphia area. We are able to take digital
+                </div>
+
+                <!-- Bento Item 5: The Most Modern Vet Care -->
+                <div class="bento-item modern-care">
+                    <h3>State-of-the-Art Veterinary Facility</h3>
+                    <p>Caring Hands Veterinary Clinic is a state-of-the-art vet facility that is staffed by the finest
+                        and most attentive professionals in the Greater Philadelphia area. We are able to take digital
                         imaging in high-resolution within seconds, allowing non-invasive diagnosis of internal injuries,
                         and our in-house laboratory allows us to do most lab work quickly and accurately without relying
                         on outside providers. We can even evaluate your pets’ electrolytes, making it easier to assess
                         their condition during emergencies.</p>
-                    <p><strong>Why Chose Our Vet Clinic?</strong></p>
+                </div>
+
+                <!-- Bento Item 6: Why Choose Our Vet Clinic? -->
+                <div class="bento-item why-choose">
+                    <h3>Why Choose Our Vet Clinic?</h3>
                     <p>Dr. Sajeesh Thomas, our veterinarian, and his staff know that comprehensive pet care has to
                         include respect and compassion for pet owners throughout every visit as well. Whether it’s
                         standard procedures like pet wellness exams, dental cleanings, or something more serious, we
                         will talk you through your options and explain the procedures themselves.</p>
+                </div>
 
-                    <div class="bottom-content">
-                        <div class="image-wrapper">
-                            <img src="./asset/blade2-8.jpg.webp" alt="Surgical Operation">
-                        </div>
-                        <div class="text-wrapper">
-                            <p>Wellness Care<strong>adipisicing elit.</strong> Animi eveniet ipsam, error dolorum
-                                impedit
-                                debitis, officiis sint saepe similique quasi dolor, ut ipsum quaerat saepe, sapiente
-                                doloribus ab laudantium ipsam!</p>
+                <!-- Bento Item 7: Image Item -->
+                <div class="bento-item image-item">
+                    <img src="./asset/dark.jpg" alt="Caring Hands Vet Clinic">
+                </div>
+
+                <!-- Bento Item 8: Key Metrics / Skills with Progress Bars -->
+                <div class="bento-item key-metrics">
+                    <h3>Our Expertise</h3>
+                    <div class="metric-item">
+                        <div class="metric-label">Wellness Care <span>99%</span></div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 99%;"></div>
                         </div>
                     </div>
-
-                    <div class="progress-bars">
-                        <div class="progress-item">
-                            <p>Wellness Care</p>
-                            <div class="bar-container">
-                                <div class="bar cardiology" style="width: 85%;"></div>
-                                <span>99%</span>
-                            </div>
+                    <div class="metric-item">
+                        <div class="metric-label">Diagnostics <span>99%</span></div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 99%;"></div>
                         </div>
-                        <div class="progress-item">
-                            <p>Diagnostics</p>
-                            <div class="bar-container">
-                                <div class="bar general-practice" style="width: 98%;"></div>
-                                <span>99%</span>
-                            </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-label">Pet Surgery <span>99%</span></div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 99%;"></div>
                         </div>
-                        <div class="progress-item">
-                            <p>Pet Surgery</p>
-                            <div class="bar-container">
-                                <div class="bar general-surgery" style="width: 89%;"></div>
-                                <span>99%</span>
-                            </div>
-                        </div>
-                        <div class="progress-item">
-                            <p>PExotic Pet Care</p>
-                            <div class="bar-container">
-                                <div class="bar pharmacology" style="width: 97%;"></div>
-                                <span>99%</span>
-                            </div>
-                        </div>
-                        <div class="progress-item">
-                            <p>Bring Your Pet to Caring Hands Veterinary Clinic for Quality Care!</p>
-                            <div class="bar-container">
-                                <div class="bar pharmacology" style="width: 100%;"></div>
-                                <span>99%</span>
-                            </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-label">Exotic Pet Care <span>99%</span></div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 99%;"></div>
                         </div>
                     </div>
                 </div>
-                <div class="content-right">
-                    <img src="./asset/blade1-10.jpg.webp" alt="Doctor and Patient">
+
+                <!-- Bento Item 9: Call to Action -->
+                <div class="bento-item call-to-action">
+                    <h3>Bring Your Pet to Caring Hands Veterinary Clinic for Quality Care!</h3>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="services-section">
             <div class="container2">
@@ -373,8 +380,7 @@
                     <div class="form-header">
                         <h2>MAKE AN <span class="highlight">APPOINTMENT</span></h2>
                         <div class="underline"></div>
-                        <p>Consectetur adipisicing elit. Id dignissimos atque debitis esse possimus, fuga tenetur rem
-                            et. Vitae, repudiandae.</p>
+                        <p>Easily schedule your visit with us through our online appointment form. Just fill in your details, choose your preferred date and time, and our team will get back to you with a confirmation. Convenient, fast, and hassle-free.</p>
                     </div>
                     <form class="appointment-form">
                         <div class="form-group">
@@ -417,108 +423,127 @@
             </div>
         </section>
 
-        <section class="doctors-section margin-top">
-            <div class="section-header">
-                <h2 class="section-title">Meet Our <span class="color"> Skilled Team</span></h2>
-                <p class="section-description">
-                    Hendrerit ligula nisl quam est scelerisque fusce lacinia malesuada mattis suspendisse
-                    porta nullam eleifend potenti conubia ad vestibulum.
+
+        <section class="team-section-container">
+            <div class="text-center-wrapper">
+                <h2 class="main-heading animate-fade-in" style="animation-delay: 0s;">
+                    Meet Our <span class="heading-highlight">Skilled Team</span>
+                </h2>
+                <p class="subtitle animate-fade-in" style="animation-delay: 0.1s;">
+                    Dedicated professionals committed to excellence.
                 </p>
             </div>
 
-            <div class="doctor-cards-container">
-                <!-- Doctor Card 1 -->
-                <div class="doctor-card">
-                    <div class="doctor-image-wrapper">
-                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
-                        <img src="./asset/playce-holder.png" alt="Dr. George Beller" class="doctor-image">
-                    </div>
-                    <div class="doctor-info-box">
-                        <h3 class="doctor-name">Dr. Sajeesh Thomas</h3>
-                        <p class="doctor-specialty">Veterinarian</p>
-                    </div>
+            <div class="team-grid">
+                <!-- Team Member Card: Mary Berry -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Mary+Berry"
+                        alt="Team Member Mary Berry">
+                    <h3 class="team-name">Mary Berry</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
                 </div>
 
-                <!-- Doctor Card 2 -->
-                <div class="doctor-card">
-                    <div class="doctor-image-wrapper">
-                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
-                        <img src="./asset/playce-holder.png" alt="Dr. George Belle"
-                            class="doctor-image">
-                    </div>
-                    <div class="doctor-info-box">
-                        <h3 class="doctor-name">Crystal</h3>
-                        <p class="doctor-specialty">Receptionist</p>
-                    </div>
+                <!-- Team Member Card: Hepsiba -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Hepsiba"
+                        alt="Team Member Hepsiba">
+                    <h3 class="team-name">Hepsiba</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
                 </div>
 
-                <!-- Doctor Card 3 -->
-                <div class="doctor-card">
-                    <div class="doctor-image-wrapper">
-                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
-                        <img src="./asset/playce-holder.png" alt="Dr. Mokles Beller" class="doctor-image">
-                    </div>
-                    <div class="doctor-info-box">
-                        <h3 class="doctor-name">Rebecca</h3>
-                        <p class="doctor-specialty">Receptionist</p>
-                    </div>
+                <!-- Team Member Card: Kayla -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Kayla"
+                        alt="Team Member Kayla">
+                    <h3 class="team-name">Kayla</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
                 </div>
 
-                <!-- Doctor Card 4 -->
-                <div class="doctor-card">
-                    <div class="doctor-image-wrapper">
-                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
-                        <img src="./asset/playce-holder.png" alt="Dr. George Belle"
-                            class="doctor-image">
-                    </div>
-                    <div class="doctor-info-box">
-                        <h3 class="doctor-name">Mary Berry</h3>
-                        <p class="doctor-specialty">Certified Veterinary Technician</p>
-                    </div>
+                <!-- Team Member Card: Gabrielle -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Gabrielle"
+                        alt="Team Member Gabrielle">
+                    <h3 class="team-name">Gabrielle</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
                 </div>
 
-
-                <!-- Doctor Card 5 -->
-                <div class="doctor-card">
-                    <div class="doctor-image-wrapper">
-                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
-                        <img src="./asset/playce-holder.png" alt="Dr. George Belle"
-                            class="doctor-image">
-                    </div>
-                    <div class="doctor-info-box">
-                        <h3 class="doctor-name">Brittany</h3>
-                        <p class="doctor-specialty">Veterinary Technician Assistant</p>
-                    </div>
+                <!-- Team Member Card: Britt C -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Britt+C"
+                        alt="Team Member Britt C">
+                    <h3 class="team-name">Britt C</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
                 </div>
 
-
-
-                <!-- Doctor Card 6 -->
-                <div class="doctor-card">
-                    <div class="doctor-image-wrapper">
-                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
-                        <img src="./asset/playce-holder.png" alt="Dr. George Belle"
-                            class="doctor-image">
-                    </div>
-                    <div class="doctor-info-box">
-                        <h3 class="doctor-name">Kayla</h3>
-                        <p class="doctor-specialty">Veterinary Technician Assistant</p>
-                    </div>
+                <!-- Team Member Card: Dr Cullen -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Dr+Cullen"
+                        alt="Team Member Dr Cullen">
+                    <h3 class="team-name">Dr Cullen</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
                 </div>
 
-
-                <!-- Doctor Card 7 -->
-                <div class="doctor-card">
-                    <div class="doctor-image-wrapper">
-                        <!-- Replace with actual doctor image. Placeholder used for demonstration. -->
-                        <img src="./asset/playce-holder.png" alt="Dr. George Belle" class="doctor-image">
-                    </div>
-                    <div class="doctor-info-box">
-                        <h3 class="doctor-name">Holly</h3>
-                        <p class="doctor-specialty">Veterinary Technician Assistant</p>
-                    </div>
+                <!-- Team Member Card: Summer -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Summer"
+                        alt="Team Member Summer">
+                    <h3 class="team-name">Summer</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
                 </div>
 
+                <!-- Team Member Card: Rosie -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Rosie"
+                        alt="Team Member Rosie">
+                    <h3 class="team-name">Rosie</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
+                </div>
+
+                <!-- Team Member Card: Darnell -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Darnell"
+                        alt="Team Member Darnell">
+                    <h3 class="team-name">Darnell</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
+                </div>
+
+                <!-- Team Member Card: Jessica -->
+                <div class="team-card animate-fade-in">
+                    <img class="team-image" src="https://placehold.co/128x128/9CA3AF/ffffff?text=Jessica"
+                        alt="Team Member Jessica">
+                    <h3 class="team-name">Jessica</h3>
+                    <p class="team-role">Employee</p>
+                    <p class="team-description">
+                        Employee description.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -528,81 +553,59 @@
 
 
 
+        <section class="customer-slider">
+            <div class="customer-slider-section">
+                <h2>What Our Customers Say</h2>
 
-
-        <section class="testimonial-section">
-            <div class="section-header">
-                <h2 class="section-title">OUR <span class="highlight">CLIENTS</span> SAY</h2>
-                <div class="underline"></div>
-                <p class="section-description">
-                    We value the trust and satisfaction of our clients. Here are some of their stories and experiences with our services. These testimonials reflect our commitment to providing compassionate, reliable, and high-quality care for every pet we treat.
-                </p>
-            </div>
-
-            <div class="slider-container">
-                <button class="slider-arrow prev-arrow" aria-label="Previous slide">&#10094;</button>
-                <div class="slider-wrapper">
-                    <div class="testimonial-slide active">
-                        <div class="client-avatar-wrapper">
-                            <img src="./asset/playce-holder.png" alt="John Daniel" class="client-avatar">
-                        </div>
-                        <h3 class="client-name">JOHN DANIEL</h3>
-                        <p class="client-title">Business Man</p>
-                        <div class="rating">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                        </div>
-                        <p class="testimonial-text">
-                            The team was incredibly professional and caring. They explained every step of the treatment and made sure my pet was comfortable. I highly recommend their services!
-                        </p>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="https://placehold.co/90x90/4CAF50/FFFFFF?text=P1" alt="Customer Avatar">
+                        <div class="stars">★★★★★</div>
+                        <p>"This product has truly transformed my workflow. It's intuitive, powerful, and incredibly
+                            reliable. Highly recommended for anyone looking to boost productivity!"</p>
+                        <h3>Alice Wonderland</h3>
+                        <span>CEO, Tech Solutions</span>
                     </div>
-
-                    <div class="testimonial-slide">
-                        <div class="client-avatar-wrapper">
-                            <img src="./asset/playce-holder.png" alt="Jane Doe"
-                                class="client-avatar">
-                        </div>
-                        <h3 class="client-name">JANE DOE</h3>
-                        <p class="client-title">Marketing Manager</p>
-                        <div class="rating">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                        </div>
-                        <p class="testimonial-text">
-                           Booking an appointment was easy, and they attended to my pet right on time. The service was fast, reliable, and very efficient.
-                        </p>
+                    <div class="item">
+                        <img src="https://placehold.co/90x90/4CAF50/FFFFFF?text=P2" alt="Customer Avatar">
+                        <div class="stars">★★★★★</div>
+                        <p>"The support team is exceptional. They were quick to respond and resolved my issue
+                            efficiently. A
+                            fantastic experience from start to finish."</p>
+                        <h3>Bob The Builder</h3>
+                        <span>Independent Consultant</span>
                     </div>
-
-                    <div class="testimonial-slide">
-                        <div class="client-avatar-wrapper">
-                            <img src="./asset/playce-holder.png" alt="Peter Jones" class="client-avatar">
-                        </div>
-                        <h3 class="client-name">rebeka</h3>
-                        <p class="client-title">Receptionist</p>
-                        <div class="rating">
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                            <span class="star filled">&#9733;</span>
-                        </div>
-                        <p class="testimonial-text">
-                            I was impressed by how clean the clinic was. The staff were very friendly and made me feel at ease. You can tell they truly care about pets
-                        </p>
+                    <div class="item">
+                        <img src="https://placehold.co/90x90/4CAF50/FFFFFF?text=P3" alt="Customer Avatar">
+                        <div class="stars">★★★★★</div>
+                        <p>"I've tried many alternatives, but nothing compares to the quality and features offered here.
+                            It's simply the best on the market!"</p>
+                        <h3>Charlie Chaplin</h3>
+                        <span>Creative Director</span>
+                    </div>
+                    <div class="item">
+                        <img src="https://placehold.co/90x90/4CAF50/FFFFFF?text=P4" alt="Customer Avatar">
+                        <div class="stars">★★★★★</div>
+                        <p>"An absolute game-changer for my business. The results speak for themselves, and it has
+                            exceeded
+                            all my expectations."</p>
+                        <h3>Diana Prince</h3>
+                        <span>Small Business Owner</span>
+                    </div>
+                    <div class="item">
+                        <img src="https://placehold.co/90x90/4CAF50/FFFFFF?text=P5" alt="Customer Avatar">
+                        <div class="stars">★★★★★</div>
+                        <p>"User-friendly interface and robust performance. It's made a significant positive impact on
+                            our
+                            daily operations. We couldn't be happier!"</p>
+                        <h3>Ethan Hunt</h3>
+                        <span>Operations Manager</span>
                     </div>
                 </div>
-                <button class="slider-arrow next-arrow" aria-label="Next slide">&#10095;</button>
-            </div>
-
-            <div class="slider-dots">
             </div>
         </section>
+
+
 
         <div class="map--section">
             <div class="info--area">
@@ -764,7 +767,8 @@
         </div>
 
         <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
-        <a class="floating" target="_blank" href="https://carecredit.com/go/33PXH"><i class="fa-solid fa-prescription-bottle-medical"></i></a>
+        <a class="floating" target="_blank" href="https://carecredit.com/go/33PXH"><i
+                class="fa-solid fa-prescription-bottle-medical"></i></a>
 
         <!-- Footer Section -->
         <footer class="main-footer">
@@ -774,9 +778,9 @@
                         <!-- Replace with actual logo image -->
                         <img src="./asset/logo.jpg" alt="Hospital Medicative Logo">
                     </div>
-                    <p class="footer-description">
+                    <!-- <p class="footer-description">
                         Voluptate porro esse repellat quo exercitationem debitis incidunt.
-                    </p>
+                    </p> -->
                     <div class="contact-info">
                         <p><i class="fas fa-phone-alt"></i> Phone: (215) 621-8959</p>
                     </div>
@@ -793,7 +797,7 @@
                 </div>
 
                 <div class="footer-column">
-                    <h4 class="footer-heading">OUR PEGES</h4>
+                    <h4 class="footer-heading">OUR PAGES</h4>
                     <div class="underline-footer"></div>
                     <ul class="footer-links">
                         <li><a href="#"><i class="fas fa-angle-right"></i>Service</a></li>
@@ -842,5 +846,37 @@
 </body>
 
 <script src="./index.js"></script>
+<!-- jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,                 // Loop to the beginning when last slide is reached
+            margin: 20,                 // Space between items
+            nav: true,                  // Show next/prev buttons
+            dots: true,                 // Show pagination dots
+            autoplay: true,             // Enable autoplay
+            autoplayTimeout: 5000,      // Autoplay interval in milliseconds
+            autoplayHoverPause: true,   // Pause autoplay on hover
+            responsive: {               // Responsive settings
+                0: {                    // For screens 0px and up
+                    items: 1,           // Show 1 item
+                    nav: false          // Hide navigation arrows
+                },
+                768: {                  // For screens 768px and up
+                    items: 2,           // Show 2 items
+                    nav: true           // Show navigation arrows
+                },
+                1024: {                 // For screens 1024px and up
+                    items: 3,           // Show 3 items
+                    nav: true           // Show navigation arrows
+                }
+            }
+        });
+    });
+</script>
 
 </html>

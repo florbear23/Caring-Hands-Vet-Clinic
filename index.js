@@ -3,6 +3,11 @@ function toggleMenu() {
         menu.classList.toggle('open');
     }
 
+    function toggleMenu() {
+    document.getElementById("mobileNav").classList.toggle("open");
+}
+
+
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
@@ -41,10 +46,7 @@ function toggleMenu() {
     let currentIndex = 0;
 
 
-    function toggleMenu() {
-    document.getElementById("mobileNav").classList.toggle("open");
-}
-
+    
 // Enable submenus on mobile
 document.querySelectorAll('.mobile-nav .dropdown > a').forEach(link => {
     link.addEventListener('click', function (e) {

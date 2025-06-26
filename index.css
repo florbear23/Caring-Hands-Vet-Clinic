@@ -397,6 +397,7 @@ body{
 
 @media (max-width: 768px) {
     .slide .content {
+        text-align: center;
         padding: 15px;
         background: rgba(0, 0, 0, 0.5);
     }
@@ -407,6 +408,11 @@ body{
 
     .slide p {
         font-size: 1rem;
+    }
+     .buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .buttons .btn {
@@ -425,7 +431,9 @@ body{
     }
 
     .buttons {
+        justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
 
     .buttons .btn {
@@ -533,153 +541,273 @@ body{
 }
 
 /* Hospital Section Styling */
-.hospital-section {
-    background-color: #fff;
-    padding: 40px 0;
-}
+  .about-container222 {
+            max-width: 1400px;
+            margin: 40px auto;
+            background-color: #ffffff; /* White background for main container */
+            border-radius: 20px; /* Rounded corners for the main container */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            overflow: hidden; /* Clear floats/prevent content overflow */
+        }
 
-.content-left {
-    flex: 2; /* Takes up more space */
-    min-width: 300px; /* Ensures it doesn't get too small */
-}
+        /* Heading Style */
+        .about-heading {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #1a202c; /* Dark text for heading */
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
 
-.content-left h1 {
-    font-size: 2.2em;
-    color: #333;
-    margin-bottom: 10px;
-}
+        /* Bento Grid Layout */
+        .bento-grid {
+            display: grid;
+            gap: 20px; /* Space between grid items */
+            grid-template-columns: repeat(1, 1fr); /* Default to single column for mobile */
+            grid-auto-rows: minmax(180px, auto); /* Minimum height for grid items */
+        }
 
-.content-left .subtitle {
-    font-size: 1.2em;
-    color: var(--text-dark); /* A blue color */
-    margin-bottom: 20px;
-    font-weight: bold;
-}
+        /* Bento Grid Item Styling */
+        .bento-item {
+            background-color: #ffffff; /* Default white background for items */
+            border-radius: 15px; /* Rounded corners for grid items */
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative; /* For image overlay/positioning if needed */
+        }
 
-.content-left p {
-    margin-bottom: 15px;
-}
+        .bento-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
 
-.content-left p strong {
-    font-weight: bold;
-}
+        .bento-item h3 {
+            font-size: 1.7rem;
+            color: #2d3748; /* Dark gray for item headings */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
 
-.bottom-content {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Allows wrapping */
-    align-items: center; /* Vertically align items */
-}
+        .bento-item p {
+            font-size: 1rem;
+            color: #4a5568; /* Medium gray for item paragraphs */
+            line-height: 1.7;
+        }
 
-.bottom-content .image-wrapper {
-    flex: 1;
-    min-width: 150px; /* Adjust as needed */
-    max-width: 250px; /* Control image size */
-}
+        /* Specific Item Styles for better visual distinction */
 
-.bottom-content .image-wrapper img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+        /* Intro/Headline Box */
+        .bento-item.intro {
+            background: linear-gradient(135deg, #a67a50 0%, #72461c 100%); /* New brown gradient */
+            color: #ffffff;
+            text-align: center;
+            padding: 30px;
+            align-items: center;
+        }
 
-.bottom-content .text-wrapper {
-    flex: 2;
-}
+        .bento-item.intro h3 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
 
-/* Progress Bars */
-.progress-bars {
-    margin-top: 40px;
-}
+        .bento-item.intro p {
+            font-size: 1.1rem;
+            color: #fdf3f1; /* Lightest color for intro text */
+            max-width: 800px;
+        }
 
-.progress-item {
-    margin-bottom: 20px;
-}
+        /* General content box backgrounds - subtle variations of the light theme */
+        .bento-item.general-info {
+            background-color: #fcfafa; /* Very light off-white */
+        }
+        .bento-item.aaha-accreditation {
+             background-color: #faf8f6; /* Slightly different very light off-white */
+        }
 
-.progress-item p {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+        /* Services box */
+        .bento-item.services {
+            background-color: #f8f2e9; /* Light, warm beige */
+        }
+        .bento-item.services ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .bento-item.services ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1rem;
+            color: #2d3748;
+        }
+        .bento-item.services ul li::before {
+            content: '✓'; /* Checkmark icon */
+            position: absolute;
+            left: 0;
+            color: #72461c; /* Dark brown checkmark */
+            font-weight: bold;
+        }
 
-.bar-container {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    height: 15px;
-    position: relative;
-    overflow: hidden; /* Ensures the bar stays within bounds */
-}
+        /* Modern Care/Technology box */
+        .bento-item.modern-care {
+            background-color: #f5e4d2; /* Slightly darker tan */
+        }
+        .bento-item.modern-care strong {
+            color: #72461c; /* Dark brown for strong text */
+        }
 
-.bar {
-    height: 100%;
-    background-color: var(--primary-color); /* Green color for the bar */
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: width 0.5s ease-in-out; /* Smooth transition for width change */
-}
+        /* Why Choose Us box */
+        .bento-item.why-choose {
+            background-color: #e9d9ca; /* Richer tan */
+        }
 
-.bar-container span {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.9em;
-    color: #333;
-    z-index: 1; /* Ensure text is above the bar */
-}
+        /* Key Metrics / Progress Bars */
+        .bento-item.key-metrics {
+            background-color: #fdf3f1; /* Matches body background */
+            padding: 25px;
+        }
+        .bento-item.key-metrics h3 {
+            color: #72461c; /* Dark brown for metrics heading */
+        }
+        .metric-item {
+            margin-bottom: 20px;
+        }
+        .metric-label {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .metric-label span:last-child {
+            font-weight: bold;
+            color: #a67a50; /* Medium brown for percentage */
+        }
+        .progress-bar-container {
+            width: 100%;
+            background-color: #e0d6cd; /* Light grey-brown for container */
+            border-radius: 5px;
+            height: 10px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #a67a50; /* Medium brown for progress bar */
+            border-radius: 5px;
+            width: 0%; /* Initial width */
+            transition: width 1s ease-out; /* Smooth animation */
+        }
 
-/* Colors for specific bars (you can customize these) */
-/* .bar.cardiology { background-color: #2196F3; } 
-.bar.general-practice { background-color: #FFC107; } 
-.bar.general-surgery { background-color: #4CAF50; } 
-.bar.pharmacology { background-color: #9C27B0; } */
+        /* Image Item Specific Styles */
+        .bento-item.image-item {
+            padding: 0; /* Remove padding for image to fill the box */
+            overflow: hidden;
+            background-color: transparent; /* No background color needed */
+        }
 
+        .bento-item.image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire area */
+            border-radius: 15px; /* Inherit border-radius from parent */
+            display: block; /* Remove extra space below image */
+            transition: transform 0.3s ease;
+        }
+        .bento-item.image-item img:hover {
+            transform: scale(1.05); /* Slightly zoom on hover */
+        }
 
-.content-right {
-    flex: 1; /* Takes up less space */
-    min-width: 250px; /* Ensures it doesn't get too small */
-}
+        /* Call to Action */
+        .bento-item.call-to-action {
+            background-color: #72461c; /* Dark brown for CTA */
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 30px;
+            align-items: center;
+        }
 
-.content-right img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px; /* Slightly rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-}
+        .bento-item.call-to-action > h3{
+            color: #fff;
+        }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack columns vertically on smaller screens */
-    }
+        /* Responsive Layouts */
+        @media (min-width: 600px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+            }
 
-    .content-left, .content-right {
-        flex: none; /* Remove flex sizing to allow full width */
-        width: 100%; /* Take full width */
-    }
+            .bento-item.intro {
+                grid-column: span 2; /* Intro spans full width on tablets */
+            }
+            .bento-item.general-info {
+                grid-column: span 2; /* General info spans full width on tablets */
+            }
+            .bento-item.modern-care,
+            .bento-item.why-choose {
+                grid-column: span 1; /* These remain 1 column */
+            }
+            .bento-item.image-item {
+                grid-column: span 1; /* Occupy 1 column */
+                grid-row: span 1; /* Occupy 1 row */
+            }
+            .bento-item.key-metrics {
+                grid-column: span 2; /* Metrics span full width on tablets */
+            }
+            .bento-item.call-to-action {
+                grid-column: span 2; /* Call to action spans full width */
+            }
+        }
 
-    .bottom-content {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: flex-start; /* Align content to the start */
-    }
+        @media (min-width: 1024px) {
+            .bento-grid {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for desktops */
+            }
 
-    .bottom-content .image-wrapper {
-        max-width: 100%; /* Allow image to take full width of its container */
-    }
-}
-
-@media (max-width: 480px) {
-    .content-left h1 {
-        font-size: 1.8em;
-    }
-
-    .content-left .subtitle {
-        font-size: 1em;
-    }
-}
+            .bento-item.intro {
+                grid-column: span 4; /* Intro spans full width on desktops */
+                min-height: 200px;
+            }
+            .bento-item.general-info {
+                grid-column: span 2;
+                min-height: 250px;
+            }
+            .bento-item.aaha-accreditation {
+                grid-column: span 2;
+                min-height: 250px;
+            }
+            .bento-item.services {
+                grid-column: span 2;
+            }
+            .bento-item.modern-care {
+                grid-column: span 2;
+            }
+            .bento-item.image-item {
+                grid-column: span 2; /* Make the image span 2 columns */
+                grid-row: span 2; /* Make the image span 2 rows for a more prominent spot */
+            }
+            .bento-item.why-choose {
+                grid-column: span 2;
+            }
+            .bento-item.key-metrics {
+                grid-column: span 2;
+            }
+            .bento-item.call-to-action {
+                grid-column: span 4;
+            }
+        }
 
 
 .container2 {
@@ -1172,230 +1300,165 @@ input[type="date"] {
 }
 
 
-.doctors-section {
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-    padding: 0;
-    margin: 0 auto;
-}
+/* Section Container */
+        .team-section-container {
+            width: 100%;
+            max-width: 1400px; /* Equivalent to Tailwind's max-w-6xl */
+            margin: 0 auto; /* Equivalent to Tailwind's mx-auto */
+            padding-top: 3rem; /* Equivalent to py-12 (top) */
+            padding-bottom: 3rem; /* Equivalent to py-12 (bottom) */
+            padding-left: 1rem; /* Equivalent to px-4 */
+            padding-right: 1rem; /* Equivalent to px-4 */
+            background-color: #ffffff; /* Keeping container background white for contrast */
+           
+            
+        }
 
-.section-header {
-    
-    margin-bottom: 50px;
-}
+        @media (min-width: 640px) { /* sm breakpoint */
+            .team-section-container {
+                padding-left: 1.5rem; /* Equivalent to sm:px-6 */
+                padding-right: 1.5rem; /* Equivalent to sm:px-6 */
+            }
+        }
 
-.section-title {
-    color: var(--primary-color);
-    font-size: 2.2em;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
+        @media (min-width: 1024px) { /* lg breakpoint */
+            .team-section-container {
+                padding-left: 2rem; /* Equivalent to lg:px-8 */
+                padding-right: 2rem; /* Equivalent to lg:px-8 */
+            }
+        }
 
-.section-title > span{
-    color: var(--primary-color);
-}
+        /* Text Center */
+        .text-center-wrapper {
+            text-align: center;
+            margin-bottom: 3rem; /* Equivalent to mb-12 */
+        }
 
-.section-description {
-    color: var(--text-light);
-    font-size: 1em;
-    line-height: 1.5;
-    max-width: 700px;
-    margin: 0 auto; /* Center the description text */
-}
+        /* Heading */
+        .main-heading {
+            font-size: 2.25rem; /* Equivalent to text-4xl */
+            font-weight: 800; /* Equivalent to font-extrabold */
+            color: #1a202c; /* Equivalent to text-gray-900 */
+        }
 
-.doctor-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; /* Space between cards */
+        @media (min-width: 640px) { /* sm breakpoint */
+            .main-heading {
+                font-size: 3rem; /* Equivalent to sm:text-5xl */
+            }
+        }
 
-}
+        @media (min-width: 1024px) { /* lg breakpoint */
+            .main-heading {
+                font-size: 3.75rem; /* Equivalent to lg:text-6xl */
+            }
+        }
 
-.doctor-card {
-    background-color: #f4f5f5;
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    overflow: hidden; /* Ensures image corners are rounded with border-radius */
-    box-shadow: 0 4px 10px var(--shadow-light);
-    width: 100%; /* Default to full width on small screens */
-    max-width: 350px; /* Maximum width for each card */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+        .heading-highlight {
+            color: #a67a50; /* Changed to first new theme color */
+        }
 
-.doctor-image-wrapper {
-    width: 100%;
-    height: 250px; /* Fixed height for image area to ensure consistency */
-    overflow: hidden;
-    background-color: #f0f0f0; /* Placeholder background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        /* Subtitle */
+        .subtitle {
+            margin-top: 1rem; /* Equivalent to mt-4 */
+            font-size: 1.25rem; /* Equivalent to text-xl */
+            color: #4a5568; /* Equivalent to text-gray-600 */
+        }
 
-.doctor-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    display: block; /* Removes extra space below image */
-}
+        /* Grid Container */
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Equivalent to grid-cols-1 */
+            gap: 2rem; /* Equivalent to gap-8 */
+        }
 
-.doctor-info-box {
-    background-color: var(--text-dark);
-    color: white;
-    padding: 20px 15px;
-    width: 100%;
-    box-sizing: border-box; /* Include padding in width */
-}
+        @media (min-width: 768px) { /* md breakpoint */
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr); /* Equivalent to md:grid-cols-2 */
+            }
+        }
 
-.doctor-name {
-    margin: 0;
-    font-size: 1.1em;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
+        @media (min-width: 1024px) { /* lg breakpoint */
+            .team-grid {
+                grid-template-columns: repeat(3, 1fr); /* Equivalent to lg:grid-cols-3 */
+            }
+        }
 
-.doctor-specialty {
-    margin: 5px 0 0;
-    font-size: 0.85em;
-    opacity: 0.9;
-    letter-spacing: 0.5px;
-}
+        /* Team Card */
+        .team-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Equivalent to rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-md */
+            padding: 1.5rem; /* Equivalent to p-6 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
 
-.doctor-availability {
-    width: 100%;
-    padding: 20px 15px;
-    box-sizing: border-box;
-}
+        .team-card:hover {
+            transform: translateY(-5px) scale(1.02); /* Slight lift and scale on hover */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Enhanced shadow */
+        }
 
-.doctor-availability table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-   ;
-}
+        /* Team Image */
+        .team-image {
+            width: 8rem; /* Equivalent to w-32 */
+            height: 8rem; /* Equivalent to h-32 */
+            border-radius: 9999px; /* Equivalent to rounded-full */
+            object-fit: cover;
+            margin-bottom: 1rem; /* Equivalent to mb-4 */
+            border: 4px solid #72461c; /* Changed ring color to second new theme color */
+        }
 
-.doctor-availability tr {
-    border-bottom: 1px solid var(--border-light);
-}
+        /* Team Name */
+        .team-name {
+            font-size: 1.5rem; /* Equivalent to text-2xl */
+            font-weight: 700; /* Equivalent to font-bold */
+            color: #2d3748; /* Equivalent to text-gray-800 */
+            margin-bottom: 0.25rem; /* Equivalent to mb-1 */
+        }
 
-.doctor-availability tr:last-child {
-    border-bottom: none; /* No border for the last row */
-}
+        /* Team Role */
+        .team-role {
+            color: #a67a50; /* Changed to first new theme color */
+            font-weight: 500; /* Equivalent to font-medium */
+            margin-bottom: 0.75rem; /* Equivalent to mb-3 */
+        }
 
-.doctor-availability td {
-    padding: 10px 0;
-    color: var(--text-dark);
-    font-size: 0.9em;
-}
+        /* Team Description */
+        .team-description {
+            color: #4a5568; /* Equivalent to text-gray-600 */
+            text-align: center;
+            line-height: 1.625; /* Equivalent to leading-relaxed */
+        }
 
-.doctor-availability td:first-child {
-    text-align: left;
-}
-
-.doctor-availability td:last-child {
-    text-align: right;
-    font-weight: 600;
-    color: var(--primary-color); /* Highlight time slots */
-}
-
-.doctor-availability tr:last-child td:last-child {
-    color: #ff6347; /* Tomato color for 'CLOSED' */
-}
-
-
-.view-profile-button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 0.9em;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-bottom: 20px; /* Space below button */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.view-profile-button:hover {
-    background-color: var(--text-dark)   ; /* Darker shade on hover */
-    transform: translateY(-2px);
-}
-
-.view-profile-button:active {
-    transform: translateY(0);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .doctor-card {
-        max-width: 45%; /* Two cards per row on larger tablets */
-    }
-}
-
-@media (max-width: 768px) {
-    .doctor-cards-container {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center cards in the column */
-    }
-
-    .doctor-card {
-        max-width: 400px; /* Max width for single cards on smaller screens */
-    }
-
-    .section-header {
-        margin-bottom: 30px;
-    }
-
-    .section-title {
-        font-size: 1.1em;
-    }
-
-    .section-description {
-        font-size: 0.85em;
-    }
-}
-
-@media (max-width: 480px) {
- 
-
-    .section-title {
-        font-size: 1em;
-    }
-
-    .section-description {
-        font-size: 0.8em;
-    }
-
-    .doctor-card {
-        border-radius: 5px;
-    }
-
-    .doctor-name {
-        font-size: 1em;
-    }
-
-    .doctor-specialty {
-        font-size: 0.8em;
-    }
-
-    .doctor-availability td {
-        font-size: 0.85em;
-    }
-
-    .view-profile-button {
-        padding: 10px 20px;
-        font-size: 0.8em;
-    }
-}
-
+        /* Custom animation for fading in elements */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0; /* Start hidden */
+        }
+        /* Delay animation for each card */
+        .team-card:nth-child(1) { animation-delay: 0.1s; }
+        .team-card:nth-child(2) { animation-delay: 0.2s; }
+        .team-card:nth-child(3) { animation-delay: 0.3s; }
+        .team-card:nth-child(4) { animation-delay: 0.4s; }
+        .team-child:nth-child(5) { animation-delay: 0.5s; }
+        .team-card:nth-child(6) { animation-delay: 0.6s; }
+        .team-card:nth-child(7) { animation-delay: 0.7s; }
+        .team-card:nth-child(8) { animation-delay: 0.8s; }
+        .team-card:nth-child(9) { animation-delay: 0.9s; }
+        .team-card:nth-child(10) { animation-delay: 1.0s; }
 
 .section-header {
     margin-bottom: 50px;
@@ -1432,275 +1495,202 @@ input[type="date"] {
 }
 
 
-/* --- Testimonial Section (Slider) Styles --- */
-.testimonial-section {
+ /* Section Styling */
+ .customer-slider{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 100%;
-   
-    padding: 60px 20px;
-    text-align: center;
-    box-sizing: border-box;
-    position: relative; /* For positioning arrows */
-    background-color: #f4f5f5; /* White background for this section */
-   
-    margin: 40px auto 40px auto;
-}
-
-.slider-container {
-    position: relative;
-    max-width: 1200px;
-    width: 100%;
-    overflow: hidden; /* Hide overflowing slides */
-    margin-bottom: 30px;
-}
-
-.slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth transition for slides */
-}
-
-.testimonial-slide {
-    min-width: 100%; /* Each slide takes full width of slider-wrapper */
-    flex-shrink: 0; /* Prevent slides from shrinking */
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.client-avatar-wrapper {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
-    border: 5px solid rgba(32, 178, 170, 0.3); /* Lighter version of primary color */
-    box-shadow: 0 0 0 5px rgba(32, 178, 170, 0.1);
-}
-
-.client-avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.client-name {
-    font-size: 1.3em;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-
-.client-title {
-    font-size: 0.9em;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.rating {
-    margin-bottom: 20px;
-    font-size: 1.2em; /* Adjust star size */
-}
-
-.star {
-    color: gold;
-    margin: 0 2px;
-}
-
-.testimonial-text {
-    font-size: 1em;
-    color: var(--text-dark);
-    line-height: 1.8;
-    max-width: 650px;
     margin: 0 auto;
-}
+    background-color: whitesmoke;
+ }
+        .customer-slider-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: whitesmoke;
+            margin: 40px auto;
+            max-width: 1200px;
+            border-radius: 12px;
+            overflow: hidden; /* Ensures no content overflows rounded corners */
+        }
 
-.slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent; /* Arrows are subtle/invisible in image */
-    border: none;
-    color: var(--primary-color); /* Matches the dot color for consistency */
-    font-size: 2.5em;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10; /* Ensure arrows are above slides */
-    transition: color 0.3s ease;
-    /* Hide arrows by default if you want them very subtle as in the image */
-    opacity: 0.2; /* Make them very faint */
-    pointer-events: auto; /* Ensure they are clickable */
-}
+        .customer-slider-section h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
 
-.slider-arrow:hover {
-    color: var(--text-dark); /* Subtle hover effect */
-    opacity: 1; /* Become visible on hover */
-}
+        /* Owl Carousel Customizations */
+        .owl-carousel .item {
+            background: #ffffff;
+            padding: 30px;
+            margin: 20px; /* Provides spacing between items in the carousel */
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 280px; /* Ensure consistent height for items */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
 
-.prev-arrow {
-    left: 0;
-}
+        .owl-carousel .item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
 
-.next-arrow {
-    right: 0;
-}
+        .owl-carousel .item img {
+            width: 90px;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #4CAF50; /* Green border for images */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.slider-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
+        /* Star Rating Styling */
+        .owl-carousel .item .stars {
+            color: #FFD700; /* Gold color for stars */
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            letter-spacing: 3px; /* Space out the stars */
+        }
 
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: var(--text-light);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
+        .owl-carousel .item p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 25px;
+            font-style: italic;
+            line-height: 1.5;
+        }
 
-.dot.active {
-    background-color: var(--primary-color);
-    transform: scale(1.2); /* Slightly larger for active dot */
-}
+        .owl-carousel .item h3 {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
 
+        .owl-carousel .item span {
+            font-size: 0.9em;
+            color: #777;
+            display: block;
+        }
 
+        /* Owl Carousel Navigation (Dots) */
+        .owl-theme .owl-dots .owl-dot span {
+            width: 12px;
+            height: 12px;
+            margin: 5px 7px;
+            background: #dcdcdc;
+            display: block;
+            -webkit-backface-visibility: visible;
+            transition: opacity .2s ease;
+            border-radius: 30px; /* Make dots rounded */
+        }
 
+        .owl-theme .owl-dots .owl-dot.active span,
+        .owl-theme .owl-dots .owl-dot:hover span {
+            background: #4CAF50; /* Active dot color */
+        }
 
-/* --- Responsive Design for Both Sections --- */
-@media (max-width: 900px) {
-    /* Contact Section adjustments */
-    .contact-item {
-        flex-basis: 45%; /* Two items per row on medium screens */
-    }
+        /* Owl Carousel Navigation (Arrows) */
+        .owl-theme .owl-nav [class*='owl-'] {
+            color: #fff;
+            font-size: 1.8em;
+            margin: 0 10px;
+            background: #4CAF50; /* Green background for arrows */
+            border-radius: 50%; /* Make arrows circular */
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
 
-    .contact-item:nth-child(even)::after {
-        content: none; /* Remove vertical line for the second item in a row */
-    }
+        .owl-theme .owl-nav .owl-prev {
+            left: -50px; /* Position prev arrow outside */
+        }
 
-    .contact-item:not(:last-child)::after {
-        content: ''; /* Re-add for the first item in a new row */
-        height: 1px; /* Make it horizontal */
-        width: 70%;
-        bottom: 0;
-        top: unset;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+        .owl-theme .owl-nav .owl-next {
+            right: -50px; /* Position next arrow outside */
+        }
 
-    .contact-item:last-child::after {
-        content: none; /* Ensure no line after the last item */
-    }
-}
+        .owl-theme .owl-nav [class*='owl-']:hover {
+            background: #388E3C; /* Darker green on hover */
+            text-decoration: none;
+        }
 
-@media (max-width: 768px) {
-    .testimonial-section {
-        padding: 40px 15px;
-    }
+        /* Responsive Adjustments for Arrows and General Layout */
+        @media (max-width: 1024px) {
+            .owl-theme .owl-nav .owl-prev {
+                left: -20px;
+            }
+            .owl-theme .owl-nav .owl-next {
+                right: -20px;
+            }
+        }
 
-    .section-title {
-        font-size: 1.5em;
-    }
+        @media (max-width: 768px) {
+            .customer-slider-section {
+                padding: 40px 15px;
+                margin: 20px auto;
+            }
 
-    .section-description {
-        font-size: 0.9em;
-    }
+            .customer-slider-section h2 {
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
 
-    .slider-arrow {
-        font-size: 2em;
-        padding: 5px;
-    }
+            .owl-carousel .item {
+                padding: 25px;
+                margin: 10px;
+                min-height: 250px;
+            }
 
-    .client-avatar-wrapper {
-        width: 100px;
-        height: 100px;
-    }
+            .owl-carousel .item p {
+                font-size: 1em;
+            }
 
-    .client-name {
-        font-size: 1.1em;
-    }
+            .owl-theme .owl-nav {
+                display: none; /* Hide arrows on smaller screens, rely on dots */
+            }
+        }
 
-    .client-title {
-        font-size: 0.8em;
-    }
+        @media (max-width: 480px) {
+            .customer-slider-section {
+                padding: 30px 10px;
+                margin: 15px auto;
+            }
 
-    .testimonial-text {
-        font-size: 0.9em;
-    }
-}
+            .customer-slider-section h2 {
+                font-size: 1.8em;
+            }
 
-@media (max-width: 600px) {
-    /* Contact Section adjustments */
-    .contact-section {
-        flex-direction: column;
-        padding: 20px 10px;
-    }
+            .owl-carousel .item {
+                padding: 20px;
+                margin: 5px;
+                min-height: 220px;
+            }
 
-    .contact-item {
-        margin: 15px 0;
-        min-width: unset; /* Remove min-width for very small screens */
-        width: 100%; /* Full width for items */
-    }
+            .owl-carousel .item img {
+                width: 70px;
+                height: auto;
+            }
 
-    .contact-item:not(:last-child)::after {
-        content: '';
-        height: 1px;
-        width: 70%;
-        bottom: 0;
-        top: unset;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-    .contact-item:last-child::after {
-        content: none; /* No separator after the last item */
-    }
-}
+            .owl-carousel .item h3 {
+                font-size: 1.1em;
+            }
 
-
-@media (max-width: 480px) {
-    
-    .testimonial-section,
-    .contact-section {
-        padding: 30px 10px;
-    }
-
-    .section-title {
-        font-size: 1.3em;
-    }
-
-    .section-description {
-        font-size: 0.8em;
-    }
-
-    .slider-arrow {
-        font-size: 1.8em;
-    }
-
-    .client-avatar-wrapper {
-        width: 80px;
-        height: 80px;
-    }
-
-    .client-name {
-        font-size: 1em;
-    }
-
-    .client-title {
-        font-size: 0.75em;
-    }
-
-    .testimonial-text {
-        font-size: 0.85em;
-    }
-}
+            .owl-carousel .item span {
+                font-size: 0.8em;
+            }
+        }
 
 
 
