@@ -1,0 +1,307 @@
+    .main---container{
+        padding: 1rem 0;
+    }
+    
+    
+    /* Wizard Container */
+        .wizard-container {
+            background-color: #ffffff; /* White background for the wizard */
+            padding: 30px; /* Padding inside the wizard */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            width: 100%; /* Full width initially */
+            max-width: 700px; /* Maximum width for larger screens */
+            box-sizing: border-box;
+            margin-top: 50px; /* Push down a bit from the top */
+        }
+
+        /* Wizard Header */
+        .wizard-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .wizard-header h2 {
+            color: #72461c; /* Darker brown for heading */
+            margin-bottom: 10px;
+            font-size: 2em; /* Larger heading font size */
+        }
+
+        .wizard-header p {
+            color: #7f8c8d; /* Grey for sub-text */
+            font-size: 1.1em;
+        }
+
+        /* Step Indicators */
+        .step-indicators {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative; /* For the progress line */
+        }
+
+        .step-indicators::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #ecf0f1; /* Light grey line */
+            z-index: 1; /* Behind the circles */
+            transform: translateY(-50%);
+        }
+
+        .step-indicator {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #bdc3c7; /* Grey for inactive steps */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            z-index: 2; /* On top of the line */
+            position: relative;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-indicator.active {
+            background-color: #a67a50; /* Medium brown/tan for active step */
+            transform: scale(1.1); /* Slightly enlarge active step */
+        }
+
+        .step-indicator.completed {
+            background-color: #27ae60; /* Green for completed steps */
+        }
+
+        /* Form Steps */
+        .form-step {
+            display: none; /* Hidden by default */
+            animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+        }
+
+        .form-step.active {
+            display: block; /* Display active step */
+        }
+
+        /* Form Groups */
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #34495e; /* Darker text for labels */
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group input[type="time"],
+        .form-group input[type="number"],
+        .form-group select,
+        .form-group textarea {
+            width: calc(100% - 22px); /* Full width minus padding and border */
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px; /* Rounded corners for inputs */
+            font-size: 1em;
+            color: #333;
+            box-sizing: border-box; /* Include padding and border in width */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #a67a50; /* Medium brown/tan border on focus */
+            box-shadow: 0 0 8px rgba(166, 122, 80, 0.2); /* Soft shadow on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        .form-group textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 80px; /* Minimum height for textarea */
+        }
+
+        /* Checkbox specific styling for terms */
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            margin-bottom: 0; /* Override default label margin */
+            font-weight: normal;
+            font-size: 1em;
+            color: #34495e;
+            cursor: pointer;
+        }
+
+
+        /* Error Message Styling */
+        .error-message {
+            color: #e74c3c; /* Red for error messages */
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: none; /* Hidden by default */
+        }
+
+        /* Navigation Buttons */
+        .wizard-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .wizard-buttons button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px; /* Rounded corners for buttons */
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .wizard-buttons button#prevBtn {
+            background-color: #95a5a6; /* Grey for previous button */
+            color: #ffffff;
+        }
+
+        .wizard-buttons button#prevBtn:hover {
+            background-color: #7f8c8d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .wizard-buttons button#nextBtn,
+        .wizard-buttons button#submitBtn {
+            background-color: #a67a50; /* Medium brown/tan for next/submit button */
+            color: #ffffff;
+        }
+
+        .wizard-buttons button#nextBtn:hover,
+        .wizard-buttons button#submitBtn:hover {
+            background-color: #72461c; /* Darker brown on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Confirmation Summary */
+        .confirmation-summary {
+            background-color: #fdf3f1; /* Light pinkish beige background for summary */
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .confirmation-summary p {
+            margin-bottom: 10px;
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        .confirmation-summary strong {
+            color: #72461c; /* Darker brown for strong text */
+        }
+
+        /* Success Message */
+        #successMessage {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #d4edda; /* Light green background */
+            color: #155724; /* Dark green text */
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Terms and Conditions specific styling */
+        .terms-content {
+            background-color: #fcfcfc;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 300px; /* Max height for scrollable area */
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .terms-content h4 {
+            color: #72461c; /* Darker brown for headings in terms */
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .terms-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .terms-content ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .wizard-container {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            .wizard-header h2 {
+                font-size: 1.6em;
+            }
+
+            .wizard-header p {
+                font-size: 0.95em;
+            }
+
+            .step-indicator {
+                width: 35px;
+                height: 35px;
+                font-size: 1em;
+            }
+
+            .wizard-buttons button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }

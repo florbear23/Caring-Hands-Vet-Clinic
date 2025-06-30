@@ -1870,8 +1870,8 @@ input[type="date"] {
                 transform: translateX(-50%);
             }
 
-            .social-icons {
-                justify-content: center; /* Center social icons */
+            .social-icons23 {
+                justify-content: center ; /* Center social icons */
             }
         }
 

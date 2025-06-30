@@ -119,9 +119,7 @@
         }
 
         @media (max-width: 480px) {
-            body {
-                padding: 15px;
-            }
+          
             .forms-list-container {
                 border-radius: 12px;
                 padding: 25px;

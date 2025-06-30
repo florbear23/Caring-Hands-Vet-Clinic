@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caring Hands Veterinary Clinic</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/apointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar fix">
+        <div class="top-info">
+            <span>📞 (215) 621-8959</span>
+            <span>3310 Grant Ave, Philadelphia, PA </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+            <a
+                href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                    class="fab fa-google"></i></a>
+            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i
+                    class="fab fa-yelp"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+     <header class="main-header fix">
+        <div class="logo">
+            <img src="../asset/logo.jpg" alt="Logo" />
+        </div>
+        <nav class="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="../page/service.html">Service</a>
+            <li class="dropdown">
+                <a href="./page/treated.html">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                    <a href="../page/leptospirosis.html">Leptospirosis</a>
+                    <a href="../page/skin.html">Skin Infection</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../page/blog.html">Blog</a>
+                    <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                    <a href="../page/meetOutPets.html">Meet Our Pets</a>
+                </div>
+            </li>
+            <a href="../page/contactUs.html">Contact Us </a>
+            <a href="../page/onlineForm.html">Online Form</a>
+            <a href="#">More</a>
+        </nav>
+        <a href="#" class="btn1 ">Request Appointment</a>
+
+
+
+    </header>
+    <!-- Add inside <body> after previous code -->
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+    <!-- Mobile Nav (hidden by default) -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="../page/service.html">Service</a>
+        <li class="dropdown">
+            <a href="../page/condition.html">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                <a href="../page/leptospirosis.html">Leptospirosis</a>
+                <a href="#">Skin Infection</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../page/blog.html">Blog</a>
+                <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                <a href="../page/meetOutPets.html">Meet Our Pets</a>
+            </div>
+        </li>
+        <a href="../page/contactUs.html">Contact Us </a>
+        <a href="../page/onlineForm.html">Online Form</a>
+        <a href="#">More</a>
+        <a href="#" class="btn2 margin-top">Request Appointment</a>
+    </div>
+
+
+
+
+    <main class="main---container">
+
+       <div class="wizard-container">
+        <div class="wizard-header">
+            <h2>Schedule Your Pet's Appointment</h2>
+            <p>Please fill out the details below to request an appointment with our clinic.</p>
+        </div>
+
+        <!-- Step Indicators -->
+        <div class="step-indicators">
+            <div class="step-indicator active" id="stepIndicator1">1</div>
+            <div class="step-indicator" id="stepIndicator2">2</div>
+            <div class="step-indicator" id="stepIndicator3">3</div>
+            <div class="step-indicator" id="stepIndicator4">4</div>
+            <div class="step-indicator" id="stepIndicator5">5</div>
+            <div class="step-indicator" id="stepIndicator6">6</div>
+        </div>
+
+        <!-- Step 1: Pet Information -->
+        <div class="form-step active" id="step1">
+            <h3>Step 1: Pet Information</h3>
+            <div class="form-group">
+                <label for="petName">Pet's Name <span style="color: red;">*</span></label>
+                <input type="text" id="petName" name="petName" placeholder="e.g., Buddy">
+                <span class="error-message" id="petNameError">Pet's name is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="petType">Pet Type <span style="color: red;">*</span></label>
+                <select id="petType" name="petType">
+                    <option value="">Select Pet Type</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span class="error-message" id="petTypeError">Pet type is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="petBreed">Breed (Optional)</label>
+                <input type="text" id="petBreed" name="petBreed" placeholder="e.g., Golden Retriever">
+            </div>
+            <div class="form-group">
+                <label for="petAge">Pet's Age (Years, Optional)</label>
+                <input type="number" id="petAge" name="petAge" min="0" placeholder="e.g., 5">
+            </div>
+            <div class="form-group">
+                <label for="numberOfPets">Number of Pets <span style="color: red;">*</span></label>
+                <input type="number" id="numberOfPets" name="numberOfPets" min="1" value="1">
+                <span class="error-message" id="numberOfPetsError">Number of pets is required and must be at least 1.</span>
+            </div>
+            <div class="form-group">
+                <label for="clinicianPreference">Clinician Preference <span style="color: red;">*</span></label>
+                <select id="clinicianPreference" name="clinicianPreference">
+                    <option value="">Select Clinician</option>
+                    <option value="Dr. Cullen">Dr. Cullen</option>
+                    <option value="Dr. Thomas">Dr. Thomas</option>
+                    <option value="Technician">Technician</option>
+                </select>
+                <span class="error-message" id="clinicianPreferenceError">Clinician preference is required.</span>
+            </div>
+        </div>
+
+        <!-- Step 2: Owner Information -->
+        <div class="form-step" id="step2">
+            <h3>Step 2: Owner Information</h3>
+            <div class="form-group">
+                <label for="ownerName">Your Full Name <span style="color: red;">*</span></label>
+                <input type="text" id="ownerName" name="ownerName" placeholder="e.g., Jane Doe">
+                <span class="error-message" id="ownerNameError">Your full name is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="clientStatus">Client Status <span style="color: red;">*</span></label>
+                <select id="clientStatus" name="clientStatus">
+                    <option value="">Select Status</option>
+                    <option value="New Client">I am a new client</option>
+                    <option value="Returning Client">I am a returning client</option>
+                </select>
+                <span class="error-message" id="clientStatusError">Client status is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="ownerEmail">Email Address <span style="color: red;">*</span></label>
+                <input type="email" id="ownerEmail" name="ownerEmail" placeholder="e.g., jane.doe@example.com">
+                <span class="error-message" id="ownerEmailError">A valid email address is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="ownerPhone">Phone Number <span style="color: red;">*</span></label>
+                <input type="tel" id="ownerPhone" name="ownerPhone" placeholder="e.g., +1 (123) 456-7890">
+                <span class="error-message" id="ownerPhoneError">A valid phone number is required.</span>
+            </div>
+        </div>
+
+        <!-- NEW Step 3: Personal Information -->
+        <div class="form-step" id="step3">
+            <h3>Step 3: Personal Information</h3>
+            <div class="form-group">
+                <label for="firstName">First Name <span style="color: red;">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g., Jane">
+                <span class="error-message" id="firstNameError">First Name is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name <span style="color: red;">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g., Doe">
+                <span class="error-message" id="lastNameError">Last Name is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="streetAddress">Street Address <span style="color: red;">*</span></label>
+                <input type="text" id="streetAddress" name="streetAddress" placeholder="e.g., 123 Main St">
+                <span class="error-message" id="streetAddressError">Street Address is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="city">City <span style="color: red;">*</span></label>
+                <input type="text" id="city" name="city" placeholder="e.g., Anytown">
+                <span class="error-message" id="cityError">City is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="state">State <span style="color: red;">*</span></label>
+                <input type="text" id="state" name="state" placeholder="e.g., CA">
+                <span class="error-message" id="stateError">State is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="zipCode">Zip Code <span style="color: red;">*</span></label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="e.g., 90210">
+                <span class="error-message" id="zipCodeError">Zip Code is required.</span>
+            </div>
+        </div>
+
+        <!-- Original Step 3, now Step 4: Appointment Details -->
+        <div class="form-step" id="step4">
+            <h3>Step 4: Appointment Details</h3>
+            <div class="form-group">
+                <label for="appointmentDate">Preferred Date <span style="color: red;">*</span></label>
+                <input type="date" id="appointmentDate" name="appointmentDate">
+                <span class="error-message" id="appointmentDateError">Preferred date is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="appointmentTime">Preferred Time <span style="color: red;">*</span></label>
+                <input type="time" id="appointmentTime" name="appointmentTime">
+                <span class="error-message" id="appointmentTimeError">Preferred time is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="reasonForVisit">Reason for Visit <span style="color: red;">*</span></label>
+                <textarea id="reasonForVisit" name="reasonForVisit" placeholder="e.g., Annual check-up, vaccination, limping, etc."></textarea>
+                <span class="error-message" id="reasonForVisitError">Reason for visit is required.</span>
+            </div>
+        </div>
+
+        <!-- Original Step 4, now Step 5: Terms and Conditions -->
+        <div class="form-step" id="step5">
+            <h3>Step 5: Terms and Conditions for Online Appointment Booking</h3>
+            <div class="terms-content">
+                <h4>Instructions for Clients Before Making an Appointment:</h4>
+                <p><strong>New Clients</strong></p>
+                <ul>
+                    <li><strong>Arrival Time:</strong> Please arrive 15 minutes before your appointment and bring all your previous medical records.</li>
+                    <li><strong>Medical records:</strong> Please have your previous veterinarian/emergency hospital/breeder email us all the important vaccine history and medical records to the clinic's email 24 hours before your appointment - Email: <strong>info@caringhandsvetclinic.com</strong></li>
+                    <li><strong>Appointment Restrictions:</strong> New clients cannot book technician appointments.</li>
+                    <li><strong>Routine Check-Ups and GI Issues:</strong> If your pet is coming in for a routine annual check-up or has gastrointestinal issues, please bring a fresh stool sample in a plastic bag or small container completely sealed.</li>
+                </ul>
+
+                <p><strong>Existing Clients</strong></p>
+                <ul>
+                    <li><strong>Arrival Time:</strong> Please arrive 10 minutes before your appointment to be checked in.</li>
+                    <li><strong>Technician Appointments:</strong> When you select a technician appointment, your pet will be seen by a technician to update vaccines, perform blood tests, and deworming under the supervision of a doctor. If you need to discuss any health concerns with the doctor, please cancel and change the appointment type to a Doctor's Appointment.</li>
+                    <li>If your pet is up-to-date on their annual or biannual check-up, services like booster vaccines, heartworm tests, other lab work, Cytopoint injections, and Allercept injections can be performed by an experienced or certified Caring Hands technician.</li>
+                    <li><strong>Doctors Appointment:</strong> If your pet is experiencing any health or behavior concerns and you need to see a doctor during your visit, please select the "Doctor Appointment" option.</li>
+                    <li><strong>Annual and Biannual check-up:</strong> Schedule a Doctor Appointment (not a technician exam) if your pet is due for an annual check-up and vaccines.</li>
+                    <li><strong>No-Show Policy:</strong> Please notify the office at least 24 business hours in advance if you cannot make it to your pet's appointment. Clients will lose their deposit if they do not show up for the appointment. Calling the office after the appointment time or within that hour will be considered a no-show.</li>
+                </ul>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                <label for="agreeTerms">I have read and agree to the Terms and Conditions for Online Appointment Booking. <span style="color: red;">*</span></label>
+                <span class="error-message" id="agreeTermsError">You must agree to the terms and conditions to proceed.</span>
+            </div>
+        </div>
+
+        <!-- Original Step 5, now Step 6: Confirmation -->
+        <div class="form-step" id="step6">
+            <h3>Step 6: Confirm Your Details</h3>
+            <p>Please review the information below before submitting your appointment request.</p>
+            <div class="confirmation-summary">
+                <h4>Pet Information:</h4>
+                <p><strong>Name:</strong> <span id="summaryPetName"></span></p>
+                <p><strong>Type:</strong> <span id="summaryPetType"></span></p>
+                <p><strong>Breed:</strong> <span id="summaryPetBreed"></span></p>
+                <p><strong>Age:</strong> <span id="summaryPetAge"></span></p>
+                <p><strong>Number of Pets:</strong> <span id="summaryNumberOfPets"></span></p>
+                <p><strong>Clinician Preference:</strong> <span id="summaryClinicianPreference"></span></p>
+
+                <h4>Owner Information:</h4>
+                <p><strong>Name:</strong> <span id="summaryOwnerName"></span></p>
+                <p><strong>Client Status:</strong> <span id="summaryClientStatus"></span></p>
+                <p><strong>Email:</strong> <span id="summaryOwnerEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="summaryOwnerPhone"></span></p>
+
+                <h4>Personal Information:</h4>
+                <p><strong>First Name:</strong> <span id="summaryFirstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="summaryLastName"></span></p>
+                <p><strong>Street Address:</strong> <span id="summaryStreetAddress"></span></p>
+                <p><strong>City:</strong> <span id="summaryCity"></span></p>
+                <p><strong>State:</strong> <span id="summaryState"></span></p>
+                <p><strong>Zip Code:</strong> <span id="summaryZipCode"></span></p>
+
+                <h4>Appointment Details:</h4>
+                <p><strong>Date:</strong> <span id="summaryAppointmentDate"></span></p>
+                <p><strong>Time:</strong> <span id="summaryAppointmentTime"></span></p>
+                <p><strong>Reason:</strong> <span id="summaryReasonForVisit"></span></p>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="wizard-buttons">
+            <button type="button" id="prevBtn" style="display: none;">Previous</button>
+            <button type="button" id="nextBtn">Next</button>
+            <button type="button" id="submitBtn" style="display: none;">Request Appointment</button>
+        </div>
+
+        <!-- Success Message (hidden by default) -->
+        <div id="successMessage">
+            <p>Your appointment request has been submitted successfully!</p>
+            <p>We will contact you shortly to confirm the details.</p>
+        </div>
+    </div>
+
+
+    </main>
+
+    <div class="map--section">
+        <div class="info--area">
+            <div class="office-hours-container">
+
+                <!-- Main content area now uses a responsive grid -->
+                <div class="office-hours-grid">
+                    <!-- Office Hours List Column -->
+
+                    <div>
+                        <h1 class="office-hours-title">Office Hours</h1>
+
+                        <div class="office-hours-list">
+                            <!-- Monday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Monday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 5:00 pm</span>
+                            </div>
+
+                            <!-- Tuesday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Tuesday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 8:00 pm</span>
+                            </div>
+
+                            <!-- Wednesday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Wednesday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 8:00 pm</span>
+                            </div>
+
+                            <!-- Thursday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Thursday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">9:00 am - 6:00 pm</span>
+                            </div>
+
+                            <!-- Friday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Friday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 4:00 pm</span>
+                            </div>
+
+                            <!-- Saturday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Saturday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">9:00 am - 3:00 pm</span>
+                            </div>
+
+                            <!-- Sunday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Sunday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Holiday Closures Section Column -->
+
+                    <div>
+                        <h1 class="office-hours-title">We will be closed on the following holidays:</h1>
+                        <ul class="holiday-list">
+                            <li>New Year's Eve</li>
+                            <li>New Year's Day</li>
+                            <li>Memorial Day</li>
+                            <li>Independence Day</li>
+                            <li>Labor Day</li>
+                            <li>Thanksgiving</li>
+                            <li>Christmas Eve</li>
+                            <li>Christmas Day</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrapper">
+                <!-- Emergency Contact Section -->
+                <div class="emergency-section">
+                    <h2>Emergency Care</h2>
+                    <p>
+                        In case of emergency during our off hours you can contact the following 24 hour Emergency Care
+                        Centers:
+                    </p>
+                    <ul>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Veterinary Specialty & Emergency Center (VSEC)</span>
+                                <a href="https://vesecvet.com" target="_blank">vesecvet.com</a>
+                                <span class="block">(215) 750-7884</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Matthew J Ryan Hospital (University of Penn.)</span>
+                                <span class="block">(215) 898-4680</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Centre for Animal Referral & Emergency Services (CARES)</span>
+                                <a href="https://vetcares.com" target="_blank">vetcares.com</a>
+                                <span class="block">(215) 750-2774</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Branding and Social Media Section -->
+                <div class="branding-social-section">
+                    <!-- Logos -->
+                    <div class="logos-container">
+                        <img src="../asset/caringhandsvetclinic_logo15f-999-626.png.webp"
+                            alt="Caring Hands Veterinary Clinic Logo">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                            <a
+                                href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                                    class="fab fa-google"></i></a>
+                            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i
+                                    class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.079743306154!2d-75.0071798!3d40.0679285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b37a74daf973%3A0x86d30f06cde938d!2sCaring%20Hands%20Veterinary%20Clinic!5e1!3m2!1sen!2sph!4v1750088527301!5m2!1sen!2sph"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <!-- Footer Section -->
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <!-- Logo Image Moved Here, below the heading and above the phone number -->
+                <img src="../asset/logo.jpg" alt="Company Logo" class="footer-logo">
+                <p><i class="fas fa-phone"></i> (215) 621-8959</p>
+                <!-- Retaining social icons here as they often go with contact info -->
+                <div class="social-icons23">
+                    <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>OUR PAGES</h3>
+                <ul>
+                    <li><a href="../page/service.html">Service</a></li>
+                    <li><a href="../page/condition.html">Conditions Treated</a></li>
+                    <li><a href="../page/aboutUs.html">About Us</a></li>
+                    <li><a href="../page/blog.html">Blog</a></li>
+                    <li><a href="../page/contactUs.html">Contact Us</a></li>
+                    <li><a href="#more-pages">More</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>OUR SERVICES</h3>
+                <ul>
+                    <li><a href="../page/service.html">Bloodwork</a></li>
+                    <li><a href="../page/service.html">Dental Diseases</a></li>
+                    <li><a href="../page/service.html">Deworming</a></li>
+                    <li><a href="../page/service.html">Eye and Ear Surgery</a></li>
+                    <li><a href="../page/service.html">More</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="currentYear"></span> Caring Hands Veterinary Clinic. All rights reserved.
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+<script src="../index.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+        $(document).ready(function() {
+            let currentStep = 1; // Tracks the current step of the wizard
+            const totalSteps = 6; // Total number of steps in the wizard
+
+            // Function to display the specified step and update indicators
+            function showStep(stepNum) {
+                // Hide all form steps and remove 'active' and 'completed' classes from indicators
+                $('.form-step').removeClass('active');
+                $('.step-indicator').removeClass('active completed');
+
+                // Show the current step
+                $('#step' + stepNum).addClass('active');
+
+                // Update step indicators:
+                // Set 'completed' class for all steps prior to the current one
+                for (let i = 1; i < stepNum; i++) {
+                    $('#stepIndicator' + i).addClass('completed');
+                }
+                // Set 'active' class for the current step
+                $('#stepIndicator' + stepNum).addClass('active');
+
+                // Adjust button visibility based on the current step
+                if (stepNum === 1) {
+                    $('#prevBtn').hide(); // Hide previous button on the first step
+                } else {
+                    $('#prevBtn').show(); // Show previous button on other steps
+                }
+
+                if (stepNum === totalSteps) {
+                    $('#nextBtn').hide(); // Hide next button on the last step
+                    $('#submitBtn').show(); // Show submit button on the last step
+                    updateConfirmationSummary(); // Populate summary on the confirmation step
+                } else {
+                    $('#nextBtn').show(); // Show next button on other steps
+                    $('#submitBtn').hide(); // Hide submit button on other steps
+                }
+
+                // Hide success message if we navigate back or forward after submission
+                $('#successMessage').hide();
+            }
+
+            // Function to validate the current step's form fields
+            function validateStep(stepNum) {
+                let isValid = true;
+                // Get all required input/select/textarea elements within the current step
+                $('#step' + stepNum + ' :input[required], #step' + stepNum + ' select').each(function() {
+                    const input = $(this);
+                    const errorMessageId = input.attr('id') + 'Error';
+                    const errorMessageElement = $('#' + errorMessageId);
+
+                    if (input.is(':checkbox')) { // Special validation for checkboxes
+                        if (!input.is(':checked')) {
+                            errorMessageElement.show();
+                            isValid = false;
+                        } else {
+                            errorMessageElement.hide();
+                        }
+                    } else if (input.val().trim() === '' || (input.is('select') && input.val() === '')) {
+                        input.addClass('error-border');
+                        errorMessageElement.show();
+                        isValid = false;
+                    } else {
+                        input.removeClass('error-border');
+                        errorMessageElement.hide();
+                        // Additional validation for email and phone numbers
+                        if (input.attr('type') === 'email' && !isValidEmail(input.val())) {
+                            errorMessageElement.text('Please enter a valid email address.');
+                            errorMessageElement.show();
+                            isValid = false;
+                        } else if (input.attr('type') === 'tel' && !isValidPhone(input.val())) {
+                            errorMessageElement.text('Please enter a valid phone number (e.g., +1 (123) 456-7890).');
+                            errorMessageElement.show();
+                            isValid = false;
+                        } else if (input.attr('type') === 'number' && input.attr('id') === 'numberOfPets' && (parseInt(input.val()) < 1 || isNaN(parseInt(input.val())))) {
+                            // Specific validation for numberOfPets
+                            errorMessageElement.text('Number of pets is required and must be at least 1.');
+                            errorMessageElement.show();
+                            isValid = false;
+                        }
+                    }
+                });
+                return isValid;
+            }
+
+            // Helper function for basic email validation
+            function isValidEmail(email) {
+                // A simple regex for email validation (can be more robust)
+                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return regex.test(email);
+            }
+
+            // Helper function for basic phone validation (can be more robust)
+            function isValidPhone(phone) {
+                // Allows digits, spaces, hyphens, parentheses, and plus sign at the beginning
+                const regex = /^\+?[\d\s\-\(\)]+$/;
+                return regex.test(phone) && phone.replace(/[\s\-\(\)]/g, '').length >= 10; // Min 10 digits
+            }
+
+
+            // Function to update the confirmation summary on step 6 (now step 6)
+            function updateConfirmationSummary() {
+                $('#summaryPetName').text($('#petName').val() || 'N/A');
+                $('#summaryPetType').text($('#petType option:selected').text() || 'N/A');
+                $('#summaryPetBreed').text($('#petBreed').val() || 'N/A');
+                $('#summaryPetAge').text($('#petAge').val() || 'N/A');
+                $('#summaryNumberOfPets').text($('#numberOfPets').val() || 'N/A');
+                $('#summaryClinicianPreference').text($('#clinicianPreference option:selected').text() || 'N/A');
+
+                $('#summaryOwnerName').text($('#ownerName').val() || 'N/A');
+                $('#summaryClientStatus').text($('#clientStatus option:selected').text() || 'N/A');
+                $('#summaryOwnerEmail').text($('#ownerEmail').val() || 'N/A');
+                $('#summaryOwnerPhone').text($('#ownerPhone').val() || 'N/A');
+
+                $('#summaryFirstName').text($('#firstName').val() || 'N/A');
+                $('#summaryLastName').text($('#lastName').val() || 'N/A');
+                $('#summaryStreetAddress').text($('#streetAddress').val() || 'N/A');
+                $('#summaryCity').text($('#city').val() || 'N/A');
+                $('#summaryState').text($('#state').val() || 'N/A');
+                $('#summaryZipCode').text($('#zipCode').val() || 'N/A');
+
+                $('#summaryAppointmentDate').text($('#appointmentDate').val() || 'N/A');
+                $('#summaryAppointmentTime').text($('#appointmentTime').val() || 'N/A');
+                $('#summaryReasonForVisit').text($('#reasonForVisit').val() || 'N/A');
+            }
+
+            // Click handler for the 'Next' button
+            $('#nextBtn').on('click', function() {
+                // Validate the current step before proceeding
+                if (validateStep(currentStep)) {
+                    currentStep++;
+                    if (currentStep > totalSteps) {
+                        currentStep = totalSteps; // Prevent going beyond the last step
+                    }
+                    showStep(currentStep); // Display the next step
+                }
+            });
+
+            // Click handler for the 'Previous' button
+            $('#prevBtn').on('click', function() {
+                currentStep--;
+                if (currentStep < 1) {
+                    currentStep = 1; // Prevent going below the first step
+                }
+                showStep(currentStep); // Display the previous step
+            });
+
+            // Click handler for the 'Submit' button
+            $('#submitBtn').on('click', function() {
+                // Here you would typically send the data to a server using AJAX
+                // For this example, we'll just simulate a submission and show a success message.
+                // You can collect all data from the form fields using jQuery's .val()
+                const formData = {
+                    petName: $('#petName').val(),
+                    petType: $('#petType').val(),
+                    petBreed: $('#petBreed').val(),
+                    petAge: $('#petAge').val(),
+                    numberOfPets: $('#numberOfPets').val(),
+                    clinicianPreference: $('#clinicianPreference').val(),
+                    ownerName: $('#ownerName').val(),
+                    clientStatus: $('#clientStatus').val(),
+                    ownerEmail: $('#ownerEmail').val(),
+                    ownerPhone: $('#ownerPhone').val(),
+                    firstName: $('#firstName').val(),
+                    lastName: $('#lastName').val(),
+                    streetAddress: $('#streetAddress').val(),
+                    city: $('#city').val(),
+                    state: $('#state').val(),
+                    zipCode: $('#zipCode').val(),
+                    appointmentDate: $('#appointmentDate').val(),
+                    appointmentTime: $('#appointmentTime').val(),
+                    reasonForVisit: $('#reasonForVisit').val(),
+                    agreedTerms: $('#agreeTerms').is(':checked')
+                };
+
+                console.log("Submitting appointment data:", formData);
+
+                // Simulate success and reset the form
+                // In a real application, you would make an AJAX call here, e.g.:
+                /*
+                $.ajax({
+                    url: '/api/submit-appointment', // Your backend API endpoint
+                    method: 'POST',
+                    data: formData,
+                    success: function(response) {
+                        // On successful submission:
+                        $('.form-step').removeClass('active'); // Hide all steps
+                        $('.wizard-buttons').hide(); // Hide buttons
+                        $('.step-indicators').hide(); // Hide indicators
+                        $('#successMessage').show(); // Show success message
+                        // Optionally, reset the form after successful submission
+                        $('form')[0].reset();
+                        currentStep = 1; // Reset step counter
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        // Handle submission error
+                        console.error("Submission failed:", textStatus, errorThrown);
+                        alert("There was an error submitting your request. Please try again.");
+                    }
+                });
+                */
+
+                // For this demonstration, we'll just show the success message directly:
+                $('.form-step').removeClass('active'); // Hide all steps
+                $('.wizard-buttons').hide(); // Hide buttons
+                $('.step-indicators').hide(); // Hide indicators
+                $('#successMessage').show(); // Show success message
+                $('form')[0].reset(); // Reset the form fields
+                currentStep = 1; // Reset step for potential re-use
+            });
+
+            // Initialize the wizard to show the first step
+            showStep(currentStep);
+        });
+    </script>
+
+</html>
