@@ -176,4 +176,10 @@ document.querySelectorAll('.mobile-nav .dropdown > a').forEach(link => {
             setTimeout(hideLoadingPage, 5000);
         });
 
+
+        //  const allowedPaths = [ "/about", "/contact"]; // your valid routes
+        //     if (!allowedPaths.includes(window.location.pathname)) {
+        //         window.location.href = "./page/404.html";
+        //     }
+
         
