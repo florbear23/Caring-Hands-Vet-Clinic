@@ -152,4 +152,28 @@ document.querySelectorAll('.mobile-nav .dropdown > a').forEach(link => {
         });
 
 
+
+            // Get references to the loading page and main content elements
+        const loadingPage = document.getElementById('loadingPage');
+        const mainContent = document.getElementById('mainContent');
+
+        // Function to hide the loading page and show the main content
+        function hideLoadingPage() {
+            // Add the 'hidden' class to fade out the loading page
+            loadingPage.classList.add('hidden');
+
+            // After the transition, completely hide the loading page and display main content
+            loadingPage.addEventListener('transitionend', () => {
+                loadingPage.style.display = 'none'; // Completely remove from layout
+                mainContent.style.display = 'block'; // Show the main content
+            }, { once: true }); // Ensure the event listener only runs once
+        }
+
+        // Simulate a network request or content loading delay
+        // You can replace this with actual data fetching logic
+        window.addEventListener('load', () => {
+            // Set a timeout to hide the loading page after 3 seconds (3000 milliseconds)
+            setTimeout(hideLoadingPage, 5000);
+        });
+
         

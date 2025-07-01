@@ -2302,3 +2302,47 @@ input[type="date"] {
             width: 50px;
             height: 50px;
         }
+
+         .loading-container {
+            position: fixed; /* Fixed position to cover the whole screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(253, 243, 241, 1); /* Semi-transparent theme background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999999999999; /* Ensure it's on top of other content */
+            transition: opacity 0.5s ease-out; /* Smooth fade-out effect */
+        }
+
+        /* Styles for the spinner */
+        .spinner {
+            border: 8px solid #f3f3f3; /* Light grey border */
+            border-top: 8px solid #a67a50; /* Theme color for spinner */
+            border-radius: 50%; /* Make it a circle */
+            width: 60px;
+            height: 60px;
+            animation: spin 1.5s linear infinite; /* Spin animation */
+            margin-bottom: 20px; /* Space between spinner and text */
+        }
+
+        /* Keyframe animation for the spinner */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Styles for the loading text */
+        .loading-text {
+            font-size: 1.5em;
+            color: #72461c; /* Theme color for text */
+        }
+
+        /* Class to hide the loading container */
+        .hidden {
+            opacity: 0;
+            pointer-events: none; /* Disable interaction when hidden */
+        }
