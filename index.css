@@ -2346,3 +2346,9 @@ input[type="date"] {
             opacity: 0;
             pointer-events: none; /* Disable interaction when hidden */
         }
+
+
+        .qr-icon{
+            width: 1.5rem;
+            height: auto;
+        }
