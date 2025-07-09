@@ -153,7 +153,7 @@ document.querySelectorAll('.mobile-nav .dropdown > a').forEach(link => {
 
 
 
-            // Get references to the loading page and main content elements
+         // Get references to the loading page and main content elements
         const loadingPage = document.getElementById('loadingPage');
         const mainContent = document.getElementById('mainContent');
 
@@ -173,13 +173,5 @@ document.querySelectorAll('.mobile-nav .dropdown > a').forEach(link => {
         // You can replace this with actual data fetching logic
         window.addEventListener('load', () => {
             // Set a timeout to hide the loading page after 3 seconds (3000 milliseconds)
-            setTimeout(hideLoadingPage, 5000);
+            setTimeout(hideLoadingPage, 4000);
         });
-
-
-        //  const allowedPaths = [ "/about", "/contact"]; // your valid routes
-        //     if (!allowedPaths.includes(window.location.pathname)) {
-        //         window.location.href = "./page/404.html";
-        //     }
-
-        
