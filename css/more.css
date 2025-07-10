@@ -1,0 +1,163 @@
+        /* Section Styling */
+        .more-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center; /* Center the heading */
+        }
+
+        /* Heading Styling */
+        .more-heading {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #a67a50; /* Changed from #f3b73f */
+            margin-bottom: 50px;
+            letter-spacing: 0.05em;
+        }
+
+        .more-heading span {
+            color: #724610; /* Changed from #333, assuming #72461 was a typo for #724610 */
+        }
+
+        /* Services Grid Container */
+        .more-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+            gap: 25px; /* Space between cards */
+            justify-content: center; /* Center cards in the grid */
+            align-items: stretch; /* Make cards the same height */
+        }
+
+        /* Service Card Styling */
+        .more-card {
+            background-color: #fff;
+            border-radius: 12px; /* Rounded corners */
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            text-align: center;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .more-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+        }
+
+        /* Icon Styling */
+        .more-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #e8dccf; /* Lightened shade of #a67a50 */
+            border-radius: 50%; /* Circular shape */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 2.2em; /* Size of the icon */
+            color: #a67a50; /* Changed from #f3b73f */
+        }
+
+        /* Title Styling */
+        .more-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #724610; /* Changed from #333 */
+            margin-bottom: 10px;
+        }
+
+        /* Description Styling */
+        .more-text {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1; /* Allows description to take available space */
+        }
+
+        /* Learn More Link Styling */
+        .learn-more {
+            display: flex;
+            align-items: center;
+            color: #a67a50; /* Changed from #f3b73f */
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .learn-more:hover {
+            color: #8b6742; /* Darkened shade of #a67a50 */
+        }
+
+        /* Styling for Font Awesome arrow icon */
+        .learn-more .fas.fa-arrow-right { /* Targeting the Font Awesome arrow */
+            margin-left: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .learn-more:hover .fas.fa-arrow-right { /* Arrow moves on hover */
+            transform: translateX(5px);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .more-heading {
+                font-size: 2em;
+            }
+
+            .more-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .more-card {
+                padding: 25px;
+            }
+
+            .more-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 2em;
+            }
+
+            .more-title {
+                font-size: 1.3em;
+            }
+
+            .more-text {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .more-section {
+                padding: 30px 15px;
+            }
+
+            .more-heading {
+                font-size: 1.8em;
+                margin-bottom: 40px;
+            }
+
+            .more-grid {
+                grid-template-columns: 1fr; /* Single column on very small screens */
+                gap: 15px;
+            }
+
+            .more-card {
+                padding: 20px;
+            }
+
+            .more-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.8em;
+            }
+
+            .more-title {
+                font-size: 1.2em;
+            }
+        }

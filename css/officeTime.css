@@ -1,0 +1,137 @@
+.main---container{
+    margin: 2rem auto;
+}
+
+/* Container for the Office Hours section */
+        .office-hours-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 1400px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Section Title */
+        .office-hours-container h2 {
+            font-size: 2.2em;
+            color: #4A2C1D; /* Applied theme color (dark brown, substitute for #72461) */
+            margin-bottom: 25px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .office-hours-container h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: #a67a50; /* Applied theme color */
+            border-radius: 2px;
+        }
+
+        /* Schedule List */
+        .schedule-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        .schedule-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 1.1em;
+            color: #4A2C1D; /* Applied theme color (dark brown) */
+        }
+
+        .schedule-list li:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-list .day {
+            font-weight: 600;
+            color: #4A2C1D; /* Applied theme color (dark brown) */
+            flex: 1;
+            text-align: left;
+        }
+
+        .schedule-list .time {
+            font-weight: 400;
+            color: #6B5B50; /* A slightly lighter warm brown for contrast */
+            flex: 1;
+            text-align: right;
+        }
+
+        /* Holiday Information */
+        .holiday-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            text-align: left;
+        }
+
+        .holiday-info h3 {
+            font-size: 1.3em;
+            color: #4A2C1D; /* Applied theme color (dark brown) */
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .holiday-info ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+            font-size: 1.1em;
+            color: #4A2C1D; /* Applied theme color (dark brown) */
+        }
+
+        .holiday-info ul li {
+            margin-bottom: 8px;
+        }
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            .office-hours-container {
+                padding: 20px;
+            }
+
+            .office-hours-container h2 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+
+            .schedule-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 0;
+            }
+
+            .schedule-list .day,
+            .schedule-list .time {
+                text-align: left;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            .schedule-list .time {
+                font-size: 0.95em;
+            }
+
+            .holiday-info h3 {
+                font-size: 1.1em;
+            }
+
+            .holiday-info ul {
+                font-size: 1em;
+            }
+        }
