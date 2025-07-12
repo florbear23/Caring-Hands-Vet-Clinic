@@ -217,7 +217,7 @@ body{
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
 
     .nav-menu,
     .nav-icons,
@@ -2065,7 +2065,7 @@ input[type="date"] {
         }
 
         .emergency-section li a {
-            color: #4f46e5; /* text-indigo-600 equivalent */
+            color: var(--primary-color); /* text-indigo-600 equivalent */
             text-decoration: none;
             margin-left: 0.25rem; /* ml-1 equivalent */
         }
