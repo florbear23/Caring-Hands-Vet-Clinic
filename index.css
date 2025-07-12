@@ -2077,7 +2077,7 @@ input[type="date"] {
         .emergency-section li .block {
             display: block;
             font-size: 0.875rem; /* text-sm equivalent */
-            color: #6b7280; /* text-gray-500 equivalent */
+            color: #6b7280 !important; /* text-gray-500 equivalent */
         }
 
         .branding-social-section {
