@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caring Hands Veterinary Clinic</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/officeTime.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar fix">
+        <div class="top-info">
+            <span>📞 (215) 621-8959</span>
+            <span>3310 Grant Ave, Philadelphia, PA </span>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+            <a
+                href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                    class="fab fa-google"></i></a>
+            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i
+                    class="fab fa-yelp"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+     <header class="main-header fix">
+        <div class="logo">
+            <img src="../asset/logo.jpg" alt="Logo" />
+        </div>
+        <nav class="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="../page/service.html">Service</a>
+            <li class="dropdown">
+                <a href="./page/treated.html">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                    <a href="../page/leptospirosis.html">Leptospirosis</a>
+                    <a href="../page/skin.html">Skin Infection</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../page/blog.html">Blog</a>
+                    <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                    <a href="../page/meetOutPets.html">Meet Our Pets</a>
+                </div>
+            </li>
+            <a href="../page/contactUs.html">Contact Us </a>
+            <a href="../page/onlineForm.html">Online Form</a>
+            <a href="../page/more.html">More</a>
+        </nav>
+        <a href="../page/apointment.html" class="btn1 ">Request Appointment</a>
+
+
+
+    </header>
+    <!-- Add inside <body> after previous code -->
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+    <!-- Mobile Nav (hidden by default) -->
+     <div class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Home</a>
+        <a href="../page/service.html">Service</a>
+        <li class="dropdown">
+            <a href="../page/condition.html">Conditions Treated <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../page/condition.html">Lameness and Limping in Pets</a>
+                <a href="../page/leptospirosis.html">Leptospirosis</a>
+                <a href="../page/skin.html">Skin Infection</a>
+            </div>
+        </li>
+        <li class="dropdown">
+                <a href="../page/aboutUs.html">About Us <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../index.html">Blog</a>
+                    <a href="../page/meetOutTeam.html">Meet Our Team</a>
+                    <a href="../page/meetOutPets.html">Meet Our Team</a>
+                </div>
+            </li>
+        <a href="../page/contactUs.html">Contact Us </a>
+        <a href="../page/onlineForm.html">Online Form</a>
+        <a href="../page/more.html">More</a>
+        <a href="../page/apointment.html" class="btn2 margin-top">Request Appointment</a>
+    </div>
+
+
+ <header class="header-banner">
+                <div class="header-content">
+                    <h1>What our customers say</h1>
+                    <div class="breadcrumb">
+                        <a href="../index.html">Home</a> - Testimonial
+                        <a href="../page/more.html">Back</a> - Testimonial
+                    </div>
+                </div>
+            </header>
+    <main class="main---container">
+
+        
+
+          <section class="testimonials-section">
+        <h2 class="section-title">What our customers say</h2>
+
+        
+
+        <div class="testimonials-grid" id="testimonials-grid">
+            <!-- Testimonial Cards (will be dynamically shown/hidden) -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/FF6B6B/FFFFFF?text=AD" alt="Ashley Dume-Charles" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Ashley Dume-Charles</div>
+                        <div class="testimonial-role">1 month ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Staff is friendly and does an awesome job with pets.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/6BFF6B/FFFFFF?text=AM" alt="April Mager" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">April Mager</div>
+                        <div class="testimonial-role">1 month ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Happy to come here. They are always kind to my pets and offer thorough exams.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/6B6BFF/FFFFFF?text=ME" alt="mindy earussi" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">mindy earussi</div>
+                        <div class="testimonial-role">2 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">They are amazing. Took great care of my older cat. Very compassionate and genuine. Would give more stars if I could! The absolute best.Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/FFBB6B/FFFFFF?text=AM" alt="Ashley Marshall" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Ashley Marshall</div>
+                        <div class="testimonial-role">2 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Dr. Thomas is a wonderful Dr. Sadie is 100 percent better since he removed her tumor. They greeted us at the front door and held the door open, and walked us to the exam room right away.Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/BB6BFF/FFFFFF?text=M" alt="Mikayla" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Mikayla</div>
+                        <div class="testimonial-role">3 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">They were amazing. I mistakenly made the wrong appointment date and they saw how upset I was and took me right then and there. Dr Cullen was incredibly warm and kind. My car actually fell asleep in her hands. I've had PTSD with Vets in the past but I can honestly say I will go back there in a heart beat!Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/6BFFBB/FFFFFF?text=BH" alt="Bob Hagelin" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Bob Hagelin</div>
+                        <div class="testimonial-role">3 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Caring Hands Veterinary Clinic has been amazing with my dog, Prince, while treating his fractured wrist. The staff is professional, kind, and truly cares for my pup! They continue to provided excellent care for my sweet baby. I would highly recommend!!Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/FF6BBF/FFFFFF?text=JY" alt="John Young" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">John Young</div>
+                        <div class="testimonial-role">3 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Brought Mayday to another vet and they wanted to put her down. Came to Caring Hands and they thought she was very dehydrated and she also had a growth on her foot that needed to be amputated. They got her on a hydration regegemat til she could gain weight. She got scheduled for an amputation and surgery went fabulous. She had her left rear leg removed. Came home and she was a new cat. Surgery was so Great followed the Doctotrs instructions and within 2 weeks Mayday was great. I couldn't Say enough about How Great everyone at Caring Hand was to me and Mayday. Would absolutely 1000% recommend anyone with a pet to go there. So so happy with my and Maydays treatment. Thank You !!Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/FFBBFF/FFFFFF?text=AM" alt="Arielle McKeiver" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Arielle McKeiver</div>
+                        <div class="testimonial-role">4 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">I was able to bring my dog in even though they were booked ..Everyone was so kind and comforting in such a very sad time ..We had to put our 14 year old dog to sleep ..The doctor really took our feelings into consideration 😪.Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/BBFFFF/FFFFFF?text=KP" alt="Kali77 Paz" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Kali77 Paz</div>
+                        <div class="testimonial-role">4 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">I want to thank this hospital staff for their kindness and help when my Snickers McKeiver passed away. I highly recommend this animal hospital. Caring hands is the correct name for this place. Awesome staff.Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/FFD700/FFFFFF?text=AB" alt="Annette Bell" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Annette Bell</div>
+                        <div class="testimonial-role">6 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Front desk staff was not the friendliest! There were two brunette seems on it the blonde seemed annoyed and not the most professional.i didn’t like her response or phone interaction both times.The Vet was very professional, knowledgeable, and took his time. I really liked his demeanor! The vet Asst. didn’t get her name, she’s young blonde. I really liked her she was sweet with my pet and took her time asking questions and speaking to me. I gave em 5 stars cause the vet was that cool! I go to EMANCIPET as well they have an amazing staff and they seem to realllly love all the pets.Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/C0C0C0/FFFFFF?text=JR" alt="Jason Ratner" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Jason Ratner</div>
+                        <div class="testimonial-role">7 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">I had a cat that was outside that needed emergency care. They took care of him right away and answered all my questions .Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/808080/FFFFFF?text=P" alt="Pat" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Pat</div>
+                        <div class="testimonial-role">7 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Took great care of our Boxer Laila. All the way until her end this past May.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/A0A0A0/FFFFFF?text=N" alt="Nicole" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Nicole</div>
+                        <div class="testimonial-role">8 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Have been going here for a few years. Growth has been seen. Vets and techs are professional and helpful. Prices are competitive with other vets but not low cost. RecommendRead more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/B0B0B0/FFFFFF?text=DG" alt="Deno Grayson" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Deno Grayson</div>
+                        <div class="testimonial-role">8 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">They are an amazing staff!</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/D0D0D0/FFFFFF?text=LA" alt="Lili A" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Lili A</div>
+                        <div class="testimonial-role">9 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Our family is truly grateful to have been recommended Caring Hands by a friend. After our 4mo lab mix took a freak slip while running in the house we were desperate to find quick and affordable care. Caring Hands quoted us literally thousands of dollars less to give our baby the surgery she needed. Post op care has been going wonderful as well. I have already recommended CH to other pet owners and will continue to. Affordable, local, and personable.Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/E0E0E0/FFFFFF?text=BT" alt="Brittany Todd" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Brittany Todd</div>
+                        <div class="testimonial-role">9 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Great place, very caring!</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/F0F0F0/FFFFFF?text=EK" alt="Emily K" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Emily K</div>
+                        <div class="testimonial-role">9 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Dr. Thomas is absolutely amazing! A few months ago my dog pour her ACL. Most places were trying to charge me up to $8000. I took my dog to Dr. Thomas, and the first day I met him, I knew he was the right doctor for my pet! Your animal is definitely in good hands with Dr. Thomas and you can see the love he has for the animals! It has been five months and my dogs leg is doing wonderful… Definitely going to need surgery on the other leg and I would not think about going to anyone else!Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/A0A0A0/FFFFFF?text=L" alt="Luke" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Luke</div>
+                        <div class="testimonial-role">10 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">I brought my baby in as a first time patient for a sick visit, and they got me in the same day. Everyone we encountered was so kind, and the staff was so caring with her. The Doctor was very gentle, we found out she has a respiratory infection, so he gave an antibiotic shot and I swear she was feeling better by the time we left. I’ll definitely come back for her regular kitty care, and I highly recommend this vet!Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/B0B0B0/FFFFFF?text=SK" alt="SUNFLOWER KISS" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">SUNFLOWER KISS</div>
+                        <div class="testimonial-role">10 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Great people!</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/C0C0C0/FFFFFF?text=JK" alt="Joanne Kennedy" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Joanne Kennedy</div>
+                        <div class="testimonial-role">11 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">I was able to bring my dog in for a sick visit the same day within hours. The Staff is always so friendly, helpful and attentive to my dogs needs. Met Dr. Khan for the first time and he is almost as great as Dr.Thomas (haha). The whole team and a special thank you to Kayla for somehow always being on staff when I bring Pete in. We love Caring HandsRead more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/D0D0D0/FFFFFF?text=TD" alt="Tracey Darabasz" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Tracey Darabasz</div>
+                        <div class="testimonial-role">11 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">We had an emergency with our dog and they took him in right away to be evaluated. Dr Thomas and his staff were exceptional. They took great care of our dog! They were very caring, attentive and professional!Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/E0E0E0/FFFFFF?text=DN" alt="D NE Philly" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">D NE Philly</div>
+                        <div class="testimonial-role">11 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Dr. Thomas and all the vet techs at Caring Hands are wonderful. They take great care of my cats and are always sincere and engaged.Read more</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/F0F0F0/FFFFFF?text=JT" alt="Julie Tan" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Julie Tan</div>
+                        <div class="testimonial-role">11 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">All of my animals have gone here, really great staff. I wouldn't go anywhere else.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://placehold.co/60x60/A0A0A0/FFFFFF?text=JT" alt="Julie Tan" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Julie Tan</div>
+                        <div class="testimonial-role">11 months ago</div>
+                    </div>
+                </div>
+                <div class="testimonial-rating">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">Took my cat here twice for illness and wellness visits, Dr. Thomas and his staff are exceptional and truly caring. We’ve had rather saddening experiences with previous vets where they completely disregarded our past cat’s illness, but walking into Caring Hands, we felt completely at ease. Cost for care is very reasonable as well. Highly recommend!</p>
+            </div>
+        </div>
+
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be dynamically generated -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+    </main>
+
+    <div class="map--section">
+        <div class="info--area">
+            <div class="office-hours-container">
+
+                <!-- Main content area now uses a responsive grid -->
+                <div class="office-hours-grid">
+                    <!-- Office Hours List Column -->
+
+                    <div>
+                        <h1 class="office-hours-title">Office Hours</h1>
+
+                        <div class="office-hours-list">
+                            <!-- Monday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Monday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 5:00 pm</span>
+                            </div>
+
+                            <!-- Tuesday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Tuesday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 8:00 pm</span>
+                            </div>
+
+                            <!-- Wednesday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Wednesday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 8:00 pm</span>
+                            </div>
+
+                            <!-- Thursday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Thursday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">9:00 am - 6:00 pm</span>
+                            </div>
+
+                            <!-- Friday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Friday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">8:00 am - 4:00 pm</span>
+                            </div>
+
+                            <!-- Saturday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Saturday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">9:00 am - 3:00 pm</span>
+                            </div>
+
+                            <!-- Sunday -->
+                            <div class="daily-schedule-item">
+                                <span class="day-name">Sunday</span>
+                                <div class="separator"></div>
+                                <span class="time-range">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Holiday Closures Section Column -->
+
+                    <div>
+                        <h1 class="office-hours-title">We will be closed on the following holidays:</h1>
+                        <ul class="holiday-list">
+                            <li>New Year's Eve</li>
+                            <li>New Year's Day</li>
+                            <li>Memorial Day</li>
+                            <li>Independence Day</li>
+                            <li>Labor Day</li>
+                            <li>Thanksgiving</li>
+                            <li>Christmas Eve</li>
+                            <li>Christmas Day</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-wrapper">
+                <!-- Emergency Contact Section -->
+                <div class="emergency-section">
+                    <h2>Emergency Care</h2>
+                    <p>
+                        In case of emergency during our off hours you can contact the following 24 hour Emergency Care
+                        Centers:
+                    </p>
+                    <ul>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Veterinary Specialty & Emergency Center (VSEC)</span>
+                                <a href="https://vesecvet.com" target="_blank">vesecvet.com</a>
+                                <span class="block">(215) 750-7884</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Matthew J Ryan Hospital (University of Penn.)</span>
+                                <span class="block">(215) 898-4680</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <span class="font-medium">Centre for Animal Referral & Emergency Services (CARES)</span>
+                                <a href="https://vetcares.com" target="_blank">vetcares.com</a>
+                                <span class="block">(215) 750-2774</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Branding and Social Media Section -->
+                <div class="branding-social-section">
+                    <!-- Logos -->
+                    <div class="logos-container">
+                        <img src="../asset/caringhandsvetclinic_logo15f-999-626.png.webp"
+                            alt="Caring Hands Veterinary Clinic Logo">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100055273847886"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                            <a
+                                href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i
+                                    class="fab fa-google"></i></a>
+                            <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i
+                                    class="fab fa-yelp"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14710.079743306154!2d-75.0071798!3d40.0679285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b37a74daf973%3A0x86d30f06cde938d!2sCaring%20Hands%20Veterinary%20Clinic!5e1!3m2!1sen!2sph!4v1750088527301!5m2!1sen!2sph"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Loading Container -->
+     <div id="loadingPage" class="loading-container">
+        <!-- Font Awesome Dog Icon -->
+        <i class="fas fa-dog dog-icon"></i>
+        <div class="loading-text">Caring for your pets...</div>
+    </div>
+
+
+    <!-- Footer Section -->
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <!-- Logo Image Moved Here, below the heading and above the phone number -->
+                <img src="../asset/logo.jpg" alt="Company Logo" class="footer-logo">
+                <p><i class="fas fa-phone"></i> (215) 621-8959</p>
+                <!-- Retaining social icons here as they often go with contact info -->
+                <div class="social-icons23">
+                    <a href="https://www.facebook.com/profile.php?id=100055273847886"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/CaringHandsVC"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.google.com/maps/place/Caring+Hands+Veterinary+Clinic/@40.0679285,-75.0071798,3378m/data=!3m1!1e3!4m6!3m5!1s0x89c6b37a74daf973:0x86d30f06cde938d!8m2!3d40.0679285!4d-75.0071798!16s%2Fg%2F1hhjtj6kb?hl=en&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/caring-hands-veterinary-clinic-philadelphia"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>OUR PAGES</h3>
+                <ul>
+                    <li><a href="../page/service.html">Service</a></li>
+                    <li><a href="../page/condition.html">Conditions Treated</a></li>
+                    <li><a href="../page/aboutUs.html">About Us</a></li>
+                    <li><a href="../page/blog.html">Blog</a></li>
+                    <li><a href="../page/contactUs.html">Contact Us</a></li>
+                    <li><a href="#more-pages">More</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>OUR SERVICES</h3>
+                <ul>
+                    <li><a href="../page/service.html">Bloodwork</a></li>
+                    <li><a href="../page/service.html">Dental Diseases</a></li>
+                    <li><a href="../page/service.html">Deworming</a></li>
+                    <li><a href="../page/service.html">Eye and Ear Surgery</a></li>
+                    <li><a href="../page/service.html">More</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="currentYear"></span> Caring Hands Veterinary Clinic. All rights reserved.
+        </div>
+    </footer>
+
+     <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
+        <a class="floating" target="_blank" href="http://carecredit.com/go/337PXH">
+            <!-- <i class="fa-solid fa-prescription-bottle-medical"></i> -->
+             <img src="../asset/qr-code_cropped_via_10015_io.png" alt=" qr-code" class="qr-icon">
+        </a>
+
+
+
+
+
+
+</body>
+
+<script src="../index.js"></script>
+
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const testimonialsGrid = document.getElementById('testimonials-grid');
+            const testimonialCards = Array.from(testimonialsGrid.getElementsByClassName('testimonial-card'));
+            const paginationContainer = document.getElementById('pagination');
+            const cardsPerPage = 6;
+            let currentPage = 1;
+
+            // Function to display cards for a given page
+            function displayCards(page) {
+                const startIndex = (page - 1) * cardsPerPage;
+                const endIndex = startIndex + cardsPerPage;
+
+                testimonialCards.forEach((card, index) => {
+                    if (index >= startIndex && index < endIndex) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Function to set up pagination buttons
+            function setupPagination() {
+                paginationContainer.innerHTML = ''; // Clear existing buttons
+                const totalPages = Math.ceil(testimonialCards.length / cardsPerPage);
+
+                // Add previous button
+                const prevButton = document.createElement('button');
+                prevButton.classList.add('pagination-button');
+                prevButton.innerHTML = '&lt;';
+                prevButton.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        updatePagination();
+                    }
+                });
+                paginationContainer.appendChild(prevButton);
+
+                // Add page number buttons
+                for (let i = 1; i <= totalPages; i++) {
+                    const button = document.createElement('button');
+                    button.classList.add('pagination-button');
+                    button.textContent = String(i).padStart(2, '0');
+                    button.addEventListener('click', () => {
+                        currentPage = i;
+                        updatePagination();
+                    });
+                    paginationContainer.appendChild(button);
+                }
+
+                // Add next button
+                const nextButton = document.createElement('button');
+                nextButton.classList.add('pagination-button');
+                nextButton.innerHTML = '&gt;';
+                nextButton.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        updatePagination();
+                    }
+                });
+                paginationContainer.appendChild(nextButton);
+
+                updatePagination(); // Initial update to set active button and display cards
+            }
+
+            // Function to update active button and display cards
+            function updatePagination() {
+                const buttons = paginationContainer.querySelectorAll('.pagination-button');
+                buttons.forEach(button => {
+                    button.classList.remove('active');
+                    if (button.textContent === String(currentPage).padStart(2, '0')) {
+                        button.classList.add('active');
+                    }
+                });
+                displayCards(currentPage);
+            }
+
+            // Initialize pagination and display first page
+            setupPagination();
+        });
+    </script>
+
+</html>

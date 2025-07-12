@@ -2288,7 +2288,7 @@ input[type="date"] {
             position: fixed; /* Fixed position */
             bottom: 30px; /* Place at the bottom */
             left: 30px; /* Place at the right */
-            z-index: 99999999999; /* Make sure it's above other content */
+            z-index: 9999; /* Make sure it's above other content */
             border: none; /* Remove borders */
             outline: none; /* Remove outline */
             background-color: var(--text-dark); /* Blue background */
@@ -2315,7 +2315,7 @@ input[type="date"] {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            z-index: 99999999999; /* Ensure it's on top of other content */
+            z-index: 9999999999999999999999999999 !important; /* Ensure it's on top of other content */
             transition: opacity 0.5s ease-out; /* Smooth fade-out effect */
         }
 
