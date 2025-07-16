@@ -92,7 +92,21 @@
         <a href="../page/apointment.html" class="btn2 margin-top">Request Appointment</a>
     </div>
 
+    <div class="service--container">
+        <picture class="banner--image">
+            <!-- Small size for mobile (most specific first) -->
+            <source media="(max-width: 500px)" srcset="../asset/banner/form--phone--banner.png">
 
+            <!-- Medium size for tablets -->
+            <source media="(max-width: 768px)" srcset="../asset/banner/form--tablet--banner.png">
+
+            <!-- WebP image for modern browsers (as fallback, no media query) -->
+            <source srcset="../asset/banner/form--banner.png" type="image/webp">
+
+            <!-- Default fallback image (in case all else fails) -->
+            <img src="https://via.placeholder.com/1200x600" alt="Responsive Image">
+        </picture>
+    </div>
 
 
     <main class="main---container vh">

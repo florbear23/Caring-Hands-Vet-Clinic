@@ -2696,3 +2696,30 @@ input[type="date"] {
                 font-size: 1.2em;
             }
         }
+
+        .service--container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 1rem 0; 
+            background-color:#fff;
+            
+        }
+
+        .service--container > .banner--image{
+            max-width: 1400px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+         .banner--image > source{
+             width: 100%;
+         }
+
+          picture img{
+            width: 100%;
+          }
+
+       
