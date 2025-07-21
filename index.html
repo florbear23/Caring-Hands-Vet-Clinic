@@ -172,8 +172,38 @@
         </div>
     </section>
 
+    <section class="container-max-global">
+        <div class="container-global">
+            <picture class="banner--image">
+                <!-- Small size for mobile (most specific first) -->
+                <source media="(max-width: 500px)" srcset="./asset/slogan/slogan1-phone.png">
+        
+                <!-- Medium size for tablets -->
+                <source media="(max-width: 768px)" srcset="./asset/slogan/slogan1-tablet.png">
+        
+                <!-- WebP image for modern browsers (as fallback, no media query) -->
+                <source srcset="./asset/slogan/slogan1-default.png" type="image/webp">
+        
+                <!-- Default fallback image (in case all else fails) -->
+                <img class="bg--un" src="./asset/banner/qr-default-picture.png" alt="Responsive Image">
+            </picture>
+        </div>
+    </section>
+
     <section class="qr-section">
-        <img src="./asset/qr-code.webp" alt="qr code">
+        <picture class="banner--image">
+            <!-- Small size for mobile (most specific first) -->
+            <source media="(max-width: 500px)" srcset="./asset/banner/qr-phone-picture.png">
+
+            <!-- Medium size for tablets -->
+            <source media="(max-width: 768px)" srcset="./asset/banner/qr-tablet-picture.png">
+
+            <!-- WebP image for modern browsers (as fallback, no media query) -->
+            <source srcset="./asset/banner/qr-default-picture.png" type="image/webp">
+
+            <!-- Default fallback image (in case all else fails) -->
+            <img  class="bg--un" src="./asset/banner/qr-default-picture.png" alt="Responsive Image">
+        </picture>
     </section>
 
     <div class="about-container222">
@@ -427,6 +457,39 @@
     </section>
 
 
+    <section class="container-max-global mt20 bg-global-2">
+        <div class="container-global">
+            <picture class="banner--image center">
+                <!-- Small size for mobile (most specific first) -->
+                <source media="(max-width: 500px)" srcset="./asset/slogan/slogan2-phone.png">
+
+                <!-- Medium size for tablets -->
+                <source media="(max-width: 768px)" srcset="./asset/slogan/slogan2-default.png">
+
+                <!-- WebP image for modern browsers (as fallback, no media query) -->
+                <source srcset="./asset/slogan/slogan2-default.png" type="image/webp">
+
+                <!-- Default fallback image (in case all else fails) -->
+                <img  class="bg--un" src="./asset/banner/qr-default-picture.png" alt="Responsive Image">
+            </picture>
+
+           <picture class="banner--image center">
+                <!-- Small size for mobile (most specific first) -->
+                <source media="(max-width: 500px)" srcset="./asset/slogan/slogan3-phone.png">
+
+                <!-- Medium size for tablets -->
+                <source media="(max-width: 768px)" srcset="./asset/slogan/slogan3-default.png">
+
+                <!-- WebP image for modern browsers (as fallback, no media query) -->
+                <source srcset="./asset/slogan/slogan3-default.png" type="image/webp">
+
+                <!-- Default fallback image (in case all else fails) -->
+                <img  class="bg--un" src="./asset/banner/qr-default-picture.png" alt="Responsive Image">
+            </picture>
+        </div>
+    </section>
+
+
     <section class="team-section-container">
         <div class="text-center-wrapper">
             <h2 class="main-heading animate-fade-in" style="animation-delay: 0s;">
@@ -674,9 +737,23 @@
             </div>
             <div class="adopt-section-container">
         <!-- Top Banner Section - Now a minimal orange bar -->
-        <div class="banner-top" style="background:url(./asset/emergency.jpg) center center/cover no-repeat;">
-            <!-- This section is now just a decorative bar -->
-        </div>
+            <div class="banner-top" >
+            <div class="service--container">
+                    <picture class="banner--image">
+                        <!-- Small size for mobile (most specific first) -->
+                        <source media="(max-width: 500px)" srcset="./asset/banner/emer-phone-picture.png">
+
+                        <!-- Medium size for tablets -->
+                        <source media="(max-width: 768px)" srcset="./asset/banner/emer-tablet-picture.png">
+
+                        <!-- WebP image for modern browsers (as fallback, no media query) -->
+                        <source srcset="./asset/banner/emer-default-picture.png" type="image/webp">
+
+                        <!-- Default fallback image (in case all else fails) -->
+                        <img  class="bg--un" src="./asset/banner/emer-default-picture.png" alt="Responsive Image">
+                    </picture>
+                </div>
+            </div>
 
         <!-- Pets Image Section - Hidden -->
         <div class="pets-image-container" >

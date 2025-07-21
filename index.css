@@ -13,12 +13,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+   
     /* outline: 1px solid red; */
 }
 
 body{
     margin: 0;
     padding: 0;
+     background-color: #FFE5CC;
 }
 
 .top-bar {
@@ -112,7 +114,7 @@ body{
 }
 
 .nav-menu a:hover {
-    color: #333;
+    color: whitesmoke;
 }
 
 .nav-menu a:hover::after {
@@ -581,7 +583,7 @@ body{
   
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -597,6 +599,43 @@ body{
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 30px; /* Space between columns */
 }
+/* global area */
+
+.container-max-global{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 30px; /* Space between columns */
+}
+
+.container-global {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 30px; /* Space between columns */
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.bg-global-1{
+    background: #ffffff url(./asset/bg.png) center center/cover no-repeat; 
+}
+
+.bg-global-2{
+    background: #ffffff url(./asset/bg2.png) center center/cover no-repeat; 
+}
+
+
+
+
 
 /* Hospital Section Styling */
   .about-container222 {
@@ -1033,7 +1072,7 @@ body{
 /* Appointment Section Styling */
 .appointment-section {
     width: 100%; /* Ensure section takes full width */
-    padding: 0; /* Remove default padding as container handles it */
+    padding: 2rem 0; /* Remove default padding as container handles it */
 }
 
 .image-column {
@@ -1362,7 +1401,7 @@ input[type="date"] {
         .team-section-container {
             width: 100%;
             max-width: 1400px; /* Equivalent to Tailwind's max-w-6xl */
-            margin: 0 auto; /* Equivalent to Tailwind's mx-auto */
+            margin: 2rem auto; /* Equivalent to Tailwind's mx-auto */
             padding-top: 3rem; /* Equivalent to py-12 (top) */
             padding-bottom: 3rem; /* Equivalent to py-12 (bottom) */
             padding-left: 1rem; /* Equivalent to px-4 */
@@ -1560,7 +1599,7 @@ input[type="date"] {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    background-color: whitesmoke;
+    background: #ffffff url(./asset/bg.png) center center/cover no-repeat;
  }
         .customer-slider-section {
             padding: 60px 20px;
@@ -1788,8 +1827,6 @@ input[type="date"] {
             background-color: #72461c; /* Darker brown background */
             color: #fdf3f1; /* Light cream text color */
             padding: 40px 20px;
-            border-top-left-radius: 15px; /* Rounded top-left corner */
-            border-top-right-radius: 15px; /* Rounded top-right corner */
             box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
             position: relative;
             z-index: 10;
@@ -1965,11 +2002,17 @@ input[type="date"] {
                 max-width: 217px;
                 width: 100%;
                 padding: 20px;
-                background-color: whitesmoke !important;
-                color: var(--primary-color ) !important;
+                background-color: whitesmoke ;
+                color: var(--primary-color ) ;
                 border-radius: 30px;
                 text-decoration: none;
                 text-align: center;
+            }
+
+
+            .btn1:hover ,.btn2:hover{
+                background-color: #DA4646;
+                color: #fff;
             }
 
             .margin-top{
@@ -2018,6 +2061,8 @@ input[type="date"] {
             font-size: 18px; /* Increase font size */
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow for button */
             transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            width: 50px;
+            height: 50px;
         }
 
         #scrollToTopBtn2:hover {
@@ -2036,7 +2081,7 @@ input[type="date"] {
             z-index: 9999; /* Make sure it's above other content */
             border: none; /* Remove borders */
             outline: none; /* Remove outline */
-            background-color: var(--text-dark); /* Blue background */
+            background-color: #008479; /* Blue background */
             color: white; /* White text */
             cursor: pointer; /* Add a mouse pointer on hover */
             padding: 15px 25px; /* Some padding */
@@ -2263,7 +2308,7 @@ input[type="date"] {
 
         .right-image-area .image-wrapper {
             width: 100%;
-            max-width: 350px; /* Adjust max width for the image */
+            max-width: 500px; /* Adjust max width for the image */
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -2411,14 +2456,18 @@ input[type="date"] {
         .banner-top {
             
             color: #fff;
-            
+            background-color: transparent;
             min-height: 300px; /* Minimal height */
-            height: 300px;
+            height: 360px;
             box-sizing: border-box;
             display: flex; /* Keep flex for potential future use, but it's empty */
             justify-content: center;
             align-items: center;
         }
+
+         .bg--un{
+            background-color: transparent;
+         }
 
         /* Elements that remain hidden or are no longer in banner-top */
         .banner-top .logo-container,
@@ -2631,6 +2680,7 @@ input[type="date"] {
             .banner-top {
                 /* padding: 8px 30px; */
                 min-height: 25px;
+                height: 765px;
             }
             .bottom-info {
                 padding: 20px 30px;
