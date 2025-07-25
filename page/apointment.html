@@ -96,24 +96,23 @@
 
 
     <main class="main---container">
+        
+     <div class="wizard-container">
+    <div class="wizard-header">
+        <h2>Schedule Your Pet's Appointment</h2>
+        <p>Please fill out the details below to request an appointment with our clinic.</p>
+    </div>
 
-       <div class="wizard-container">
-        <div class="wizard-header">
-            <h2>Schedule Your Pet's Appointment</h2>
-            <p>Please fill out the details below to request an appointment with our clinic.</p>
-        </div>
+    <div class="step-indicators">
+        <div class="step-indicator active" id="stepIndicator1">1</div>
+        <div class="step-indicator" id="stepIndicator2">2</div>
+        <div class="step-indicator" id="stepIndicator3">3</div>
+        <div class="step-indicator" id="stepIndicator4">4</div>
+        <div class="step-indicator" id="stepIndicator5">5</div>
+        <div class="step-indicator" id="stepIndicator6">6</div>
+    </div>
 
-        <!-- Step Indicators -->
-        <div class="step-indicators">
-            <div class="step-indicator active" id="stepIndicator1">1</div>
-            <div class="step-indicator" id="stepIndicator2">2</div>
-            <div class="step-indicator" id="stepIndicator3">3</div>
-            <div class="step-indicator" id="stepIndicator4">4</div>
-            <div class="step-indicator" id="stepIndicator5">5</div>
-            <div class="step-indicator" id="stepIndicator6">6</div>
-        </div>
-
-        <!-- Step 1: Pet Information -->
+    <form id="appointmentForm" action="https://formspree.io/f/xeozaapz"  method="POST">
         <div class="form-step active" id="step1">
             <h3>Step 1: Pet Information</h3>
             <div class="form-group">
@@ -158,7 +157,6 @@
             </div>
         </div>
 
-        <!-- Step 2: Owner Information -->
         <div class="form-step" id="step2">
             <h3>Step 2: Owner Information</h3>
             <div class="form-group">
@@ -187,7 +185,6 @@
             </div>
         </div>
 
-        <!-- NEW Step 3: Personal Information -->
         <div class="form-step" id="step3">
             <h3>Step 3: Personal Information</h3>
             <div class="form-group">
@@ -222,7 +219,6 @@
             </div>
         </div>
 
-        <!-- Original Step 3, now Step 4: Appointment Details -->
         <div class="form-step" id="step4">
             <h3>Step 4: Appointment Details</h3>
             <div class="form-group">
@@ -237,42 +233,62 @@
             </div>
             <div class="form-group">
                 <label for="reasonForVisit">Reason for Visit <span style="color: red;">*</span></label>
-                <textarea id="reasonForVisit" name="reasonForVisit" placeholder="e.g., Annual check-up, vaccination, limping, etc."></textarea>
+                <textarea id="reasonForVisit" name="reasonForVisit"
+                    placeholder="e.g., Annual check-up, vaccination, limping, etc."></textarea>
                 <span class="error-message" id="reasonForVisitError">Reason for visit is required.</span>
             </div>
         </div>
 
-        <!-- Original Step 4, now Step 5: Terms and Conditions -->
         <div class="form-step" id="step5">
             <h3>Step 5: Terms and Conditions for Online Appointment Booking</h3>
             <div class="terms-content">
                 <h4>Instructions for Clients Before Making an Appointment:</h4>
                 <p><strong>New Clients</strong></p>
                 <ul>
-                    <li><strong>Arrival Time:</strong> Please arrive 15 minutes before your appointment and bring all your previous medical records.</li>
-                    <li><strong>Medical records:</strong> Please have your previous veterinarian/emergency hospital/breeder email us all the important vaccine history and medical records to the clinic's email 24 hours before your appointment - Email: <strong>info@caringhandsvetclinic.com</strong></li>
-                    <li><strong>Appointment Restrictions:</strong> New clients cannot book technician appointments.</li>
-                    <li><strong>Routine Check-Ups and GI Issues:</strong> If your pet is coming in for a routine annual check-up or has gastrointestinal issues, please bring a fresh stool sample in a plastic bag or small container completely sealed.</li>
+                    <li><strong>Arrival Time:</strong> Please arrive 15 minutes before your appointment and bring all
+                        your previous medical records.</li>
+                    <li><strong>Medical records:</strong> Please have your previous veterinarian/emergency
+                        hospital/breeder email us all the important vaccine history and medical records to the clinic's
+                        email 24 hours before your appointment - Email: <strong>info@caringhandsvetclinic.com</strong>
+                    </li>
+                    <li><strong>Appointment Restrictions:</strong> New clients cannot book technician appointments.
+                    </li>
+                    <li><strong>Routine Check-Ups and GI Issues:</strong> If your pet is coming in for a routine
+                        annual check-up or has gastrointestinal issues, please bring a fresh stool sample in a plastic
+                        bag or small container completely sealed.</li>
                 </ul>
 
                 <p><strong>Existing Clients</strong></p>
                 <ul>
-                    <li><strong>Arrival Time:</strong> Please arrive 10 minutes before your appointment to be checked in.</li>
-                    <li><strong>Technician Appointments:</strong> When you select a technician appointment, your pet will be seen by a technician to update vaccines, perform blood tests, and deworming under the supervision of a doctor. If you need to discuss any health concerns with the doctor, please cancel and change the appointment type to a Doctor's Appointment.</li>
-                    <li>If your pet is up-to-date on their annual or biannual check-up, services like booster vaccines, heartworm tests, other lab work, Cytopoint injections, and Allercept injections can be performed by an experienced or certified Caring Hands technician.</li>
-                    <li><strong>Doctors Appointment:</strong> If your pet is experiencing any health or behavior concerns and you need to see a doctor during your visit, please select the "Doctor Appointment" option.</li>
-                    <li><strong>Annual and Biannual check-up:</strong> Schedule a Doctor Appointment (not a technician exam) if your pet is due for an annual check-up and vaccines.</li>
-                    <li><strong>No-Show Policy:</strong> Please notify the office at least 24 business hours in advance if you cannot make it to your pet's appointment. Clients will lose their deposit if they do not show up for the appointment. Calling the office after the appointment time or within that hour will be considered a no-show.</li>
+                    <li><strong>Arrival Time:</strong> Please arrive 10 minutes before your appointment to be checked
+                        in.</li>
+                    <li><strong>Technician Appointments:</strong> When you select a technician appointment, your pet
+                        will be seen by a technician to update vaccines, perform blood tests, and deworming under the
+                        supervision of a doctor. If you need to discuss any health concerns with the doctor, please
+                        cancel and change the appointment type to a Doctor's Appointment.</li>
+                    <li>If your pet is up-to-date on their annual or biannual check-up, services like booster vaccines,
+                        heartworm tests, other lab work, Cytopoint injections, and Allercept injections can be
+                        performed by an experienced or certified Caring Hands technician.</li>
+                    <li><strong>Doctors Appointment:</strong> If your pet is experiencing any health or behavior
+                        concerns and you need to see a doctor during your visit, please select the "Doctor Appointment"
+                        option.</li>
+                    <li><strong>Annual and Biannual check-up:</strong> Schedule a Doctor Appointment (not a technician
+                        exam) if your pet is due for an annual check-up and vaccines.</li>
+                    <li><strong>No-Show Policy:</strong> Please notify the office at least 24 business hours in
+                        advance if you cannot make it to your pet's appointment. Clients will lose their deposit if they
+                        do not show up for the appointment. Calling the office after the appointment time or within that
+                        hour will be considered a no-show.</li>
                 </ul>
             </div>
             <div class="checkbox-group">
                 <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
-                <label for="agreeTerms">I have read and agree to the Terms and Conditions for Online Appointment Booking. <span style="color: red;">*</span></label>
-                <span class="error-message" id="agreeTermsError">You must agree to the terms and conditions to proceed.</span>
+                <label for="agreeTerms">I have read and agree to the Terms and Conditions for Online Appointment
+                    Booking. <span style="color: red;">*</span></label>
+                <span class="error-message" id="agreeTermsError">You must agree to the terms and conditions to
+                    proceed.</span>
             </div>
         </div>
 
-        <!-- Original Step 5, now Step 6: Confirmation -->
         <div class="form-step" id="step6">
             <h3>Step 6: Confirm Your Details</h3>
             <p>Please review the information below before submitting your appointment request.</p>
@@ -306,19 +322,19 @@
             </div>
         </div>
 
-        <!-- Navigation Buttons -->
         <div class="wizard-buttons">
             <button type="button" id="prevBtn" style="display: none;">Previous</button>
             <button type="button" id="nextBtn">Next</button>
-            <button type="button" id="submitBtn" style="display: none;">Request Appointment</button>
+            <button type="submit" id="submitBtn" style="display: none;">Request Appointment</button>
+           
         </div>
 
-        <!-- Success Message (hidden by default) -->
-        <div id="successMessage">
+        <div id="successMessage" style="display: none;">
             <p>Your appointment request has been submitted successfully!</p>
             <p>We will contact you shortly to confirm the details.</p>
         </div>
-    </div>
+    </form>
+</div>
 
 
     </main>
@@ -650,219 +666,200 @@
 <script src="../index.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-        $(document).ready(function() {
-            let currentStep = 1; // Tracks the current step of the wizard
-            const totalSteps = 6; // Total number of steps in the wizard
+      $(document).ready(function() {
+    let currentStep = 1; // Tracks the current step of the wizard
+    const totalSteps = 6; // Total number of steps in the wizard
 
-            // Function to display the specified step and update indicators
-            function showStep(stepNum) {
-                // Hide all form steps and remove 'active' and 'completed' classes from indicators
-                $('.form-step').removeClass('active');
-                $('.step-indicator').removeClass('active completed');
+    // Function to display the specified step and update indicators
+    function showStep(stepNum) {
+        // Hide all form steps and remove 'active' and 'completed' classes from indicators
+        $('.form-step').removeClass('active');
+        $('.step-indicator').removeClass('active completed');
 
-                // Show the current step
-                $('#step' + stepNum).addClass('active');
+        // Show the current step
+        $('#step' + stepNum).addClass('active');
 
-                // Update step indicators:
-                // Set 'completed' class for all steps prior to the current one
-                for (let i = 1; i < stepNum; i++) {
-                    $('#stepIndicator' + i).addClass('completed');
-                }
-                // Set 'active' class for the current step
-                $('#stepIndicator' + stepNum).addClass('active');
+        // Update step indicators:
+        // Set 'completed' class for all steps prior to the current one
+        for (let i = 1; i < stepNum; i++) {
+            $('#stepIndicator' + i).addClass('completed');
+        }
+        // Set 'active' class for the current step
+        $('#stepIndicator' + stepNum).addClass('active');
 
-                // Adjust button visibility based on the current step
-                if (stepNum === 1) {
-                    $('#prevBtn').hide(); // Hide previous button on the first step
+        // Adjust button visibility based on the current step
+        if (stepNum === 1) {
+            $('#prevBtn').hide(); // Hide previous button on the first step
+        } else {
+            $('#prevBtn').show(); // Show previous button on other steps
+        }
+
+        if (stepNum === totalSteps) {
+            $('#nextBtn').hide(); // Hide next button on the last step
+            $('#submitBtn').show(); // Show submit button on the last step
+            updateConfirmationSummary(); // Populate summary on the confirmation step
+        } else {
+            $('#nextBtn').show(); // Show next button on other steps
+            $('#submitBtn').hide(); // Hide submit button on other steps
+        }
+
+        // Hide success message if we navigate back or forward after submission
+        $('#successMessage').hide();
+    }
+
+    // Function to validate the current step's form fields
+    function validateStep(stepNum) {
+        let isValid = true;
+        // Get all required input/select/textarea elements within the current step
+        $('#step' + stepNum + ' :input[required], #step' + stepNum + ' select').each(function() {
+            const input = $(this);
+            const errorMessageId = input.attr('id') + 'Error';
+            const errorMessageElement = $('#' + errorMessageId);
+
+            if (input.is(':checkbox')) { // Special validation for checkboxes
+                if (!input.is(':checked')) {
+                    errorMessageElement.show();
+                    isValid = false;
                 } else {
-                    $('#prevBtn').show(); // Show previous button on other steps
+                    errorMessageElement.hide();
                 }
-
-                if (stepNum === totalSteps) {
-                    $('#nextBtn').hide(); // Hide next button on the last step
-                    $('#submitBtn').show(); // Show submit button on the last step
-                    updateConfirmationSummary(); // Populate summary on the confirmation step
-                } else {
-                    $('#nextBtn').show(); // Show next button on other steps
-                    $('#submitBtn').hide(); // Hide submit button on other steps
+            } else if (input.val().trim() === '' || (input.is('select') && input.val() === '')) {
+                input.addClass('error-border');
+                errorMessageElement.show();
+                isValid = false;
+            } else {
+                input.removeClass('error-border');
+                errorMessageElement.hide();
+                // Additional validation for email and phone numbers
+                if (input.attr('type') === 'email' && !isValidEmail(input.val())) {
+                    errorMessageElement.text('Please enter a valid email address.');
+                    errorMessageElement.show();
+                    isValid = false;
+                } else if (input.attr('type') === 'tel' && !isValidPhone(input.val())) {
+                    errorMessageElement.text('Please enter a valid phone number (e.g., +1 (123) 456-7890).');
+                    errorMessageElement.show();
+                    isValid = false;
+                } else if (input.attr('type') === 'number' && input.attr('id') === 'numberOfPets' && (parseInt(input.val()) < 1 || isNaN(parseInt(input.val())))) {
+                    // Specific validation for numberOfPets
+                    errorMessageElement.text('Number of pets is required and must be at least 1.');
+                    errorMessageElement.show();
+                    isValid = false;
                 }
-
-                // Hide success message if we navigate back or forward after submission
-                $('#successMessage').hide();
             }
-
-            // Function to validate the current step's form fields
-            function validateStep(stepNum) {
-                let isValid = true;
-                // Get all required input/select/textarea elements within the current step
-                $('#step' + stepNum + ' :input[required], #step' + stepNum + ' select').each(function() {
-                    const input = $(this);
-                    const errorMessageId = input.attr('id') + 'Error';
-                    const errorMessageElement = $('#' + errorMessageId);
-
-                    if (input.is(':checkbox')) { // Special validation for checkboxes
-                        if (!input.is(':checked')) {
-                            errorMessageElement.show();
-                            isValid = false;
-                        } else {
-                            errorMessageElement.hide();
-                        }
-                    } else if (input.val().trim() === '' || (input.is('select') && input.val() === '')) {
-                        input.addClass('error-border');
-                        errorMessageElement.show();
-                        isValid = false;
-                    } else {
-                        input.removeClass('error-border');
-                        errorMessageElement.hide();
-                        // Additional validation for email and phone numbers
-                        if (input.attr('type') === 'email' && !isValidEmail(input.val())) {
-                            errorMessageElement.text('Please enter a valid email address.');
-                            errorMessageElement.show();
-                            isValid = false;
-                        } else if (input.attr('type') === 'tel' && !isValidPhone(input.val())) {
-                            errorMessageElement.text('Please enter a valid phone number (e.g., +1 (123) 456-7890).');
-                            errorMessageElement.show();
-                            isValid = false;
-                        } else if (input.attr('type') === 'number' && input.attr('id') === 'numberOfPets' && (parseInt(input.val()) < 1 || isNaN(parseInt(input.val())))) {
-                            // Specific validation for numberOfPets
-                            errorMessageElement.text('Number of pets is required and must be at least 1.');
-                            errorMessageElement.show();
-                            isValid = false;
-                        }
-                    }
-                });
-                return isValid;
-            }
-
-            // Helper function for basic email validation
-            function isValidEmail(email) {
-                // A simple regex for email validation (can be more robust)
-                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return regex.test(email);
-            }
-
-            // Helper function for basic phone validation (can be more robust)
-            function isValidPhone(phone) {
-                // Allows digits, spaces, hyphens, parentheses, and plus sign at the beginning
-                const regex = /^\+?[\d\s\-\(\)]+$/;
-                return regex.test(phone) && phone.replace(/[\s\-\(\)]/g, '').length >= 10; // Min 10 digits
-            }
-
-
-            // Function to update the confirmation summary on step 6 (now step 6)
-            function updateConfirmationSummary() {
-                $('#summaryPetName').text($('#petName').val() || 'N/A');
-                $('#summaryPetType').text($('#petType option:selected').text() || 'N/A');
-                $('#summaryPetBreed').text($('#petBreed').val() || 'N/A');
-                $('#summaryPetAge').text($('#petAge').val() || 'N/A');
-                $('#summaryNumberOfPets').text($('#numberOfPets').val() || 'N/A');
-                $('#summaryClinicianPreference').text($('#clinicianPreference option:selected').text() || 'N/A');
-
-                $('#summaryOwnerName').text($('#ownerName').val() || 'N/A');
-                $('#summaryClientStatus').text($('#clientStatus option:selected').text() || 'N/A');
-                $('#summaryOwnerEmail').text($('#ownerEmail').val() || 'N/A');
-                $('#summaryOwnerPhone').text($('#ownerPhone').val() || 'N/A');
-
-                $('#summaryFirstName').text($('#firstName').val() || 'N/A');
-                $('#summaryLastName').text($('#lastName').val() || 'N/A');
-                $('#summaryStreetAddress').text($('#streetAddress').val() || 'N/A');
-                $('#summaryCity').text($('#city').val() || 'N/A');
-                $('#summaryState').text($('#state').val() || 'N/A');
-                $('#summaryZipCode').text($('#zipCode').val() || 'N/A');
-
-                $('#summaryAppointmentDate').text($('#appointmentDate').val() || 'N/A');
-                $('#summaryAppointmentTime').text($('#appointmentTime').val() || 'N/A');
-                $('#summaryReasonForVisit').text($('#reasonForVisit').val() || 'N/A');
-            }
-
-            // Click handler for the 'Next' button
-            $('#nextBtn').on('click', function() {
-                // Validate the current step before proceeding
-                if (validateStep(currentStep)) {
-                    currentStep++;
-                    if (currentStep > totalSteps) {
-                        currentStep = totalSteps; // Prevent going beyond the last step
-                    }
-                    showStep(currentStep); // Display the next step
-                }
-            });
-
-            // Click handler for the 'Previous' button
-            $('#prevBtn').on('click', function() {
-                currentStep--;
-                if (currentStep < 1) {
-                    currentStep = 1; // Prevent going below the first step
-                }
-                showStep(currentStep); // Display the previous step
-            });
-
-            // Click handler for the 'Submit' button
-            $('#submitBtn').on('click', function() {
-                // Here you would typically send the data to a server using AJAX
-                // For this example, we'll just simulate a submission and show a success message.
-                // You can collect all data from the form fields using jQuery's .val()
-                const formData = {
-                    petName: $('#petName').val(),
-                    petType: $('#petType').val(),
-                    petBreed: $('#petBreed').val(),
-                    petAge: $('#petAge').val(),
-                    numberOfPets: $('#numberOfPets').val(),
-                    clinicianPreference: $('#clinicianPreference').val(),
-                    ownerName: $('#ownerName').val(),
-                    clientStatus: $('#clientStatus').val(),
-                    ownerEmail: $('#ownerEmail').val(),
-                    ownerPhone: $('#ownerPhone').val(),
-                    firstName: $('#firstName').val(),
-                    lastName: $('#lastName').val(),
-                    streetAddress: $('#streetAddress').val(),
-                    city: $('#city').val(),
-                    state: $('#state').val(),
-                    zipCode: $('#zipCode').val(),
-                    appointmentDate: $('#appointmentDate').val(),
-                    appointmentTime: $('#appointmentTime').val(),
-                    reasonForVisit: $('#reasonForVisit').val(),
-                    agreedTerms: $('#agreeTerms').is(':checked')
-                };
-
-                console.log("Submitting appointment data:", formData);
-
-                // Simulate success and reset the form
-                // In a real application, you would make an AJAX call here, e.g.:
-                /*
-                $.ajax({
-                    url: '/api/submit-appointment', // Your backend API endpoint
-                    method: 'POST',
-                    data: formData,
-                    success: function(response) {
-                        // On successful submission:
-                        $('.form-step').removeClass('active'); // Hide all steps
-                        $('.wizard-buttons').hide(); // Hide buttons
-                        $('.step-indicators').hide(); // Hide indicators
-                        $('#successMessage').show(); // Show success message
-                        // Optionally, reset the form after successful submission
-                        $('form')[0].reset();
-                        currentStep = 1; // Reset step counter
-                    },
-                    error: function(jqXHR, textStatus, errorThrown) {
-                        // Handle submission error
-                        console.error("Submission failed:", textStatus, errorThrown);
-                        alert("There was an error submitting your request. Please try again.");
-                    }
-                });
-                */
-
-                // For this demonstration, we'll just show the success message directly:
-                $('.form-step').removeClass('active'); // Hide all steps
-                $('.wizard-buttons').hide(); // Hide buttons
-                $('.step-indicators').hide(); // Hide indicators
-                $('#successMessage').show(); // Show success message
-                $('form')[0].reset(); // Reset the form fields
-                currentStep = 1; // Reset step for potential re-use
-            });
-
-            // Initialize the wizard to show the first step
-            showStep(currentStep);
         });
+        return isValid;
+    }
+
+    // Helper function for basic email validation
+    function isValidEmail(email) {
+        // A simple regex for email validation (can be more robust)
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+
+    // Helper function for basic phone validation (can be more robust)
+    function isValidPhone(phone) {
+        // Allows digits, spaces, hyphens, parentheses, and plus sign at the beginning
+        const regex = /^\+?[\d\s\-\(\)]+$/;
+        return regex.test(phone) && phone.replace(/[\s\-\(\)]/g, '').length >= 10; // Min 10 digits
+    }
+
+
+    // Function to update the confirmation summary on step 6 (now step 6)
+    function updateConfirmationSummary() {
+        $('#summaryPetName').text($('#petName').val() || 'N/A');
+        $('#summaryPetType').text($('#petType option:selected').text() || 'N/A');
+        $('#summaryPetBreed').text($('#petBreed').val() || 'N/A');
+        $('#summaryPetAge').text($('#petAge').val() || 'N/A');
+        $('#summaryNumberOfPets').text($('#numberOfPets').val() || 'N/A');
+        $('#summaryClinicianPreference').text($('#clinicianPreference option:selected').text() || 'N/A');
+
+        $('#summaryOwnerName').text($('#ownerName').val() || 'N/A');
+        $('#summaryClientStatus').text($('#clientStatus option:selected').text() || 'N/A');
+        $('#summaryOwnerEmail').text($('#ownerEmail').val() || 'N/A');
+        $('#summaryOwnerPhone').text($('#ownerPhone').val() || 'N/A');
+
+        $('#summaryFirstName').text($('#firstName').val() || 'N/A');
+        $('#summaryLastName').text($('#lastName').val() || 'N/A');
+        $('#summaryStreetAddress').text($('#streetAddress').val() || 'N/A');
+        $('#summaryCity').text($('#city').val() || 'N/A');
+        $('#summaryState').text($('#state').val() || 'N/A');
+        $('#summaryZipCode').text($('#zipCode').val() || 'N/A');
+
+        $('#summaryAppointmentDate').text($('#appointmentDate').val() || 'N/A');
+        $('#summaryAppointmentTime').text($('#appointmentTime').val() || 'N/A');
+        $('#summaryReasonForVisit').text($('#reasonForVisit').val() || 'N/A');
+    }
+
+    // Click handler for the 'Next' button
+    $('#nextBtn').on('click', function() {
+        // Validate the current step before proceeding
+        if (validateStep(currentStep)) {
+            currentStep++;
+            if (currentStep > totalSteps) {
+                currentStep = totalSteps; // Prevent going beyond the last step
+            }
+            showStep(currentStep); // Display the next step
+        }
+    });
+
+    // Click handler for the 'Previous' button
+    $('#prevBtn').on('click', function() {
+        currentStep--;
+        if (currentStep < 1) {
+            currentStep = 1; // Prevent going below the first step
+        }
+        showStep(currentStep); // Display the previous step
+    });
+
+    // **IMPORTANT CHANGE:** Modify the submit button's behavior
+    // Instead of preventing default and simulating, we'll let the form submit.
+    // We will attach the success message display to the form's 'submit' event
+    // and let Formspree handle the actual submission.
+
+    $('#appointmentForm').on('submit', function(event) {
+        // Validate the final step before allowing submission
+        if (!validateStep(currentStep)) {
+            event.preventDefault(); // Stop submission if validation fails
+            return;
+        }
+
+        // If validation passes, allow the form to submit normally to Formspree.
+        // Formspree will then redirect the user to a success page by default,
+        // or to your custom thank-you page if configured in Formspree.
+
+        // After the form is submitted (and Formspree redirects), you might not
+        // see the success message directly on *this* page.
+        // Formspree usually handles displaying a success message or redirecting.
+
+        // If you want to show a message *before* redirecting (for a brief moment),
+        // you would use AJAX to submit the form, which your commented-out code showed.
+        // For a direct form submission to Formspree, the page will redirect.
+        
+        // This part is for *after* Formspree successfully processes and redirects back
+        // to a page where you might want to show this message, or if you were
+        // using AJAX instead of direct form submission.
+        // For direct submission, this code below won't execute on the original page.
+        // It's here for conceptual understanding of what would happen on success.
+        console.log("Form is being submitted to Formspree...");
+        
+        // **If you want to use the local success message and prevent Formspree's redirect:**
+        // You would uncomment the AJAX section in your original code
+        // and remove `type="submit"` from the submit button, then programmatically trigger AJAX.
+        // However, sticking with `type="submit"` and `action="formspree.io"` is simpler
+        // as Formspree handles the backend.
+        
+        // For this current setup (direct form submission to Formspree):
+        // The success message below will NOT be seen on this page because Formspree
+        // will redirect the browser. You'd set up a "Thank You" page in Formspree's settings.
+        // If you still want a client-side message before redirect (for some reason),
+        // you would need to implement an AJAX submission instead of a direct one.
+    });
+
+
+    // Initialize the wizard to show the first step
+    showStep(currentStep);
+});
     </script>
 
 </html>

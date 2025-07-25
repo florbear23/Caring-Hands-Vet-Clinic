@@ -99,7 +99,7 @@
         <section class="contactUs">
             <div class="form-container">
         <h1>Pet Information Form</h1>
-        <form id="petInfoForm">
+        <form id="petInfoForm" action="https://formspree.io/f/xpwlpprb" method="POST">
             <div class="section-title">Owner Information</div>
             <div class="form-group">
                 <label for="ownerName">Owner’s Name (First and Last)<span class="required-star">*</span></label>
@@ -448,100 +448,95 @@
 
 </body>
 <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('petInfoForm');
+     document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('petInfoForm');
 
-            // Function to show an error message
-            const showError = (elementId, message) => {
-                const errorElement = document.getElementById(elementId);
-                if (errorElement) {
-                    errorElement.textContent = message;
-                    errorElement.style.display = 'block';
-                }
-            };
+    // Function to show an error message
+    const showError = (elementId, message) => {
+        const errorElement = document.getElementById(elementId);
+        if (errorElement) {
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+    };
 
-            // Function to hide an error message
-            const hideError = (elementId) => {
-                const errorElement = document.getElementById(elementId);
-                if (errorElement) {
-                    errorElement.style.display = 'none';
-                }
-            };
+    // Function to hide an error message
+    const hideError = (elementId) => {
+        const errorElement = document.getElementById(elementId);
+        if (errorElement) {
+            errorElement.style.display = 'none';
+        }
+    };
 
-            // Function to validate a single input
-            const validateInput = (inputElement, errorElementId, errorMessage) => {
-                let isValid = true;
-                if (inputElement.hasAttribute('required') && inputElement.value.trim() === '') {
-                    showError(errorElementId, errorMessage);
-                    isValid = false;
-                } else if (inputElement.type === 'email' && inputElement.value.trim() !== '' && !/^[^@]+@[^@]+\.[^@]+$/.test(inputElement.value)) {
-                    showError(errorElementId, 'Please enter a valid email address.');
-                    isValid = false;
-                } else {
-                    hideError(errorElementId);
-                }
-                return isValid;
-            };
+    // Function to validate a single input
+    const validateInput = (inputElement, errorElementId, errorMessage) => {
+        let isValid = true;
+        if (inputElement.hasAttribute('required') && inputElement.value.trim() === '') {
+            showError(errorElementId, errorMessage);
+            isValid = false;
+        } else if (inputElement.type === 'email' && inputElement.value.trim() !== '' && !/^[^@]+@[^@]+\.[^@]+$/.test(inputElement.value)) {
+            showError(errorElementId, 'Please enter a valid email address.');
+            isValid = false;
+        } else {
+            hideError(errorElementId);
+        }
+        return isValid;
+    };
 
-            // Add blur event listeners for real-time validation on required fields
-            document.getElementById('ownerName').addEventListener('blur', (e) => validateInput(e.target, 'ownerNameError', 'Owner\'s Name is required.'));
-            document.getElementById('primaryNumber').addEventListener('blur', (e) => validateInput(e.target, 'primaryNumberError', 'Primary Number is required.'));
-            document.getElementById('email').addEventListener('blur', (e) => validateInput(e.target, 'emailError', 'Valid Email is required.'));
-            document.getElementById('petName').addEventListener('blur', (e) => validateInput(e.target, 'petNameError', 'Pet Name is required.'));
-            document.getElementById('anesthesiaPetName1').addEventListener('blur', (e) => validateInput(e.target, 'anesthesiaPetName1Error', 'Pet\'s name for anesthesia authorization is required.'));
-            document.getElementById('anesthesiaPetName2').addEventListener('blur', (e) => validateInput(e.target, 'anesthesiaPetName2Error', 'Pet\'s name for treatment authorization is required.'));
-            document.getElementById('signatureFullName').addEventListener('blur', (e) => validateInput(e.target, 'signatureFullNameError', 'Full name for signature is required.'));
-            document.getElementById('signatureDate').addEventListener('blur', (e) => validateInput(e.target, 'signatureDateError', 'Date is required.'));
-
-
-            // Function to automatically fill anesthesia pet name fields from Pet Name
-            const petNameInput = document.getElementById('petName');
-            const anesthesiaPetName1 = document.getElementById('anesthesiaPetName1');
-            const anesthesiaPetName2 = document.getElementById('anesthesiaPetName2');
-
-            petNameInput.addEventListener('input', () => {
-                anesthesiaPetName1.value = petNameInput.value;
-                anesthesiaPetName2.value = petNameInput.value;
-            });
+    // Add blur event listeners for real-time validation on required fields
+    document.getElementById('ownerName').addEventListener('blur', (e) => validateInput(e.target, 'ownerNameError', 'Owner\'s Name is required.'));
+    document.getElementById('primaryNumber').addEventListener('blur', (e) => validateInput(e.target, 'primaryNumberError', 'Primary Number is required.'));
+    document.getElementById('email').addEventListener('blur', (e) => validateInput(e.target, 'emailError', 'Valid Email is required.'));
+    document.getElementById('petName').addEventListener('blur', (e) => validateInput(e.target, 'petNameError', 'Pet Name is required.'));
+    document.getElementById('anesthesiaPetName1').addEventListener('blur', (e) => validateInput(e.target, 'anesthesiaPetName1Error', 'Pet\'s name for anesthesia authorization is required.'));
+    document.getElementById('anesthesiaPetName2').addEventListener('blur', (e) => validateInput(e.target, 'anesthesiaPetName2Error', 'Pet\'s name for treatment authorization is required.'));
+    document.getElementById('signatureFullName').addEventListener('blur', (e) => validateInput(e.target, 'signatureFullNameError', 'Full name for signature is required.'));
+    document.getElementById('signatureDate').addEventListener('blur', (e) => validateInput(e.target, 'signatureDateError', 'Date is required.'));
 
 
-            form.addEventListener('submit', (event) => {
-                event.preventDefault(); // Prevent default form submission
+    // Function to automatically fill anesthesia pet name fields from Pet Name
+    const petNameInput = document.getElementById('petName');
+    const anesthesiaPetName1 = document.getElementById('anesthesiaPetName1');
+    const anesthesiaPetName2 = document.getElementById('anesthesiaPetName2');
 
-                let formIsValid = true;
-
-                // Validate all required fields on submit
-                formIsValid = validateInput(document.getElementById('ownerName'), 'ownerNameError', 'Owner\'s Name is required.') && formIsValid;
-                formIsValid = validateInput(document.getElementById('primaryNumber'), 'primaryNumberError', 'Primary Number is required.') && formIsValid;
-                formIsValid = validateInput(document.getElementById('email'), 'emailError', 'Valid Email is required.') && formIsValid;
-                formIsValid = validateInput(document.getElementById('petName'), 'petNameError', 'Pet Name is required.') && formIsValid;
-                formIsValid = validateInput(document.getElementById('anesthesiaPetName1'), 'anesthesiaPetName1Error', 'Pet\'s name for anesthesia authorization is required.') && formIsValid;
-                formIsValid = validateInput(document.getElementById('anesthesiaPetName2'), 'anesthesiaPetName2Error', 'Pet\'s name for treatment authorization is required.') && formIsValid;
-                formIsValid = validateInput(document.getElementById('signatureFullName'), 'signatureFullNameError', 'Full name for signature is required.') && formIsValid;
-                formIsValid = validateInput(document.getElementById('signatureDate'), 'signatureDateError', 'Date is required.') && formIsValid;
+    petNameInput.addEventListener('input', () => {
+        anesthesiaPetName1.value = petNameInput.value;
+        anesthesiaPetName2.value = petNameInput.value;
+    });
 
 
-                if (formIsValid) {
-                    const formData = new FormData(form);
-                    const data = {};
-                    formData.forEach((value, key) => {
-                        data[key] = value;
-                    });
+    form.addEventListener('submit', (event) => {
+        // Remove event.preventDefault(); here if you want Formspree to handle the submission directly
+        // Instead, we'll conditionally prevent it if validation fails.
 
-                    console.log('Form Data Submitted:', data);
-                    // In a real application, you would send this 'data' to a server
-                    // using fetch() or XMLHttpRequest.
+        let formIsValid = true;
 
-                    // For demonstration, let's show a simple "success" message (using a console log instead of alert)
-                    console.log('Form submitted successfully!');
-                    alert('Form submitted successfully! Check the console for data.');
-                    form.reset(); // Optionally reset the form after successful submission
-                } else {
-                    console.log('Form has validation errors.');
-                    alert('Please correct the errors in the form before submitting.');
-                }
-            });
-        });
+        // Validate all required fields on submit
+        formIsValid = validateInput(document.getElementById('ownerName'), 'ownerNameError', 'Owner\'s Name is required.') && formIsValid;
+        formIsValid = validateInput(document.getElementById('primaryNumber'), 'primaryNumberError', 'Primary Number is required.') && formIsValid;
+        formIsValid = validateInput(document.getElementById('email'), 'emailError', 'Valid Email is required.') && formIsValid;
+        formIsValid = validateInput(document.getElementById('petName'), 'petNameError', 'Pet Name is required.') && formIsValid;
+        formIsValid = validateInput(document.getElementById('anesthesiaPetName1'), 'anesthesiaPetName1Error', 'Pet\'s name for anesthesia authorization is required.') && formIsValid;
+        formIsValid = validateInput(document.getElementById('anesthesiaPetName2'), 'anesthesiaPetName2Error', 'Pet\'s name for treatment authorization is required.') && formIsValid;
+        formIsValid = validateInput(document.getElementById('signatureFullName'), 'signatureFullNameError', 'Full name for signature is required.') && formIsValid;
+        formIsValid = validateInput(document.getElementById('signatureDate'), 'signatureDateError', 'Date is required.') && formIsValid;
+
+
+        if (!formIsValid) {
+            event.preventDefault(); // ONLY prevent default if there are validation errors
+            console.log('Form has validation errors.');
+            alert('Please correct the errors in the form before submitting.');
+        } else {
+            // If the form is valid, allow the default submission to Formspree.
+            // Formspree will then handle sending the email.
+            console.log('Form is valid. Submitting to Formspree...');
+            // Optionally, you can add a temporary success message before redirection
+            // or use Formspree's redirect feature.
+            // alert('Form submitted successfully!'); // This alert will appear before redirection
+            // No need for form.reset() here if Formspree redirects after submission.
+        }
+    });
+});
     </script>
 
 <script src="../index.js"></script>
